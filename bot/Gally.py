@@ -59,10 +59,10 @@ async def on_message(message):
 			a = int(ListElementInMessage[1])
 			b = int(ListElementInMessage[2])+1000
 			c = round(((a * 3.04)+10000) / (1 - (b / (b + 1200))))
-			d = (a*3.04)+10000
+			d = int((a*3.04)+10000)
 			embed = discord.Embed(title="Ce que donne 3 gemmes PV", color=0xffffff)
 			embed.set_thumbnail(url="")
-			embed.add_field(name="Calculs effectués avec:", value="\nPV : " + str(d) + "\nDéfense : " + str(b) + "(dont 1000 via les attirails)\n\nEpv avec 3 Gemmes Pv : " + str(c), inline=False)
+			embed.add_field(name="Calculs effectués avec:", value="\nPV : " + str(d) + "(dont 10 000 via les attirails)\nDéfense : " + str(b) + "(dont 1 000 via les attirails)\n\nEpv avec 3 Gemmes Pv : " + str(c), inline=False)
 			await message.channel.send(embed=embed)
 		else:
 			await message.channel.send ("Erreur, Ecrivez 3GemPv suivi des PV de base et de la Def")
