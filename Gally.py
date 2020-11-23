@@ -1,7 +1,8 @@
 import discord
-#from discord.ext import commands
+from discord.ext import commands
+import os
 
-TOKEN = 'DiscordBotToken'
+TOKEN = os.getenv("DiscordBotToken")
 
 client = discord.Client()
 
