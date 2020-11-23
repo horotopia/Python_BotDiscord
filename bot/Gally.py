@@ -40,6 +40,18 @@ async def on_message(message):
 			await message.channel.send(embed=embed)
 		else:
 			await message.channel.send ("Erreur, Ecrivez EpvGem suivi des PV de base et de la Def de base")
+			
+	if ListElementInMessage[0] == "3GemPv":
+		if len(ListElementInMessage) == 3 and ListElementInMessage[1].isnumeric() and ListElementInMessage[2].isnumeric():
+			a = int(ListElementInMessage[1])
+			b = int(ListElementInMessage[2])
+			c = round((a * 3.04) / (1 - (b / (b + 1200))))
+			embed = discord.Embed(title="Ce que donne 3 gemmes PV", color=0xffffff)
+			embed.set_thumbnail()
+			embed.add_field(name="Calculs effectués avec:", value="\nPV de base: " + str(a) + "\nDéfense : " + str(b) + "\n\nEpv avec 3 Gemmes Pv : " + str(c), inline=False)
+			await message.channel.send(embed=embed)
+		else:
+			await message.channel.send ("Erreur, Ecrivez 3GemPv suivi des PV de base et de la Def")
 	
 	if ListElementInMessage[0] == "D":
 		if len(ListElementInMessage) == 4 and ListElementInMessage[1].isnumeric() and ListElementInMessage[2].isnumeric and ListElementInMessage[3].isnumeric:
