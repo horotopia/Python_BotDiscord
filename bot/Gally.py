@@ -110,12 +110,12 @@ async def on_message(message):
 			e = ["3","3.25","3.5","3.75","4","5.5","7","8.5","10","12.5","15","17.5","20","27.5","35","42.5","50","62.5","75","87.5","100","125","150","175","200","225","250","275","300","325","350","375","400"]
 			while i < 10:
 				while b > 5:
-				b -= 5
-				d += 1
-			await message.channel.send("Titan", a, c[b-1],"(",e[d],"m) : ")
-			a += 1
-			i += 1
-			b += 1
+					b -= 5
+					d += 1
+				await message.channel.send("Titan", a, c[b-1],"(",e[d],"m) : ",inline=False)
+				a += 1
+				i += 1
+				b += 1
 	
 @client.event
 async def on_ready():
