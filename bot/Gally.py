@@ -112,10 +112,12 @@ async def on_message(message):
 				while b > 5:
 					b -= 5
 					d += 1
-				await message.channel.send("Titan", a, c[b-1],"(",e[d],"m) : ",inline=False)
+				await message.channel.send ("Titan" + a + c[b-1] + "(" + e[d] + "m) : ",inline=False)
 				a += 1
 				i += 1
 				b += 1
+		else:
+			await message.channel.send ("Erreur, Ecrivez Titan suivi du chiffre qui vous intéresse")
 	
 @client.event
 async def on_ready():
