@@ -112,7 +112,7 @@ async def on_message(message):
 				while b > 5:
 				b -= 5
 				d += 1
-			print("Titan", a, c[b-1],"(",e[d],"m) : ")
+			await message.channel.send("Titan", a, c[b-1],"(",e[d],"m) : ")
 			a += 1
 			i += 1
 			b += 1
