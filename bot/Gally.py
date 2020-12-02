@@ -100,7 +100,7 @@ async def on_message(message):
 		embed.add_field(name="Liste de Commandes :", value="Liste",inline=False)
 		await message.channel.send(embed=embed)
 	
-	if ListElementInMessage[0] == "Titan":
+	if ListElementInMessage[0] == "Tit":
 		if len(ListElementInMessage) == 2 and ListElementInMessage[1].isnumeric():
 			a = int(ListElementInMessage[1])
 			b = a
