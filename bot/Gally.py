@@ -115,7 +115,7 @@ async def on_message(message):
 				if i<9:
 					mess += "\n"
 				a += 1
-			await message.channel.send (mess)
+			await message.channel.send (mess=mess)
 		else:
 			await message.channel.send ("Erreur, Ecrivez Titan suivi du chiffre qui vous intéresse")
 	
