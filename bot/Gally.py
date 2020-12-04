@@ -110,7 +110,7 @@ async def on_message(message):
 			mess = ""
 			for i in range(0,9):
 				b = a%5
-				d = a/5
+				d = int(a/0.5)
 				mess += ("Titan " + str(a) + str(c[b-1]) + " (" + str(e[d]) + "m) : ")
 				if i<9:
 					mess += "\n"
