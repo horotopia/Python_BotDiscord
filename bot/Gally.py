@@ -104,14 +104,14 @@ async def on_message(message):
 		if len(ListElementInMessage) == 2 and ListElementInMessage[1].isnumeric():
 			a = int(ListElementInMessage[1])
 			b = a
-			c = [" :Dark:", " :Eau:", " :Bois:", " :Light:", " :Feu:"]
+			c = [" :dark:", " :eau:", " :bois:", " :light:", " :feu:"]
 			d = int(0)
 			e = ["3","3.25","3.5","3.75","4","5.5","7","8.5","10","12.5","15","17.5","20","27.5","35","42.5","50","62.5","75","87.5","100","125","150","175","200","225","250","275","300","325","350","375","400"]
 			mess = ""
-			for i in range(0,9):
-				b = a%5
-				d = int(a/5)
-				mess += ("Titan " + str(a) + str(c[b-1]) + " (" + str(e[d]) + "m) : ")
+			for i in range(0,10):
+				b = (a%5)-1
+				d = int((a-1)/5)
+				mess += ("Titan " + str(a) + str(c[b]) + " (" + str(e[d]) + "m) : ")
 				if i<9:
 					mess += "\n"
 				a += 1
