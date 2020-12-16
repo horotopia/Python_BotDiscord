@@ -21,8 +21,8 @@ async def on_message(message):
 			b = int(ListElementInMessage[2])
 			c = round(a/(1-(b/(b+1200))))
 			embed = discord.Embed(title="Epv", color=0xffffff)
-			embed.set_thumbnail(url="")
-			embed.add_field(name="Calculs effectués avec:", value="\nPV : " + str(a) + "\nDéfense : " + str(b) + "\n\nEpv : " + str(c), inline=False)
+			embed.set_thumbnail(url="https://img.pngio.com/bar-development-game-health-video-game-icon-video-game-health-png-512_204.png")
+			embed.add_field(name="Calculs effectués avec:", value="\nPV : " + str(a) + "\nDéfense : " + str(b) + "\n\n**Epv : " + str(c) + "**", inline=False)
 			await message.channel.send(embed=embed)
  
 		else:
@@ -38,9 +38,11 @@ async def on_message(message):
 			f = int(b * 1.68)
 			g = int(a * 1.68)
 			h = int(b * 2.36)
-			embed=discord.Embed(title="Choisir entre 2 choix de gemmes :", description="__- 2 gemmes Pv + 1 gemme Def \n- 2 gemmes Def + 1 gemme Pv__", color=0xffffff)
+			embed=discord.Embed(title="Choisir entre 2 choix de gemmes :", description="- 2 gemmes Pv + 1 gemme Def \n- 2 gemmes Def + 1 gemme Pv", color=0xffffff)
 			embed.set_thumbnail(url="https://vignette.wikia.nocookie.net/mslgame/images/a/aa/Gem.png/revision/latest/top-crop/width/150/height/150?cb=20160922163030")
-			embed.add_field(name="Calculs effectués avec:", value="\nPV de base: " + str(a) + "\nDéfense de base: " + str(b) + "\n\nEpv avec 2Pv + 1Def: " + str(c) + "\nPV : " + str(e) + "\nDef : " + str(f) + "\n\nEpv avec 1Pv + 2Def: " + str(d) + "\nPV : " + str(g) + "\nDef : " + str(h), inline=False)
+			embed.add_field(name="Calculs effectués avec:", value="\nPV de base : " + str(a) + "\nDéfense de base : " + str(b), inline=False)
+			embed.add_field(name="2Pv, 1Def", value="\n\n**Epv : " + str(c) + "**\nPV : " + str(e) + "\nDef : " + str(f), inline=True)
+			embed.add_field(name="1Pv, 2Def", value="\n\n**Epv : " + str(d) + "**\nPV : " + str(e) + "\nDef : " + str(f), inline=True)
 			await message.channel.send(embed=embed)
 		else:
 			await message.channel.send ("Erreur, Ecrivez EpvGem suivi des PV de base et de la Def de base")
@@ -58,8 +60,8 @@ async def on_message(message):
 			embed=discord.Embed(title="Choisir entre 2 choix de gemmes :", description="- 2 gemmes Pv + 1 gemme Def \n- 2 gemmes Def + 1 gemme Pv", color=0xffffff)
 			embed.set_thumbnail(url="https://vignette.wikia.nocookie.net/mslgame/images/a/aa/Gem.png/revision/latest/top-crop/width/150/height/150?cb=20160922163030")
 			embed.add_field(name="Calculs effectués avec:", value="\nPV de base : " + str(a) + " __(+ 10k via les attirails)__\nDéfense de base : " + str(b) + " __(+ 1k via les attirails)__", inline=False)
-			embed.add_field(name="2Pv,1Def", value="\n\n**Epv : " + str(c) + "**\nPV : " + str(e) + "\nDef : " + str(f), inline=True)
-			embed.add_field(name="1Pv,2Def", value="\n\n**Epv : " + str(d) + "**\nPV : " + str(e) + "\nDef : " + str(f), inline=True)
+			embed.add_field(name="2Pv, 1Def", value="\n\n**Epv : " + str(c) + "**\nPV : " + str(e) + "\nDef : " + str(f), inline=True)
+			embed.add_field(name="1Pv, 2Def", value="\n\n**Epv : " + str(d) + "**\nPV : " + str(e) + "\nDef : " + str(f), inline=True)
 			await message.channel.send(embed=embed)
 		else:
 			await message.channel.send ("Erreur, Ecrivez EpvGemTr suivi des PV de base et de la Def de base")
@@ -86,7 +88,7 @@ async def on_message(message):
 			e = round(a*5.5*(1+(b/100)*(c/100)))
 			f = round(a*5.5*(1+(c/100)))
 			embed = discord.Embed(title="les Dmg de l'Astromon :", color=0xffffff)
-			embed.set_thumbnail(url = "")
+			embed.set_thumbnail(url = "https://www.flaticon.com/svg/static/icons/svg/1496/1496059.svg")
 			embed.add_field(name="Calculs effectués avec : ", value="atk : "+ str(a) +"\nTc : "+ str(b) +"\nDc : "+ str(c) +"\n\nDégats sans crit : "+ str(d) +"\nDégats moyens : "+str(e)+"\nDégats crit : "+str(f),inline=False)
 			await message.channel.send(embed=embed)
 		else:
