@@ -69,11 +69,11 @@ async def on_message(message):
 	if ListElementInMessage[0] == "3GemPv":
 		if len(ListElementInMessage) == 3 and ListElementInMessage[1].isnumeric() and ListElementInMessage[2].isnumeric():
 			a = int(ListElementInMessage[1])
-			b = int(ListElementInMessage[2]+1000)
+			b = int(ListElementInMessage[2])+1000
 			c = round(((a * 3.04)+10000) / (1 - (b / (b + 1200))))
 			d = int((a*3.04)+10000)
 			embed = discord.Embed(title="Ce que donne 3 gemmes PV", color=0xffffff)
-			embed.set_thumbnail(url="")
+			embed.set_thumbnail(url="https://vignette.wikia.nocookie.net/mslgame/images/a/aa/Gem.png/revision/latest/top-crop/width/150/height/150?cb=20160922163030")
 			embed.add_field(name="Calculs effectués avec :", value="\nPV : " + str(d) + " (dont 10k via les attirails)\nDéfense : " + str(b) + " (dont 1k via les attirails)\n\nEpv avec 3 Gemmes Pv : " + str(c), inline=False)
 			await message.channel.send(embed=embed)
 		else:
