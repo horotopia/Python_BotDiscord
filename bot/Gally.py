@@ -51,9 +51,13 @@ async def on_message(message):
 			b = int(ListElementInMessage[2])
 			c = round(((a * 2.36)+10000) / (1 - (((b * 1.68)+1000) / (((b * 1.68)+1000) + 1200))))
 			d = round(((a * 1.68)+10000) / (1 - (((b * 2.36)+1000) / (((b * 2.36)+1000) + 1200))))
+			e = int(a * 2.36)
+			f = int(b * 1.68)
+			g = int(a * 1.68)
+			h = int(b * 2.36)
 			embed = discord.Embed(title="Choisir entre : \n- 2 gemmes pv + 1 gemme def\n- 2 gemmes def + 1 gemme pv", color=0xffffff)
 			embed.set_thumbnail(url="https://vignette.wikia.nocookie.net/mslgame/images/a/aa/Gem.png/revision/latest/top-crop/width/150/height/150?cb=20160922163030")
-			embed.add_field(name="Calculs effectués avec:", value="\nPV de base : " + str(a) + "(+ 10 000 via les attirails)\nDéfense de base : " + str(b) + "(+ 1 000 via les attirails)\n\nEpv avec 2Pv + 1Def: " + str(c) + "\nEpv avec 1Pv + 2Def: " + str(d), inline=False)
+			embed.add_field(name="Calculs effectués avec:", value="\nPV de base : " + str(a) + "(+ 10 000 via les attirails)\nDéfense de base : " + str(b) + "(+ 1 000 via les attirails)\n\nEpv avec 2Pv + 1Def: " + str(c) + "\nPV : " + str(e) + "\nDef : " + str(f) + "\nEpv avec 1Pv + 2Def: " + str(d) + "\nPV : " + str(e) + "\nDef : " + str(f), inline=False)
 			await message.channel.send(embed=embed)
 		else:
 			await message.channel.send ("Erreur, Ecrivez EpvGemTr suivi des PV de base et de la Def de base")
@@ -65,7 +69,7 @@ async def on_message(message):
 			c = round(((a * 3.04)+10000) / (1 - (b / (b + 1200))))
 			d = int((a*3.04)+10000)
 			embed = discord.Embed(title="Ce que donne 3 gemmes PV", color=0xffffff)
-			embed.set_thumbnail(url="")
+			embed.set_thumbnail(url="https://vignette.wikia.nocookie.net/mslgame/images/a/aa/Gem.png/revision/latest/top-crop/width/150/height/150?cb=20160922163030")
 			embed.add_field(name="Calculs effectués avec:", value="\nPV : " + str(d) + " (dont 10 000 via les attirails)\nDéfense : " + str(b) + " (dont 1 000 via les attirails)\n\nEpv avec 3 Gemmes Pv : " + str(c), inline=False)
 			await message.channel.send(embed=embed)
 		else:
@@ -86,7 +90,7 @@ async def on_message(message):
 		else:
 			await message.channel.send ("Erreur, Ecrivez D suivi de l'attaque, du taux critique et des dégats critique")
 	
-	if ListElementInMessage[0] == "Liste":
+	if ListElementInMessage[0] == "ListeC":
 		embed = discord.Embed(title="Liste des commandes :", color=0xffffff)
 		embed.set_thumbnail(url = "")
 		embed.add_field(name="Menu :", value="Menu \nSommaire \nInfo \nHelp \npas fini",inline=False)
