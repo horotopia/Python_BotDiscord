@@ -93,7 +93,7 @@ async def on_message(message):
 			j = int((c*1.68)+500)
 			k = int(a+10000)
 			l = int(b+1000)
-			embed=discord.Embed(title="Choix de Gemmes pour un healer", description="- Pv Def Recup \n- Pv/Def Recup x2 \nLes calculs sont effectués en prenant compte des attirails : \n +10k Pv, +1k Def, +500 Recup")
+			embed=discord.Embed(title="Choix de Gemmes pour un healer", description="Les calculs sont effectués en prenant compte des attirails : \n +10k Pv, +1k Def, +500 Recup")
 			embed.set_thumbnail(url="https://wiki.dungeondefenders2.com/images/6/6e/Heal.png")
 			embed.add_field(name="1 Pv, 1 Def, 1 Recup", value="**Epv : "+str(f)+"**"+"\nPv : "+str(d)+"Def : "+str(e)+"\nRecup : " +str(j), inline=True)
 			embed.add_field(name="1 Pv, 2 Recup", value="**Epv : "+str(h)+"**"+"\nPv : "+str(d)+"\nDef : "+str(l)+"\nRecup : " +str(i), inline=True)
