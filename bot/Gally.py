@@ -55,9 +55,9 @@ async def on_message(message):
 			f = int(b * 1.68)
 			g = int(a * 1.68)
 			h = int(b * 2.36)
-			embed=discord.Embed(title="Choisir entre 2 choix de gemmes :", description="- 2 PV + 1 Def \n- 2 Def + 1 PV", color=0xffffff)
+			embed=discord.Embed(title="Choisir entre 2 choix de gemmes :", description="- 2 PV + 1 Def \n- 2 Def + 1 PV\n", color=0xffffff)
 			embed.set_thumbnail(url="https://vignette.wikia.nocookie.net/mslgame/images/a/aa/Gem.png/revision/latest/top-crop/width/150/height/150?cb=20160922163030")
-			embed.add_field(name="Calculs effectués avec:", value="\nPV de base : " + str(a) + " (+ 10k via les attirails)\nDéfense de base : " + str(b) + " (+ 1k via les attirails)\n\nEpv avec 2Pv + 1Def: " + str(c) + "\nPV : " + str(e) + "\nDef : " + str(f) + "\n\nEpv avec 1Pv + 2Def: " + str(d) + "\nPV : " + str(e) + "\nDef : " + str(f), inline=False)
+			embed.add_field(name="Calculs effectués avec:", value="\nPV de base : " + str(a) + " (+ 10k via les attirails)\nDéfense de base : " + str(b) + " (+ 1k via les attirails)\n\n- Epv : " + str(c) + " (2Pv,1Def)\nPV : " + str(e) + "\nDef : " + str(f) + "\n\n- Epv : " + str(d) + " (1Pv,2Def)\nPV : " + str(e) + "\nDef : " + str(f), inline=False)
 			await message.channel.send(embed=embed)
 		else:
 			await message.channel.send ("Erreur, Ecrivez EpvGemTr suivi des PV de base et de la Def de base")
