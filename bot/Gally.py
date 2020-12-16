@@ -89,7 +89,7 @@ async def on_message(message):
 			f = round(((a * 1.68)+10000) / (1 - ((b +1000) / ((b +1000) + 1200))))
 			g = int((a*1.68)+10000)
 			h = int((c*2.36)+500)
-			embed=discord.Embed(title="Choix de Gemmes pour un healer", description="- Pv Def Recup \n- Pv/Def Recup x2 \n\nLes calculs sont effectués en prenant en compte 10kpv, 1kdef et 500recup via les trink")
+			embed=discord.Embed(title="Choix de Gemmes pour un healer", description="- Pv Def Recup \n- Pv/Def Recup x2 ")
 			embed.set_thumbnail(url="https://wiki.dungeondefenders2.com/images/6/6e/Heal.png")
 			embed.add_field(name="1 Pv, 1 Def, 1 Recup", value="1"+str(d), inline=True)
 			embed.add_field(name="1 Pv, 2 Recup", value="2"+str(e), inline=True)
