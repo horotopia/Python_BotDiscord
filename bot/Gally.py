@@ -90,7 +90,9 @@ async def on_message(message):
 			embed = discord.Embed(title="Calculs effectués avec : ", color=0xffffff)
 			embed.set_thumbnail(url = "https://img2.pngio.com/markeus-b-ui-buttons-opengameartorg-attack-png-187_207.png")
 			embed.add_field(name="", value="Atk : "+ str(a) +"\nTc : "+ str(b) +"\nDc : "+ str(c),inline=False)
-			embed.add_field(name="", value="\n__**Dégâts sans crit :**__ "+ str(d) +"\n\n__**Dégâts moyens__: "+str(e)+"**/75k (recomandé)\n__**Dégâts crit :**__ "+str(f),inline=False)
+			embed.add_field(name="", value="__**Dégâts min :**__ " + str(d)+ "(no crit)",inline=False)
+			embed.add_field(name="", value="__**Dégâts moyens__ : "+ str(e)+ "**(/75k recomandé)",inline=False)
+			embed.add_field(name="", value="__**Dégâts crit :**__ "+ str(f)+ "(crit)",inline=False)
 			await message.channel.send(embed=embed)
 		else:
 			await message.channel.send ("Erreur, Ecrivez D suivi de l'attaque, du taux critique et des dégats critique")
