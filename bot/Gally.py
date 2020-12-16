@@ -91,7 +91,7 @@ async def on_message(message):
 			embed.set_thumbnail(url = "https://img2.pngio.com/markeus-b-ui-buttons-opengameartorg-attack-png-187_207.png")
 			embed.add_field(name="", value="Atk : "+ str(a) +"\nTc : "+ str(b) +"\nDc : "+ str(c),inline=False)
 			embed.add_field(name="", value="__**Dégâts min :**__ " + str(d)+ "(no crit)",inline=False)
-			embed.add_field(name="", value="__**Dégâts moyens__ : "+ str(e)+ "**(/75k recomandé)",inline=False)
+			embed.add_field(name="", value="__**Dégâts moyens__ : "+ str(e)+ "(/75k recomandé)",inline=False)
 			embed.add_field(name="", value="__**Dégâts crit :**__ "+ str(f)+ "(crit)",inline=False)
 			await message.channel.send(embed=embed)
 		else:
