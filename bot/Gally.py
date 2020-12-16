@@ -96,8 +96,9 @@ async def on_message(message):
 			embed=discord.Embed(title="Choix de Gemmes pour un healer", description="- Pv Def Recup \n- Pv/Def Recup x2 \nLes calculs sont effectués en prenant compte des attirails : \n +10k Pv, +1k Def, +500 Recup")
 			embed.set_thumbnail(url="https://wiki.dungeondefenders2.com/images/6/6e/Heal.png")
 			embed.add_field(name="1 Pv, 1 Def, 1 Recup", value="**Epv : "+str(f)+"**"+"\nPv : "+str(d)+"Def : "+str(e)+"\nRecup : " +str(j), inline=True)
-			embed.add_field(name="1 Pv, 2 Recup", value="**Epv : "+str(h)+"**"+"\nPv : "+str(d)+"Def : "+str(l)+"\nRecup : " +str(i), inline=True)
-			embed.add_field(name="1 Def, 2 Recup", value="**Epv : "+str(g)+"**"+"\nPv : "+str(k)+"Def : "+str(e)+"\nRecup : " +str(i) + "\n\n__Attention, les sub ne sont pas pris en compte ;)__", inline=True)
+			embed.add_field(name="1 Pv, 2 Recup", value="**Epv : "+str(h)+"**"+"\nPv : "+str(d)+"\nDef : "+str(l)+"\nRecup : " +str(i), inline=True)
+			embed.add_field(name="1 Def, 2 Recup", value="**Epv : "+str(g)+"**"+"\nPv : "+str(k)+"\nDef : "+str(e)+"\nRecup : " +str(i), inline=True)
+			embed.add_field(name="Attention", value="\n\n__les sub ne sont pas pris en compte__ ;)", inline=False)
 			await message.channel.send(embed=embed)
 		else:
 			await message.channel.send ("Erreur, Ecrivez GemHeal suivi des PV de base, de la Def de base et de la récup de base")
