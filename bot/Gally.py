@@ -88,7 +88,7 @@ async def on_message(message):
 			e = round(a*5.5*(1+(b/100)*(c/100)))
 			f = round(a*5.5*(1+(c/100)))
 			embed = discord.Embed(title="les Dmg de l'Astromon :", color=0xffffff)
-			embed.set_thumbnail(url = "https://www.flaticon.com/svg/static/icons/svg/1496/1496059.svg")
+			embed.set_thumbnail(url = "https://img2.pngio.com/markeus-b-ui-buttons-opengameartorg-attack-png-187_207.png")
 			embed.add_field(name="Calculs effectués avec : ", value="atk : "+ str(a) +"\nTc : "+ str(b) +"\nDc : "+ str(c) +"\n\nDégats sans crit : "+ str(d) +"\nDégats moyens : "+str(e)+"\nDégats crit : "+str(f),inline=False)
 			await message.channel.send(embed=embed)
 		else:
