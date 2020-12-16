@@ -95,7 +95,7 @@ async def on_message(message):
 			l = int(b+1000)
 			embed=discord.Embed(title="Choix de Gemmes pour un healer", description="Les calculs sont effectués en prenant compte des attirails : \n +10k Pv, +1k Def, +500 Recup")
 			embed.set_thumbnail(url="https://wiki.dungeondefenders2.com/images/6/6e/Heal.png")
-			embed.add_field(name="1 Pv, 1 Def, 1 Recup", value="**Epv : "+str(f)+"**"+"\nPv : "+str(d)+"Def : "+str(e)+"\nRecup : " +str(j), inline=True)
+			embed.add_field(name="1 Pv, 1 Def, 1 Recup", value="**Epv : "+str(f)+"**"+"\nPv : "+str(d)+"\nDef : "+str(e)+"\nRecup : " +str(j), inline=True)
 			embed.add_field(name="1 Pv, 2 Recup", value="**Epv : "+str(h)+"**"+"\nPv : "+str(d)+"\nDef : "+str(l)+"\nRecup : " +str(i), inline=True)
 			embed.add_field(name="1 Def, 2 Recup", value="**Epv : "+str(g)+"**"+"\nPv : "+str(k)+"\nDef : "+str(e)+"\nRecup : " +str(i), inline=True)
 			embed.add_field(name="Attention", value="\n\n__les sub ne sont pas pris en compte__ ;)", inline=False)
