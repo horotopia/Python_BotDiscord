@@ -42,7 +42,7 @@ async def on_message(message):
 			embed.set_thumbnail(url="https://vignette.wikia.nocookie.net/mslgame/images/a/aa/Gem.png/revision/latest/top-crop/width/150/height/150?cb=20160922163030")
 			embed.add_field(name="Calculs effectués avec:", value="\nPV de base : " + str(a) + "\nDéfense de base : " + str(b), inline=False)
 			embed.add_field(name="2Pv, 1Def", value="\n\n**Epv : " + str(c) + "**\nPV : " + str(e) + "\nDef : " + str(f), inline=True)
-			embed.add_field(name="1Pv, 2Def", value="\n\n**Epv : " + str(d) + "**\nPV : " + str(e) + "\nDef : " + str(f), inline=True)
+			embed.add_field(name="1Pv, 2Def", value="\n\n**Epv : " + str(d) + "**\nPV : " + str(g) + "\nDef : " + str(h), inline=True)
 			await message.channel.send(embed=embed)
 		else:
 			await message.channel.send ("Erreur, Ecrivez EpvGem suivi des PV de base et de la Def de base")
@@ -61,7 +61,7 @@ async def on_message(message):
 			embed.set_thumbnail(url="https://vignette.wikia.nocookie.net/mslgame/images/a/aa/Gem.png/revision/latest/top-crop/width/150/height/150?cb=20160922163030")
 			embed.add_field(name="Calculs effectués avec:", value="\nPV de base : " + str(a) + " __(+ 10k via les attirails)__\nDéfense de base : " + str(b) + " __(+ 1k via les attirails)__", inline=False)
 			embed.add_field(name="2Pv, 1Def", value="\n\n**Epv : " + str(c) + "**\nPV : " + str(e) + "\nDef : " + str(f), inline=True)
-			embed.add_field(name="1Pv, 2Def", value="\n\n**Epv : " + str(d) + "**\nPV : " + str(e) + "\nDef : " + str(f), inline=True)
+			embed.add_field(name="1Pv, 2Def", value="\n\n**Epv : " + str(d) + "**\nPV : " + str(g) + "\nDef : " + str(h), inline=True)
 			await message.channel.send(embed=embed)
 		else:
 			await message.channel.send ("Erreur, Ecrivez EpvGemTr suivi des PV de base et de la Def de base")
@@ -69,7 +69,7 @@ async def on_message(message):
 	if ListElementInMessage[0] == "3GemPv":
 		if len(ListElementInMessage) == 3 and ListElementInMessage[1].isnumeric() and ListElementInMessage[2].isnumeric():
 			a = int(ListElementInMessage[1])
-			b = int(ListElementInMessage[2])+1000
+			b = int(ListElementInMessage[2]+1000)
 			c = round(((a * 3.04)+10000) / (1 - (b / (b + 1200))))
 			d = int((a*3.04)+10000)
 			embed = discord.Embed(title="Ce que donne 3 gemmes PV", color=0xffffff)
