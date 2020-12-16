@@ -80,7 +80,7 @@ async def on_message(message):
 			await message.channel.send ("Erreur, Ecrivez 3GemPv suivi des PV de base et de la Def")
 	
 	if ListElementInMessage[0] == "GemHeal":
-		if len(ListElementInMessage) == 3 and ListElementInMessage[1].isnumeric() and ListElementInMessage[2].isnumeric() and ListElementInMessage[3].isnumeric():
+		if len(ListElementInMessage) == 4 and ListElementInMessage[1].isnumeric() and ListElementInMessage[2].isnumeric() and ListElementInMessage[3].isnumeric():
 			a = int(ListElementInMessage[1])
 			b = int(ListElementInMessage[2])+1000
 			c = int(ListElementInMessage[3])
