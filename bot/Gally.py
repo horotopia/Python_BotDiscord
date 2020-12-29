@@ -2618,6 +2618,336 @@ async def on_message(message):
 
 		await message.channel.send(embed=embed)
 
+		###########################
+		######### Loki ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Loki','FeuLoki']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552560415549423619/TricksterlokiR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#306 Loki (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552560415549423619/TricksterlokiR_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: Def +30~35%\n**Passif**: Nécrose 80% 2 tours\n(Dmg +15%, Taux: +10%, tour: +1)\n**Actif**: Nécrose x2 70% 2 tours\n(Dmg +15%, Taux: +10%)\n**PV**: 33856\n**Attaque**: 2253\n**Défense**: 2229\n**Récupération**:2066", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Loki','EauLoki','TopLoki']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552560403012517889/TricksterlokiB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#307 Loki (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552560403012517889/TricksterlokiB_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Def +30~35%\n**Passif**: Chasseur 50%\n(Dmg +20%)\n**Actif**: Prédateur 40%\n(Dmg +25%, Effect: +10%)\n**PV**: 30556\n**Attaque**: 3357\n**Défense**: 2118\n**Récupération**:1907", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Loki','BoisLoki']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552560400420569099/Tricksterloki_large.jpeg", color=0xffffff)
+		embed.set_author(name="#308 Loki (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552560400420569099/Tricksterloki_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: Def +30~35%\n**Passif**: Boost moral 40%PA\n(Dmg +20%, Effect: +10%)\n**Actif**: Agression (Def)\n(Dmg +25%)\n**PV**: 30611\n**Attaque**: 2418\n**Défense**: 3391\n**Récupération**:1900", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Loki','LightLoki']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/557586319992291339/TricksterlokiW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#309 Loki (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/557586319992291339/TricksterlokiW_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: Def +30~35%\n**Passif**: Boost moral 10% PA\n(Dmg +20%, Effect: +5%)\n**Actif**: Provoc (réduit 50%dmg) 70% 2tours\n(Dmg +20%, Taux: +10%)\n**PV**: 29732\n**Attaque**: 2418\n**Défense**: 3221\n**Récupération**:2343", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Loki','DarkLoki']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552560407211147275/TricksterlokiD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#310 Loki (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552560407211147275/TricksterlokiD_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: Def +30~35%\n**Passif**: Sceau 80% 3 tours\n(Dmg +20%, Taux: +20%)\n**Actif**: Sceau 80% 2 tours\n(Dmg +20%, Taux: +10%)\n**PV**: 38548\n**Attaque**: 2180\n**Défense**: 2405\n**Récupération**:1853", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### Loki S Evo ############
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Loki','FeuLoki','SLoki','FeuSLoki']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/758071281219272775/783271918329397258/Screenshot_20201201-110053_Monster_Super_League.jpg", color=0xffffff)
+		embed.set_author(name="#306 Loki SE (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/758071281219272775/783271918329397258/Screenshot_20201201-110053_Monster_Super_League.jpg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: Def +30~35%\n**Passif**: Nécrose 80% 2 tours\n(Dmg +15%, Taux: +10%, tour: +1)\n**Actif**: Nécrose x2 70% 2 tours\n(Dmg +15%, Taux: +10%)\n**PV**: 37267\n**Attaque**: 2488\n**Défense**: 2459\n**Récupération**:2282", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Loki','EauLoki','TopLoki','SLoki','EauSLoki']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/758071281219272775/783271918177353728/Screenshot_20201201-110120_Monster_Super_League.jpg", color=0xffffff)
+		embed.set_author(name="#307 Loki SE (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/758071281219272775/783271918177353728/Screenshot_20201201-110120_Monster_Super_League.jpg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Def +30~35%\n**Passif**: Chasseur 50%\n(Dmg +20%)\n**Actif**: Prédateur 40%\n(Dmg +25%, Effect: +10%)\n**PV**: 33621\n**Attaque**: 3725\n**Défense**: 2336\n**Récupération**:2104", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Loki','BoisLoki','SLoki','BoisSLoki']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/758071281219272775/783271918014562304/Screenshot_20201201-110145_Monster_Super_League.jpg", color=0xffffff)
+		embed.set_author(name="#308 Loki SE (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/758071281219272775/783271918014562304/Screenshot_20201201-110145_Monster_Super_League.jpg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: Def +30~35%\n**Passif**: Boost moral 40%PA\n(Dmg +20%, Effect: +10%)\n**Actif**: Agression (Def)\n(Dmg +25%)\n**PV**: 33682\n**Attaque**: 2670\n**Défense**: 3759\n**Récupération**:2097", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Loki','LightLoki','SLoki','LightSLoki']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/758071281219272775/783271917825163294/Screenshot_20201201-110206_Monster_Super_League.jpg", color=0xffffff)
+		embed.set_author(name="#309 Loki SE (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/758071281219272775/783271917825163294/Screenshot_20201201-110206_Monster_Super_League.jpg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: Def +30~35%\n**Passif**: Boost moral 10% PA\n(Dmg +20%, Effect: +5%)\n**Actif**: Provoc (réduit 50%dmg) 70% 2tours\n(Dmg +20%, Taux: +10%)\n**PV**: 32715\n**Attaque**: 2670\n**Défense**: 3575\n**Récupération**:2581", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Loki','DarkLoki','SLoki','DarkSLoki']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/758071281219272775/783271917661978644/Screenshot_20201201-110228_Monster_Super_League.jpg", color=0xffffff)
+		embed.set_author(name="#310 Loki SE (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/758071281219272775/783271917661978644/Screenshot_20201201-110228_Monster_Super_League.jpg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: Def +30~35%\n**Passif**: Sceau 80% 3 tours\n(Dmg +20%, Taux: +20%)\n**Actif**: Sceau 80% 2 tours\n(Dmg +20%, Taux: +10%)\n**PV**: 42572\n**Attaque**: 2398\n**Défense**: 2650\n**Récupération**:2044", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### lucy ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Lucy','FeuLucy']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559334324830219/SnowwhiteR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#311 Lucy (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552559334324830219/SnowwhiteR_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: CR -15~20%(League)\n**Passif**: Siphon de PV \n(Dmg +25%)\n**Actif**: Sceau 80% 2 tours\n(Dmg +15%, Taux: +10%)\n**PV**: 23494\n**Attaque**: 3378\n**Défense**: 2349\n**Récupération**:1900", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Lucy','EauLucy','TopLucy']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559321473482764/Snowwhite_large.jpeg", color=0xffffff)
+		embed.set_author(name="#312 Lucy (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552559321473482764/Snowwhite_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: CR -15~20%(League)\n**Passif**: Attaque réduite 70% 2 tours\n(Dmg +15%, Taux: +10%)\n**Actif**: Attaque réduite 60% 2 tours\n(Dmg +10%, Taux: +20%)\n**PV**: 28098\n**Attaque**: 3276\n**Défense**: 2009\n**Récupération**:2043", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Lucy','BoisLucy']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559324556427267/SnowwhiteG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#313 Lucy (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552559324556427267/SnowwhiteG_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: CR -15~20%(League)\n**Passif**: Nécrose 90% 2 tours\n(Dmg +15%, Taux: +10%)\n**Actif**: Pétrification 80% 1 tour\n(Dmg +15%, Taux: +10%)\n**PV**: 30689\n**Attaque**: 2376\n**Défense**: 2481\n**Récupération**:2331", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Lucy','LightLucy']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559383763222588/SnowwhiteW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#314 Lucy (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552559383763222588/SnowwhiteW_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: CR -15~20%(League)\n**Passif**: Choc 70% 1 tour\n(Dmg +15%)\n**Actif**: Choc 70% 1 tour\n(Dmg +15%, Taux: +10%)\n**PV**: 38984\n**Attaque**: 2084\n**Défense**: 2405\n**Récupération**:1853", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Lucy','DarkLucy']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559322496761866/SnowwhiteD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#315 Lucy (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552559322496761866/SnowwhiteD_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: CR -15~20%(League)\n**Passif**: Chasseur 50%\n(Dmg +20%)\n**Actif**: Faiblesse exposée 80% 2 tours\n(Dmg +10%, Taux: +20%)\n**PV**: 27349\n**Attaque**: 3439\n**Défense**: 2288\n**Récupération**:2084", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### lumo ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Lumo','FeuLumo']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/557213503161892894/LuminaR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#316 Lumo (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/557213503161892894/LuminaR_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Récupération\n**Lead**: SP Rec +20~25%\n**Passif**: Défense réduite 40% 2 tours\n(No skillbooks)\n**Actif**: Récupération augmentée 2 tours\n(No skillbooks)\n**PV**: 25497\n**Attaque**: 1648\n**Défense**: 1682\n**Récupération**:2315", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Lumo','EauLumo']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552555923709886484/LuminaB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#317 Lumo (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552555923709886484/LuminaB_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Défenseur\n**Lead**: SP Rec +20~25%\n**Passif**: Récupération réduite 40% 1 tours\n(No skillbooks)\n**Actif**: Attaque augmentée  2 tours\n(No skillbooks)\n**PV**: 28977\n**Attaque**: 1743\n**Défense**: 2384\n**Récupération**:1301", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Lumo','BoisLumo']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552555924376518678/Lumina_large.jpeg", color=0xffffff)
+		embed.set_author(name="#318 Lumo (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552555924376518678/Lumina_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Récupération\n**Lead**: SP Rec +20~25%\n**Passif**: Attaque réduite 40% 1 tours\n(No skillbooks)\n**Actif**: Blue souls SP up 2 tours\n(No skillbooks)\n**PV**: 29290\n**Attaque**: 1410\n**Défense**: 1832\n**Récupération**:2288", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### lupin ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Lupin','FeuLupin']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556893927899138/MysteriousLupinR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#321 Lupin (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556893927899138/MysteriousLupinR_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: CR +15~20%\n**Passif**: Prédateur 30%\n(No skillbooks)\n**Actif**: Défense réduite (On crit) 2 tours\n(No skillbooks)\n**PV**: 25122\n**Attaque**: 3262\n**Défense**: 2295\n**Récupération**:2084", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Lupin','EauLupin']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556905772482580/MysteriousLupinB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#322 Lupin (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556905772482580/MysteriousLupinB_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: CR +15~20%\n**Passif**: Adrénaline 25% de ses PV\n(No skillbooks)\n**Actif**: Sommeil 80% 1 tour\n(No skillbooks)\n**PV**: 41402\n**Attaque**: 2391\n**Défense**: 1785\n**Récupération**:1922", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Lupin','BoisLupin','TopLupin']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556898126135297/MysteriousLupinG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#323 Lupin (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556898126135297/MysteriousLupinG_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: CR +15~20%\n**Passif**: Attaque réduite 70% 2 tours\n(No skillbooks)\n**Actif**: Attaque réduite 60% 2 tours\n(No skillbooks)\n**PV**: 30151\n**Attaque**: 2614\n**Défense**: 2440\n**Récupération**:2311", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Lupin','DarkLupin']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328062346100736/BossMysteriousLupin_large.jpg", color=0xffffff)
+		embed.set_author(name="#325 Lupin (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328062346100736/BossMysteriousLupin_large.jpg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: CR +15~20%\n**Passif**: Siphon de PA 25%\n(No skillbooks)\n**Actif**: Chasseur 50%\n(No skillbooks)\n**PV**: 27451\n**Attaque**: 3310\n**Défense**: 2261\n**Récupération**:2084", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if message.content.startswith('Lupina'):
+		return
+
+	if message.content.startswith('DarkLupina'):
+		return
+
+	if message.content.startswith('BoisLupina'):
+		return
+
+	if message.content.startswith('EauLupina'):
+		return
+
+	if message.content.startswith('FeuLupina'):
+		return
+
+	if message.content.startswith('LightLupina'):
+		return
+
+		###########################
+		######### mammont ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Mam','FeuMam']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556260046667777/MaroudonR_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#326 Mammont (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556260046667777/MaroudonR_Large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: Rec +30~35%\n**Passif**: Provocation 80% 2 tours\n(No skillbooks)\n**Actif**: Adrénaline (Allies) 10% de ses PV\n(No skillbooks)\n**PV**: 35313\n**Attaque**: 2364\n**Défense**: 2092\n**Récupération**:2017", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mam','EauMam','TopMam']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556255621939201/Maroudon_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#327 Mammont (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556255621939201/Maroudon_Large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Rec +30~35%\n**Passif**: Chasseur 50%\n(No skillbooks)\n**Actif**: Chasseur 50%\n(No skillbooks)\n**PV**: 22793\n**Attaque**: 3126\n**Défense**: 1989\n**Récupération**:2138", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mam','BoisMam']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556258184527873/MaroudonG_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#328 Mammont (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556258184527873/MaroudonG_Large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: Rec +30~35%\n**Passif**: Adrénaline (Allies) 10% de ses PV\n(No skillbooks)\n**Actif**: Défense réduite 60% 2 tours\n(No skillbooks)\n**PV**: 30134\n**Attaque**: 1907\n**Défense**: 3173\n**Récupération**:2220", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mam','LightMam']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556267126652931/MaroudonW_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#329 Mammont (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556267126652931/MaroudonW_Large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: Rec +30~35%\n**Passif**: Attaque réduite 80% 2 tours\n(No skillbooks)\n**Actif**: Aveuglement 80% 2 tours\n(No skillbooks)\n**PV**: 34115\n**Attaque**: 2253\n**Défense**: 2195\n**Récupération**:2059", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mam','DarkMam']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556256762658816/MaroudonD_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#330 Mammont (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556256762658816/MaroudonD_Large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Rec +30~35%\n**Passif**: Adrénaline 20% de ses PV\n(No skillbooks)\n**Actif**: Vengeance\n(No skillbooks)\n**PV**: 30611\n**Attaque**: 3017\n**Défense**: 1982\n**Récupération**:2023", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### mandragore ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Mand','FeuMand','TopMand']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556758892281870/MoonflowerR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#331 Mandragore (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556758892281870/MoonflowerR_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: PV +30~35%(Même élément)\n**Passif**: Sommeil (On crit) 1 tour\n(Dmg +25%)\n**Actif**: Chasseur 30%\n(Dmg +20%)\n**PV**: 29385\n**Attaque**: 2608\n**Défense**: 1886\n**Récupération**:1559", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mand','EauMand']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556750818115585/MoonflowerB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#332 Mandragore (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556750818115585/MoonflowerB_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: PV +30~35%,(Même élément)\n**Passif**: Fatigue 60% 1 tour\n(Dmg +10%, Taux: +10%, tour: +1)\n**Actif**: Récupération réduite 60% 2 tours\n(Dmg +10%, Taux: +10%, tour: +1)\n**PV**: 26838\n**Attaque**: 2622\n**Défense**: 1512\n**Récupération**:1580", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mand','BoisMand']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556750705000448/Moonflower_large.jpeg", color=0xffffff)
+		embed.set_author(name="#333 Mandragore (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556750705000448/Moonflower_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Défenseur\n**Lead**: PV +30~35%(Même élément)\n**Passif**: Nécrose 60% 1 tour\n(Dmg +10%, Taux: +10%, tour: +1)\n**Actif**: Sommeil 40% 1 tour\n(Taux: +30%)\n**PV**: 29603\n**Attaque**: 1430\n**Défense**: 2833\n**Récupération**:1702", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mand','LightMand']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556759823155220/MoonflowerW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#334 Mandragore (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556759823155220/MoonflowerW_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: PV +30~35%(Même élément)\n**Passif**: Provocation intrépide -50% dégâts 1 tour 80% Provocation 2 tours\n(Dmg +20%, Taux: +20%)\n**Actif**: Nécrose x3 90% 1 tours\n(Dmg +15%, Taux: +10%)\n**PV**: 30611\n**Attaque**: 1907\n**Défense**: 3439\n**Récupération**:2159", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mand','DarkMand']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556754228084739/MoonflowerD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#335 Mandragore (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556754228084739/MoonflowerD_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: PV +30~35% (Même élément)\n**Passif**: Chasseur 50%\n(Dmg +20%)\n**Actif**: Chasseur 50%\n(Dmg +20%)\n**PV**: 30441\n**Attaque**: 3187\n**Défense**: 1880\n**Récupération**:2036", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### végédalle ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Vege','FeuVege']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556196398366720/VégédalleR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#336 Végédalle (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556196398366720/VégédalleR_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Attaquant\n**Lead**: Def +20~25%\n**Passif**: Attaque réduite 70% 2 tours\n(No skillbooks)\n**Actif**: Récupération réduite 80% 2 tours\n(No skillbooks)\n**PV**: 27049\n**Attaque**: 2527\n**Défense**: 1403\n**Récupération**:1478", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Vege','EauVege']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556173111590966/VégédalleB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#337 Végédalle (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556173111590966/VégédalleB_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Tank\n**Lead**: Def +20~25%\n**Passif**: Sommeil 60% 1 tour\n(No skillbooks)\n**Actif**: Fatigue 80% 2 tours\n(No skillbooks)\n**PV**: 36675\n**Attaque**: 1710\n**Défense**: 1206\n**Récupération**:1343", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Vege','BoisVege']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556172411142144/Végédalle_large.jpeg", color=0xffffff)
+		embed.set_author(name="#338 Végédalle (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556172411142144/Végédalle_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Équilibré\n**Lead**: Def +20~25%\n**Passif**: Pétrification 60% 1 tour\n(No skillbooks)\n**Actif**: Nécrose 80% 2 tours\n(No skillbooks)\n**PV**: 29334\n**Attaque**: 1933\n**Défense**: 1895\n**Récupération**:1691", inline=False)
+
+		await message.channel.send(embed=embed)
+
 
 
 
