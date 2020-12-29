@@ -7215,7 +7215,7 @@ async def on_message(message):
 		############                Titi level                   ############
 		#####################################################################
 
-	if ListElementInMessage[0] == "Tit":
+	if ListElementInMessage[0] == "Tan":
 		if len(ListElementInMessage) == 2 and ListElementInMessage[1].isnumeric():
 			a = int(ListElementInMessage[1])
 			b = a
