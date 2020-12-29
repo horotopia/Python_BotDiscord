@@ -2068,6 +2068,50 @@ async def on_message(message):
 
 		await message.channel.send(embed=embed)
 
+###########################
+######### incubus ##################
+###########################
+
+	if any([message.content.startswith (item) for item in ['Incu','FeuIncu','TopIncu']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552551634056642589/AzazelR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#246 Incubus (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552551634056642589/AzazelR_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: Def +30~35%\n**Passif**: Attaque réduite 70% 2 tours (on crit)\n(???)\n**Actif**: Frappe Courageuse (On crit)\n(Dmg +20%)\n**PV**: 31711\n**Attaque**: 2648\n**Défense**: 2535\n**Récupération**:1732", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Incu','EauIncu']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/557576304405512192/AzazelB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#247 Incubus (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/557576304405512192/AzazelB_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: Def +30~35%\n**Passif**: Adrénaline 20% de ses PV\n(Dmg +20%, +Effect.: +5%)\n**Actif**: Provocation 80% 1 tour\n(Dmg +15%, Taux: +20%)\n**PV**: 36505\n**Attaque**: 2180\n**Défense**: 2432\n**Récupération**:1874", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Incu','BoisIncu']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552551631116435457/AzazelG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#248 Incubus (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552551631116435457/AzazelG_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Def +30~35%\n**Passif**: Boost de moral (On crit) 50% de ses PA\n(Dmg +20%)\n**Actif**: Chasseur 50%\n(Dmg +20%)\n**PV**: 25095\n**Attaque**: 3173\n**Défense**: 2547\n**Récupération**:1771", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Incu','LightIncu']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552551638858989576/AzazelW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#249 Incubus (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552551638858989576/AzazelW_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Def +30~35%\n**Passif**: Siphon de PV (Allies)\n(Dmg +20%)\n**Actif**: Choc 80% 1 tour\n(Dmg +20%, Taux: +10%)\n**PV**: 27962\n**Attaque**: 3167\n**Défense**: 2254\n**Récupération**:2091", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Incu','DarkIncu']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552551623755563008/Azazel_large.jpeg", color=0xffffff)
+		embed.set_author(name="#250 Incubus (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552551623755563008/Azazel_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Def +30~35%\n**Passif**: Siphon de PV , Greatly)\n(Dmg +20%)\n**Actif**: Sceau 80% 2 tours\n(Dmg +15%, Taux: +10%)\n**PV**: 24822\n**Attaque**: 3221\n**Défense**: 2492\n**Récupération**:2111", inline=False)
+
+		await message.channel.send(embed=embed)
+
 
 
 
