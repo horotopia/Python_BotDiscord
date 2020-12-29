@@ -6955,12 +6955,257 @@ async def on_message(message):
 		await message.channel.send(embed=embed)
 
 	if any([message.content.startswith (item) for item in ['Lynsha']]):
-		embed=discord.Embed(title="", url="", color=0xffffff)
-		embed.set_author(name="Lynsha")
-		embed.set_thumbnail(url="")
-		embed.add_field(name="@Lynsha,@Lynsha,@Lynsha", value="@Lynsha,@Lynsha,@Lynsha,@Lynsha,@Lynsha,@Lynsha,@Lynsha,@Lynsha,@Lynsha,@Lynsha,@Lynsha", inline=False)
+		Lynsha = " "
+		for i in range(0,19):
+			Lynsha += ("@Lynsha#0334 ")
+		await message.channel.send(Lynsha)	
+ 
+		#######################################
+		############  Golem  ##################
+		#######################################
 
-		await message.channel.send(embed=embed)	
+	if any([message.content ==(item) for item in ['Golems','Golem']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328050685673503/BossGolemW_large.jpg", color=0xfff99e)
+		embed.set_author(name="")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328050685673503/BossGolemW_large.jpg")
+		embed.add_field(name=" Golems 1 -> 5 ", value="__**Golem B1** (light)__\nPassif: Défense réduite 60% 2T\nActif: Choc 20% 1T\nPV: 28'548\nAttaque: 571\nDéfense: 878\nRécupération: 1'903\nDommages critiques:  50%\nTaux critique:  20%\nResist0\n\n__**Golem B2** (Eau)__\nPassif: Fatigue 60% 2T\nActif: Petrify 20% 1T\nPV: 30'140\nAttaque: 658\nDéfense: 6'412\nRécupération: 986\nDommages critiques:  50%\nTaux critique:  20%\nResist: 20%\n\n__**Golem B3** (Feu)__\nPassif: Rec down 60% 2T\nActif: Étourdissement 20% 1T\nPV: 36'480\nAttaque: 1'338\nDéfense: 547\nRécupération: 912\nDommages critiques:  50%\nTaux critique:  20%\nResist: 20%\n\n__**Golem B4** (Bois)__\nPassif: Nécrose 80% 2T\nActif: Nécrose 60% 2T\nPV: 200'400\nAttaque: 695\nDéfense: 301\nRécupération: 1'202\nDommages critiques:  50%\nTaux critique:  20%\nResist: 20%\n\n__**Golem B5** (dark)__\nPassif: Attaque réduite 80% 2T\nActif: Silence 60% 1T\nPV: 189'280\nAttaque: 1'092\nDéfense: 983\nRécupération: 1'310\nDommages critiques:  50%\nTaux critique:  20%\nResist: 20%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+
+	if any([message.content ==(item) for item in ['Golems','Golem']]):
+		return
+
+	if any([message.content ==(item) for item in ['GB1','GolemB1']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328050685673503/BossGolemW_large.jpg", color=0xfff99e)
+		embed.set_author(name="Golem B1 (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328050685673503/BossGolemW_large.jpg")
+		embed.add_field(name="⯀ ▲ ⯁ 2~3*", value="Capacité: Invincibilité, Retribution, Régénération\nPassif: Défense réduite 60% 2 tours\nPower: 180%\nActif: Choc 20% 1 tour\nPower: 150%\n50% PV Actif: Attaque réduite 100% 2 tours\nPower: 230%\nPV: 28'548\nAttaque: 571\nDéfense: 878\nRécupération: 1'903\nDommages critiques: 50%\nTaux critique: 20%\nResist: 0%\n\n__Guard sphere__\nPassif: Adrénaline 10% allies PV (on crit)\nActif: Étourdissement 80% 1 tour\nPV: 10015\nAttaque180\nDéfense: 578\nRécupération: 1156\nDommages critiques: 50%\nTaux critique: 50%\nResist: 0%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['GB2','GolemB2']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328035439378432/BossGolemB_large.jpg", color=0xfff99e)
+		embed.set_author(name="Golem B2 (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328035439378432/BossGolemB_large.jpg")
+		embed.add_field(name="⯁ 2~4*", value="Capacité: Invincibilité, Retribution\nPassif: Fatigue 60% 2 tours\nPower: 150%\nActif: Petrify 20% 1 tour\nPower: 180%\n50% PV Actif: Nécrose x3 100% 2 tours\nPower: 220.%\nPV: 30'140\nAttaque: 658\nDéfense: 6'412\nRécupération: 986\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%\n\n__Guard sphere__\nPassif: Provocation 20% 1 tour\nActif: Nécrose 100% 2 tours\nPV: 15860\nAttaque190\nDéfense: 3953\nRécupération: 439\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['GB3','GolemB3']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328040531394561/BossGolemR_large.jpg", color=0xfff99e)
+		embed.set_author(name="Golem B3 (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328040531394561/BossGolemR_large.jpg")
+		embed.add_field(name="⯀ 2~4*", value="Capacité: Invincibilité, Retribution\nPassif: Rec down 60% 2 tours\nPower: 200%\nActif: Étourdissement 20% 1 tour\nPower: 250%\n50% PV Actif: Siphon de PV (de ses PV)\nPower: 300%\nPV: 36'480\nAttaque: 1'338\nDéfense: 547\nRécupération: 912\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%\n\n__Guard sphere__\nPassif: Défense réduite 2 tours\nActif: Étourdissement 80% 1 tour\nPV: 17810\nAttaque296\nDéfense: 493\nRécupération: 493\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['GB4','GolemB4']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328032461422613/BossGolem_large.jpg", color=0xfff99e)
+		embed.set_author(name="Golem B4 (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328032461422613/BossGolem_large.jpg")
+		embed.add_field(name="▲ 2~4*", value="Capacité: Invincibilité, Retribution\nPassif: Nécrose 80% 2 tours\nPower: 160%\nActif: Nécrose 60% 2 tours\nPower: 150%\n50% PV Actif: Étourdissement 70% 1 tour\nPower: 200%\nPV: 200'400\nAttaque: 695\nDéfense: 301\nRécupération: 1'202\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%\n\n__Guard sphere__\nPassif: Étourdissement 80% 1 tour\nActif: Purification\nPV: 126464\nAttaque237\nDéfense: 274\nRécupération: 1642\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['GB5','GolemB5']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328037725274142/BossGolemD_large.jpg", color=0xfff99e)
+		embed.set_author(name="Golem B5 (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328037725274142/BossGolemD_large.jpg")
+		embed.add_field(name="⯀ ▲ ⯁ 3~5*", value="Capacité: Invincibilité, Retribution\nPassif: Attaque réduite 80% 2 tours\nPower: 170%\nActif: Silence 60% 1 tour\nPower: 200%\n50% PV Actif: Défense réduite 100% 2 tours\nPower: 250%\nPV: 189'280\nAttaque: 1'092\nDéfense: 983\nRécupération: 1'310\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%\n\n__Guard sphere__\nPassif: Défense réduite 60% 2 tours\nActif: Brise-Bonus\nPV: 86840\nAttaque1503\nDéfense: 601\nRécupération: 601\nDommages critiques: 200%\nTaux critique: 10%\nResist: 20%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['GB6','GolemB6']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328050685673503/BossGolemW_large.jpg", color=0xfff99e)
+		embed.set_author(name="Golem B6 (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328050685673503/BossGolemW_large.jpg")
+		embed.add_field(name="⯀ ▲ ⯁ 3~6*", value="Capacité: Invincibilité, Retribution, Régénération\nPassif: Défense réduite 100% 2 tours\nPower: 180%\nActif: Choc 60% 1 tour\nPower: 150%\n50% PV Actif: Attaque réduite 100% 2 tours\nPower: 230.%\nPV: 102'440\nAttaque: 1'773\nDéfense: 2'482\nRécupération: 5'122\nDommages critiques: 50%\nTaux critique: 20%\nResist: 0%\n\n__Guard sphere 1__\nPassif: Adrénaline 10% allies PV (on crit)\nActif: Étourdissement 80% 1 tour\nPV: 39910\nAttaque409\nDéfense: 1310\nRécupération: 1310\nDommages critiques: 50%\nTaux critique: 50%\nResist: 0%\n\n__Guard sphere 2__\nPassif: Choc 40% 1 tour\nActif: Purification\nPV: 39749\nAttaque819\nDéfense: 1310\nRécupération: 1310\nDommages critiques: 50%\nTaux critique: 50%\nResist: 0%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['GB7','GolemB7']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328035439378432/BossGolemB_large.jpg", color=0xfff99e)
+		embed.set_author(name="Golem B7 (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328035439378432/BossGolemB_large.jpg")
+		embed.add_field(name="⯁ 4~6*", value="Capacité: Invincibilité, Retribution\nPassif: Fatigue 100% 2 tours\nPower: 150%\nActif: Petrify 40% 2 tours\nPower: 180%\n50% PV Actif: Nécrose x3 100% 2 tours\nPower: 220.%\nPV: 71'914\nAttaque: 2'043\nDéfense: 15'345\nRécupération: 1'634\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%\n\n__Guard sphere 1__\nPassif: Provocation 20% 1 tour\nActif: Nécrose 100% 2 tours\nPV: 27560\nAttaque541\nDéfense: 6869\nRécupération: 763\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%\n\n__Guard sphere 2__\nPassif: Pétrification 40% 1 tour\nActif: Attaque augmentée  2 tours\nPV: 41891\nAttaque763\nDéfense: 6869\nRécupération: 1526\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['GB8','GolemB8']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328040531394561/BossGolemR_large.jpg", color=0xfff99e)
+		embed.set_author(name="Golem B8 (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328040531394561/BossGolemR_large.jpg")
+		embed.add_field(name="⯀ 4~6*", value="Capacité: Invincibilité, Retribution\nPassif: Rec down 100% 2 tours\nPower: 200%\nActif: Étourdissement 40% 1 tour\nPower: 250%\n50% PV Actif: Siphon de PV (de ses PV)\nPower: 300%\nPV: 111'024\nAttaque: 3'732\nDéfense: 1'157\nRécupération: 1'542\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%\n\n__Guard sphere 1__\nPassif: Défense réduite 2 tours\nActif: Étourdissement 80% 1 tour\nPV: 37752\nAttaque1452\nDéfense: 1045\nRécupération: 871\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%\n\n__Guard sphere 2__\nPassif: Défense réduite 60% 2 tours\nActif: Purification\nPV: 125840\nAttaque871\nDéfense: 1045\nRécupération: 871\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['GB9','GolemB9']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328032461422613/BossGolem_large.jpg", color=0xfff99e)
+		embed.set_author(name="Golem B9 (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328032461422613/BossGolem_large.jpg")
+		embed.add_field(name="▲ 4~6*", value="Capacité: Invincibilité, Retribution\nPassif: Nécrose x2 100% 2 tours\nPower: 160%\nActif: Nécrose x3 100% 2 tours\nPower: 150%\n50% PV Actif: Étourdissement 70% 1 tour\nPower: 200%\nPV: 568'260\nAttaque: 1'894\nDéfense: 723\nRécupération: 2'066\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%\n\n__Guard sphere 1__\nPassif: Étourdissement 80% 1 tour\nActif: Purification\nPV: 56576\nAttaque3264\nDéfense: 1958\nRécupération: 979\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%\n\n__Guard sphere 2__\nPassif: Nécrose x2 60% 1 tours\nActif: Défense augmentée\nPV: 424320\nAttaque2040\nDéfense: 3133\nRécupération: 1958\nDommages critiques: 50%\nTaux critique: 20%\nResist: 20%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['GB10','GolemB10']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328037725274142/BossGolemD_large.jpg", color=0xfff99e)
+		embed.set_author(name="Golem B10 (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328037725274142/BossGolemD_large.jpg")
+		embed.add_field(name="⯀ ▲ ⯁ 4~6*", value="Capacité: Invincibilité, Retribution\nPassif: Attaque réduite 100% 2 tours\nPower: 170%\nActif: Silence 60% 2 tours\nPower: 200%\n50% PV Actif: Défense réduite 100% 2 tours\nPower: 250%\nPV: 634'000\nAttaque: 2'378\nDéfense: 2'282\nRécupération: 2'282\nDommages critiques: 100%\nTaux critique: 20%\nResist: 30%\n\n__Guard sphere 1__\nPassif: Défense réduite 60% 2 tours\nActif: Brise-Bonus\nPV: 314080\nAttaque1812\nDéfense: 1631\nRécupération: 1087\nDommages critiques: 200%\nTaux critique: 10%\nResist: 20%\n\n__Guard sphere 2__\nPassif: Attaque réduite 60% 2 tours\nActif: Bouclier 2 tours\nPV: 54964\nAttaque4530\nDéfense: 1631\nRécupération: 2175\nDommages critiques: 200%\nTaux critique: 10%\nResist: 20%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['GB12','GolemB12']]):
+		embed=discord.Embed(title="", url="https://media.discordapp.net/attachments/684369688645337193/754619473981472818/Gn0rrnJ_d.webp", color=0xfff99e)
+		embed.set_image(url="https://media.discordapp.net/attachments/684369688645337193/754619473981472818/Gn0rrnJ_d.webp")
+
+		await message.channel.send(embed=embed)     
+
+	if any([message.content ==(item) for item in ['Colosse','Colosse']]):
+		embed=discord.Embed(title="", url="", color=0xfff99e)
+		embed.set_author(name="Colossi")
+		embed.set_thumbnail(url="")
+		embed.add_field(name="⯀ ▲ ⯁ 6*", value="Dark Colosse:\nCapacité: Invincibilité, Retribution\nPassif: Soif 100% -30% 1 tour\nActif: Sceau 100% 3 tours\n50% PV Actif: ???\nPV: 1'680'003\nAttaque: 3'940\nDéfense: 56'003\nRécupération: 1'683\nDommages critiques: ???\nTaux critique: ???\nResist: ???\n\nFeu Colosse:\nCapacité: Invincibilité\nPassif: Traqueur 100%\nActif: Traqueur 100%\n50% PV Actif: ???\nPV: 1'400'003\nAttaque: 12'900\nDéfense: 63'003\nRécupération: 2'523\nDommages critiques: ???\nTaux critique: ???\nResist: ???\n\nEau Colosse:\nCapacité: Invincibilité\nPassif: Nécrose 100% x2 3 tours\nActif: Nécrose 100% x3 3 tours\n50% PV Actif: ???\nPV: 630'112\nAttaque: 4'620\nDéfense: 42'000\nRécupération: 33'600\nDommages critiques: ???\nTaux critique: ???\nResist: ???", inline=True)
+		embed.add_field(name="- - - - -", value="Bois Colosse:\nCapacité: Invincibilité\nPassif: Prédateur 50%\nActif: Défense réduite 100% 3 tours\n50% PV Actif: ???\nPV: 3'080'014\nAttaque: 1'474\nDéfense: 19\nRécupération: 1'125\nDommages critiques: ???\nTaux critique: ???\nResist: ???\n\nLight Colosse:\nCapacité: Invincibilité\nPassif: Adrénaline 5% of de ses PV\nActif: Choc 60% 2 tour\n50% PV Actif: ???\nPV: 2'240'003\nAttaque: 8'403\nDéfense: 34\nRécupération: 43\nDommages critiques: ???\nTaux critique: ???\nResist: ???", inline=True)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['ColosseFeu','FeuColosse']]):
+		embed=discord.Embed(title="", url="", color=0xfff99e)
+		embed.set_author(name="Colosse (Feu)")
+		embed.set_thumbnail(url="")
+		embed.add_field(name="⯀ ▲ ⯁ 6*", value="Capacité: Invincibilité\nPassif: Traqueur 100%\nActif: Traqueur 100%\n50% PV Actif: ???\nPV: 1'400'003\nAttaque: 12'900\nDéfense: 63'003\nRécupération: 2'523\nDommages critiques: ???\nTaux critique: ???\nResist: ???\n\n__Guard sphere__\nPassif: ???\\nActif: ???", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['ColosseEau','EauColosse']]):
+		embed=discord.Embed(title="", url="", color=0xfff99e)
+		embed.set_author(name="Colosse (Eau)")
+		embed.set_thumbnail(url="")
+		embed.add_field(name="⯀ ▲ ⯁ 6*", value="Capacité: Invincibilité\nPassif: Nécrose 100% x2 3 tours\nActif: Nécrose 100% x3 3 tours\n50% PV Actif: ???\nPV: 630'112\nAttaque: 4'620\nDéfense: 42'000\nRécupération: 33'600\nDommages critiques: ???\nTaux critique: ???\nResist: ???\n\n__Guard sphere__\nPassif: ???\\nActif: ???", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['ColosseBois','BoisColosse']]):
+		embed=discord.Embed(title="", url="", color=0xfff99e)
+		embed.set_author(name="Colosse (Bois)")
+		embed.set_thumbnail(url="")
+		embed.add_field(name="⯀ ▲ ⯁ 6*", value="Capacité: Invincibilité\nPassif: Prédateur 50%\nActif: Défense réduite 100% 3 tours\n50% PV Actif: ???\nPV: 3'080'014\nAttaque: 1'474\nDéfense: 19\nRécupération: 1'125\nDommages critiques: ???\nTaux critique: ???\nResist: ???\n\n__Guard sphere__\nPassif: ???\\nActif: ???", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['ColosseDar','DarkColosse']]):
+		embed=discord.Embed(title="", url="", color=0xfff99e)
+		embed.set_author(name="Colosse (Dark)")
+		embed.set_thumbnail(url="")
+		embed.add_field(name="⯀ ▲ ⯁ 6*", value="Capacité: Invincibilité, Retribution\nPassif: Soif 100% -30% 1 tour\nActif: Sceau 100% 3 tours\n50% PV Actif: ???\nPV: 1'680'003\nAttaque: 3'940\nDéfense: 56'003\nRécupération: 1'683\nDommages critiques: ???\nTaux critique: ???\nResist: ???\n\n__Guard sphere__\nPassif: ???\\nActif: ???", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['ColosseLight','LightColosse']]):
+		embed=discord.Embed(title="", url="", color=0xfff99e)
+		embed.set_author(name="Colosse (light)")
+		embed.set_thumbnail(url="")
+		embed.add_field(name="⯀ ▲ ⯁ 6*", value="Capacité: Invincibilité\nPassif: Adrénaline 5% of de ses PV\nActif: Choc 60% 2 tour\n50% PV Actif: ???\nPV: 2'240'003\nAttaque: 8'403\nDéfense: 34\nRécupération: 43\nDommages critiques: ???\nTaux critique: ???\nResist: ???\n\n__Guard sphere__\nPassif: ???\\nActif: ???", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['Dragons','Dragon']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328008818130944/BossDragonB_large.jpg", color=0x80b7e8)
+		embed.set_author(name="")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328008818130944/BossDragonB_large.jpg")
+		embed.add_field(name=" Dragons 1 -> 5 ", value="__**Dragon B1** (Eau)__\nPassif: Petrify 100% 1T\nActif: Nécrose x3 100% 1T\nPV: 94'640\nAttaque: 1'966\nDéfense: 3'931\nRécupération: 1'310\nDommages critiques:  50%\nTaux critique:  20%\nResist:  30%\n\n__**Dragon B2** (dark)__\nPassif: Défense réduite 100% 2T\nActif: Silence 100% 1T\nPV: 256'100\nAttaque2'482\nDéfense709\nRécupération: 1'418\nDommages critiques 50%\nTaux critique 20%\nResist 30%\n\n__**Dragon B3** (Bois)__\nPassif: Nécrose x3 100% 1T\nActif: Soif -50% 100% 2T\nPV: 472'160\nAttaque1'634\nDéfense817\nRécupération: 1'634\nDommages critiques 50%\nTaux critique 20%\nResist 30%\n\n__**Dragon B4** (Feu)__\nPassif: Attaque réduite 100% 2T\nActif: Étourdissement 100% 1T\nPV: 251'680\nAttaque5'227\nDéfense871\nRécupération: 1'742\nDommages critiques 50%\nTaux critique 30%\nResist 30%\n\n__**Dragon B5** (light)__\nPassif: Soif -10% 100% 2T\nActif: Choc 100% 1T\nPV: 282'880\nAttaque3'917\nDéfense1'469\nRécupération: 3'917\nDommages critiques 50%\nTaux critique 30%\nResist 30%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['DB1','DragonB1']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328008818130944/BossDragonB_large.jpg", color=0x80b7e8)
+		embed.set_author(name="Dragon B1 (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328008818130944/BossDragonB_large.jpg")
+		embed.add_field(name=" ⯀ 4~5* ", value="Capacité: Invincibilité, Bénédiction\nPassif: Petrify 100% 1 tour\nPower: 600%\nActif: Nécrose x3 100% 1 tour\nPower: 300%\n50% PV Actif: Petrify 100% 1 tour\nPower: 600%\nPV: 94'640\nAttaque: 1'966\nDéfense: 3'931\nRécupération: 1'310\nDommages critiques: 50%\nTaux critique: 20%\nResist: 30%\n\n__Guard sphere 1__\nPassif: Nécrose 100% 1 tour\nActif: Attaque réduite 100% 2 tours\nPV: 43420\nAttaque1202\nDéfense: 1804\nRécupération: 902\nDommages critiques: 50%\nTaux critique: 20%\nResist: 60%\n\n__Guard sphere 2__\nPassif: Nécrose 100% 1 tour\nActif: Défense augmentée 2 tours\nPV: 86840\nAttaque1202\nDéfense: 1804\nRécupération: 2405\nDommages critiques: 0%\nTaux critique: 20%\nResist: 60%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['DB2','DragonB2']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328012178030592/BossDragonD_large.jpg", color=0x80b7e8)
+		embed.set_author(name="Dragon B2 (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328012178030592/BossDragonD_large.jpg")
+		embed.add_field(name=" ▲ 4~5* ", value="Capacité: Invincibilité, Bénédiction\nPassif: Défense réduite 100% 2 tours\nPower: 300%\nActif: Silence 100% 1 tour\nPower: 250%\n50% PV Actif: Soif -10% 100% 2 tours\nPower: 300%\nPV: 256'100\nAttaque: 2'482\nDéfense: 709\nRécupération: 1'418\nDommages critiques: 50%\nTaux critique: 20%\nResist: 30%\n\n__Guard sphere 1__\nPassif: Défense réduite 60% 2 tours\nActif: Nécrose 100% 2 tours\nPV: 47320\nAttaque546\nDéfense: 655\nRécupération: 983\nDommages critiques: 200%\nTaux critique: 10%\nResist: 60%\n\n__Guard sphere 2__\nPassif: Boost de moral 10% (allies)\nActif: Bouclier 2 tours\nPV: 94640\nAttaque546\nDéfense: 655\nRécupération: 2621\nDommages critiques: 200%\nTaux critique: 10%\nResist: 60%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['DB3','DragonB3']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328015663235083/BossDragonG_large.jpg", color=0x80b7e8)
+		embed.set_author(name="Dragon B3 (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328015663235083/BossDragonG_large.jpg")
+		embed.add_field(name=" ⯁ 4~5* ", value="Capacité: Invincibilité, Bénédiction\nPassif: Nécrose x3 100% 1 tour\nPower: 350%\nActif: Soif -50% 100% 2 tours\nPower: 250%\n50% PV Actif: Nécrose x3 100% 1 tour\nPower: 400%\nPV: 472'160\nAttaque: 1'634\nDéfense: 817\nRécupération: 1'634\nDommages critiques: 50%\nTaux critique: 20%\nResist: 30%\n\n__Guard sphere 1__\nPassif: Étourdissement 60% 1 tour\nActif: Adrénaline 5% own max PV (allies)\nPV: 165360\nAttaque1018\nDéfense: 382\nRécupération: 1145\nDommages critiques: 50%\nTaux critique: 20%\nResist: 60%\n\n__Guard sphere 2__\nPassif: Fatigue 100% 1 tour\nActif: Purification\nPV: 275600\nAttaque1018\nDéfense: 382\nRécupération: 3053\nDommages critiques: 50%\nTaux critique: 20%\nResist: 60%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['DB4','DragonB4']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328002249981955/BossDragon_large.jpg", color=0x80b7e8)
+		embed.set_author(name="Dragon B4 (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328002249981955/BossDragon_large.jpg")
+		embed.add_field(name=" ⯀ 4~6* ", value="Capacité: Invincibilité, Bénédiction\nPassif: Attaque réduite 100% 2 tours\nPower: 900%\nActif: Étourdissement 100% 1 tour\nPower: 300%\n50% PV Actif: Défense réduite 100% 2 tours\nPower: 400%\nPV: 251'680\nAttaque: 5'227\nDéfense: 871\nRécupération: 1'742\nDommages critiques: 50%\nTaux critique: 30%\nResist: 30%\n\n__Guard sphere 1__\nPassif: Soif -10% 80% 1 tour\nActif: Défense réduite 100% 2 tours\nPV: 59020\nAttaque1636\nDéfense: 572\nRécupération: 1226\nDommages critiques: 50%\nTaux critique: 20%\nResist: 60%\n\n__Guard sphere 2__\nPassif: Fatigue 100% 2 tour\nActif: Défense augmentée 2 tours\nPV: 118040\nAttaque1634\nDéfense: 572\nRécupération: 3269\nDommages critiques: 50%\nTaux critique: 20%\nResist: 60%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['DB5','DragonB5']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328018687590400/BossDragonW_large.jpg", color=0x80b7e8)
+		embed.set_author(name="Dragon B5 (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328018687590400/BossDragonW_large.jpg")
+		embed.add_field(name=" ▲ 4~6* ", value="Capacité: Invincibilité, Bénédiction, Régénération\nPassif: Soif -10% 100% 2 tours\nPower: 350%\nActif: Choc 100% 1 tour\nPower: 300%\n50% PV Actif: Choc 100% 1 tour\nPower: 400%\nPV: 282'880\nAttaque: 3'917\nDéfense: 1'469\nRécupération: 3'917\nDommages critiques: 50%\nTaux critique: 30%\nResist: 30%\n\n__Guard sphere 1__\nPassif: Brise-Bonus\nActif: Attaque réduite 100% 2 tours\nPV: 66820\nAttaque925\nDéfense: 1110\nRécupération: 1388\nDommages critiques: 50%\nTaux critique: 50%\nResist: 60%\n\n__Guard sphere 2__\nPassif: Défense réduite 100% 2 tours\nActif: Purification\nPV: 133640\nAttaque952\nDéfense: 1110\nRécupération: 3701\nDommages critiques: 50%\nTaux critique: 50%\nResist: 60%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['DB6','DragonB6']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328008818130944/BossDragonB_large.jpg", color=0x80b7e8)
+		embed.set_author(name="Dragon B6 (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328008818130944/BossDragonB_large.jpg")
+		embed.add_field(name=" ⯁ 4~6* ", value="Capacité: Invincibilité, Bénédiction\nPassif: Petrify 100% 1 tour\nPower: 600%\nActif: Nécrose x3 100% 2 tours\nPower: 300%\n50% PV Actif: Petrify 100% 1 tour\nPower: 600%\nPV: 149'240\nAttaque: 2'273\nDéfense: 5'166\nRécupération: 2'066\nDommages critiques: 100%\nTaux critique: 30%\nResist: 45%\n\n__Guard sphere 1__\nPassif: Nécrose x3 100% 1 tour\nActif: Attaque réduite 100% 3 tours\nPV: 70720\nAttaque1632\nDéfense: 2938\nRécupération: 1469\nDommages critiques: 50%\nTaux critique: 20%\nResist: 80%\n\n__Guard sphere 2__\nPassif: Nécrose 100% 2 tour\nActif: Défense augmentée 3 tours\nPV: 141440\nAttaque1632\nDéfense: 2938\nRécupération: 3917\nDommages critiques: 50%\nTaux critique: 20%\nResist: 80%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['DB7','DragonB7']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328012178030592/BossDragonD_large.jpg", color=0x80b7e8)
+		embed.set_author(name="Dragon B7 (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328012178030592/BossDragonD_large.jpg")
+		embed.add_field(name=" ⯀ 5~6* ", value="Capacité: Invincibilité, Bénédiction\nPassif: Défense réduite 100% 2 tours\nPower: 300%\nActif: Silence 100% 2 tours\nPower: 250%\n50% PV Actif: Soif -10% 100% 2 tours\nPower: 300%\nPV: 392'600\nAttaque: 4'349\nDéfense: 1'087\nRécupération: 2'174\nDommages critiques: 100%\nTaux critique: 30%\nResist: 45%\n\n__Guard sphere 1__\nPassif: Défense réduite 100% 2 tours\nActif: Nécrose x2 100% 2 tours\nPV: 104468\nAttaque1550\nDéfense: 1033\nRécupération: 1550\nDommages critiques: 150%\nTaux critique: 20%\nResist: 80%\n\n__Guard sphere 2__\nPassif: Boost de moral 10% (allies)\nActif: Bouclier 3 tours\nPV: 223860\nAttaque1550\nDéfense: 1033\nRécupération: 4133\nDommages critiques: 150%\nTaux critique: 20%\nResist: 80%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['DB8','DragonB8']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328015663235083/BossDragonG_large.jpg", color=0x80b7e8)
+		embed.set_author(name="Dragon B8 (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328015663235083/BossDragonG_large.jpg")
+		embed.add_field(name=" ▲ 5~6* ", value="Capacité: Invincibilité, Bénédiction\nPassif: Nécrose x3 100% 2 tours\nPower: 350%\nActif: Soif -50% 100% 2 tours\nPower: 500%\n50% PV Actif: Nécrose x3 100% 2 tour\nPower: 800%\nPV: 1'122'160\nAttaque: 2'988\nDéfense: 1'195\nRécupération: 2'390\nDommages critiques: 100%\nTaux critique: 40%\nResist: 45%\n\n__Guard sphere 1__\nPassif: Étourdissement 80% 1 tour\nActif: Adrénaline 5% own max PV (allies)\nPV: 296712\nAttaque1522\nDéfense: 571\nRécupération: 1712\nDommages critiques: 50%\nTaux critique: 30%\nResist: 80%\n\n__Guard sphere 2__\nPassif: Fatigue 100% 1 tour\nActif: Purification\nPV: 494520\nAttaque1522\nDéfense: 571\nRécupération: 4565\nDommages critiques: 50%\nTaux critique: 30%\nResist: 80%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['DB9','DragonB9']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328002249981955/BossDragon_large.jpg", color=0x80b7e8)
+		embed.set_author(name="Dragon B9 (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328002249981955/BossDragon_large.jpg")
+		embed.add_field(name=" ⯁ 5~6* ", value="Capacité: Invincibilité, Bénédiction\nPassif: Attaque réduite 100% 3 tours\nPower: 900%\nActif: Étourdissement 100% 1 tour\nPower: 400%\n50% PV Actif: Défense réduite 100% 3 tours\nPower: 450%\nPV: 487'188\nAttaque: 7'495\nDéfense: 1'249\nRécupération: 2'498\nDommages critiques: 100%\nTaux critique: 40%\nResist: 45%\n\n__Guard sphere 1__\nPassif: Soif -10% 80% 1 tour\nActif: Défense réduite 100% 3 tours\nPV: 258960\nAttaque2789\nDéfense: 837\nRécupération: 1793\nDommages critiques: 50%\nTaux critique: 30%\nResist: 80%\n\n__Guard sphere 2__\nPassif: Fatigue 100% 2 tour\nActif: Défense augmentée 3 tours\nPV: 345280\nAttaque2789\nDéfense: 837\nRécupération: 4781\nDommages critiques: 50%\nTaux critique: 30%\nResist: 80%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['DB10','DragonB10']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607328018687590400/BossDragonW_large.jpg", color=0x80b7e8)
+		embed.set_author(name="Dragon B10 (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607328018687590400/BossDragonW_large.jpg")
+		embed.add_field(name=" ⯀▲⯁ 6* ", value="Capacité: Invincibilité, Bénédiction, Régénération\nPassif: Soif -10% 100% 2 tours\nPower: 350%\nActif: Choc 100% 2 tours\nPower: 300%\n50% PV Actif: Choc 100% 2 tour\nPower: 300%\nPV: 784'160\nAttaque: 6'107\nDéfense: 1'357\nRécupération: 5'429\nDommages critiques: 100%\nTaux critique: 40%\nResist: 45%\n\n__Guard sphere 1__\nPassif: Brise-Bonus\nActif: Attaque réduite 100% 3 tours\nPV: 256308\nAttaque1666\nDéfense: 1499\nRécupération: 1874\nDommages critiques: 50%\nTaux critique: 50%\nResist: 80%\n\n__Guard sphere 2__\nPassif: Défense réduite 100% 3 tours\nActif: Purification\nPV: 270660\nAttaque1666\nDéfense: 1499\nRécupération: 4997\nDommages critiques: 50%\nTaux critique: 50%\nResist: 80%", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content ==(item) for item in ['TitansPV','TitanPV']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607327957161213963/BossTitan_large.jpg", color=0xe6a3a3)
+		embed.set_author(name="")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607327957161213963/BossTitan_large.jpg")
+		embed.add_field(name=" Titans 1 -> 200 ", value="Lv1 à Lv5: 3M PV\nLv6 à Lv10: 3.25M PV\nLv11 à Lv15: 3.5M PV\nLv16 à Lv20: 3.75M PV\nLv21 à Lv25: 4M PV\nLv26 à Lv30: 5.5M PV\nLv31 à Lv35: 7M PV\nLv36 à Lv40: 8.5M PV\nLv41 à Lv45: 10M PV\nLv46 à Lv50: 12.5M PV\nLv51 à Lv55: 15M PV\nLv56 à Lv60: 17.5M PV\nLv61 à Lv65: 20M PV\nLv66 à Lv70: 27.5M PV\nLv71 à Lv75: 35M PV\nLv76 à Lv80: 42.5M PV\nLv81 à Lv85: 50M PV\nLv86 à Lv90: 62.5M PV\nLv91 à Lv95: 75M PV\nLv96 à Lv100: 87.5M PV\nLv101 à Lv105: 100M PV\nLv106 à Lv110: 125M PV\nLv111 à Lv115: 150M PV\nLv116 à Lv120: 175M PV\nLv121 à Lv125: 200M PV\nLv126 à Lv130: 225M PV\nLv131 à Lv135: 250M PV\nLv136 à Lv140: 275M PV\nLv141 à Lv145: 300M PV\nLv146 à Lv150: 325M PV\nLv151 à Lv155: 350M PV\nLv156 à Lv160: 375M PV\nLv161 à Lv165: 400M PV\nLv166 à Lv170: 425M PV\nLv171 à Lv175: 450M PV\nLv176 à Lv180: 475M PV\nLv181 à Lv185: 500M PV\nLv186 à Lv190: 525M PV\nLv191 à Lv195: 550M PV\nLv196 à Lv200: 575M PV", inline=False)
+
+		await message.channel.send(embed=embed)
 
 
 
