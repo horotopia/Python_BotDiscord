@@ -6954,11 +6954,27 @@ async def on_message(message):
 
 		await message.channel.send(embed=embed)
 
+		#######################################
+		########### Appel ###############
+		#######################################
+
 	if any([message.content.startswith (item) for item in ['Lynsha']]):
 		Lynsha = " "
 		for i in range(0,19):
 			Lynsha += ("@Lynsha#0334 ")
-		await message.channel.send(Lynsha)	
+		await message.channel.send(Lynsha)
+
+	if any([message.content.startswith (item) for item in ['Ush-ki']]):
+		Ush = " "
+		for i in range(0,19):
+			Ush += ("@Ushen#5870 ")
+		await message.channel.send(Ush)
+		
+	if any([message.content.startswith (item) for item in ['Horo']]):
+		Horo = " "
+		for i in range(0,19):
+			Horo += ("@horotopia#1922 ")
+		await message.channel.send(Horo)
  
 		#######################################
 		############  Golem  ##################
