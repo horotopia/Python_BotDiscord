@@ -1168,6 +1168,178 @@ async def on_message(message):
 
 		await message.channel.send(embed=embed)
 
+		###########################
+		######### Chloe ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Chlo','FeuChlo']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553694080663562/FateR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#121 Chloe (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553694080663562/FateR_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Récupération\n**Lead**: Dégâts critiques +40~45%\n**Passif**: Adrénaline 50% 50% de ses PV\n(Dmg +10%, Taux: +20%)\n**Actif**: Adrénaline (Allies) 10% de ses PV\n(Dmg +20%, +Effect.: +5%)\n**PV**: 39873\n**Attaque**: 1976\n**Défense**: 2323\n**Récupération**:1915", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Chlo','EauChlo']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553689555009557/FateB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#122 Chloe (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553689555009557/FateB_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: Dégâts critiques +40~45%\n**Passif**: Pétrification 100% 1 tour\n(Dmg +30%)\n**Actif**: Nécrose x2 60% 2 tours\n(Dmg +20%, Taux: +10%)\n**PV**: 26675\n**Attaque**: 2240\n**Défense**: 3173\n**Récupération**:2384", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Chlo','BoisChlo']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553692314992653/FateG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#123 Chloe (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553692314992653/FateG_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Dégâts critiques +40~45%\n**Passif**: Traqueur 30%\n(Dmg +10%, Taux: +20%)\n**Actif**: Traqueur 30%\n(Dmg +10%, Taux: +20%)\n**PV**: 23712\n**Attaque**: 3323\n**Défense**: 2309\n**Récupération**:1948", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Chlo','LightChlo']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553696224083989/FateW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#124 Chloe (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553696224083989/FateW_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: Dégâts critiques +40~45%\n**Passif**: Boost de moral 30%  100% (de ses PA)\n(Dmg +15%, Taux: +10%)\n**Actif**: Choc 70% 1 tour\n(Dmg +20%, Taux: +10%)\n**PV**: 30175\n**Attaque**: 2261\n**Défense**: 3323\n**Récupération**:1811", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Chlo','DarkChlo']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553685998370820/Fate_large.jpeg", color=0xffffff)
+		embed.set_author(name="#125 Chloe (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553685998370820/Fate_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: Dégâts critiques +40~45%\n**Passif**: Attaque réduite 70% 2 tours\n(Dmg +10%, Taux: +30%)\n**Actif**: Frappe Courageuse\n(Dmg +25%)\n**PV**: 26733\n**Attaque**: 2716\n**Défense**: 2658\n**Récupération**:2522", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### cocomaru ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Coco','FeuCoco']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552911675064325/CocoemongR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#126 Cocomaru (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552911675064325/CocoemongR_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Défenseur\n**Lead**: Att +30~35% (Même élément)\n**Passif**: Attaque réduite 60% 1 tour\n(Dmg +15%, Taux: +20%)\n**Actif**: Sommeil 40% 1 tour\n(Taux: +30%)\n**PV**: 29419\n**Attaque**: 1437\n**Défense**: 2847\n**Récupération**:1702", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Coco','EauCoco']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552903211089922/CocoemongB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#127 Cocomaru (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552903211089922/CocoemongB_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: Att +30~35%(Même élément)\n**Passif**: Récupération réduite 60% 1 tour\n(Dmg +30%, tour: +1)\n**Actif**: Pétrification 40% 1 tour\n(Taux: +30%)\n**PV**: 23706\n**Attaque**: 2384\n**Défense**: 1709\n**Récupération**:1866", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Coco','BoisCoco','TopCoco']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552801033650176/Cocoemong_large.jpeg", color=0xffffff)
+		embed.set_author(name="#128 Cocomaru (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552801033650176/Cocoemong_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: Att +30~35% (Même élément)\n**Passif**: Étourdissement 70% 1 tour\n(Dmg +20%, Taux: +10%)\n**Actif**: Nécrose 70% 2 tours\n(Dmg +20%, Taux: +10%)\n**PV**: 31646\n**Attaque**: 2642\n**Défense**: 1784\n**Récupération**:1716", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Coco','LightCoco']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552970559160342/CocoemongW_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#129 Cocomaru (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552970559160342/CocoemongW_Large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: Att +30~35%(Même élément)\n**Passif**: Agression (PV)\n(Dmg +20%)\n**Actif**: Agression (PV)\n(Dmg +20%)\n**PV**: 37520\n**Attaque**: 2235\n**Défense**: 1751\n**Récupération**:2385", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Coco','DarkCoco']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552906637967386/CocoemongD_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#130 Cocomaru (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552906637967386/CocoemongD_Large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: Att +30~35%(Même élément)\n**Passif**: Attaque réduite 70% 2 tours\n(Dmg +20%, Taux: +10%)\n**Actif**: Aveuglement 70% 2 tours\n(Dmg +10%, Taux: +10%)\n**PV**: 33141\n**Attaque**: 2812\n**Défense**: 2365\n**Récupération**:1970", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### Poulichon ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Poul','LightPoul']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558022694666240/Ponicon_large.jpeg", color=0xffffff)
+		embed.set_author(name="#134 Poulichon (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558022694666240/Ponicon_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Équilibré\n**Lead**: Dégâts critiques +40~45% (Même élément)\n**Passif**: Attaque réduite 70% 2 tours\n(Dmg: +20% Taux: +10%)\n**Actif**: Choc 80% 2 tours\n(Dmg: +20% Taux: +15%)\n**PV**: 30417\n**Attaque**: 1749\n**Défense**: 1895\n**Récupération**: 1807", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Poul','DarkPoul']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558034140790846/PoniconD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#135 Poulichon (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558034140790846/PoniconD_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: Dégâts critiques +40~45% (Même élément)\n**Passif**: Défense réduite 70% 2 tours\n(Dmg: +20% Taux: +10%)\n**Actif**: Prédateur (light) 100%\n(Dmg: +35%)\n**PV**: 26430\n**Attaque**: 2384\n**Défense**: 1818\n**Récupération**: 1600", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### cosmo ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Cosmo','LightCosmo']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558953041756160/Shootingstar_large.jpeg", color=0xffffff)
+		embed.set_author(name="#139 Cosmo (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558953041756160/Shootingstar_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Équilibré\n**Lead**: CR +13~18%\n**Passif**: Adrénaline (Allies) 10% de ses PV  (On crit)\n(Dmg +15%, +Effect.: +5%)\n**Actif**: Nécrose x2 60% 1 tour\n(Dmg +10%, Taux: +10%, tour: +1)\n**PV**: 32991\n**Attaque**: 2076\n**Défense**: 2106\n**Récupération**:1786", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Cosmo','DarkCosmo']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558983840399361/ShootingstarD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#140 Cosmo (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558983840399361/ShootingstarD_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Tank\n**Lead**: CR +13~18%\n**Passif**: Brise bouclier 100%\n(Dmg +30%)\n**Actif**: Silence 60% 1 tour\n(Dmg +20%, Taux: +20%)\n**PV**: 45522\n**Attaque**: 1411\n**Défense**: 1445\n**Récupération**:1281", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### cotonou ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Coto','FeuCoto']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553079292035082/CottonsongR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#141 Cotonou (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553079292035082/CottonsongR_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Récupération\n**Lead**: SP Rec +10~15%\n**Passif**: Nécrose 60% 1 tour\n(Dmg +10%, Taux: +10%, tour: +1)\n**Actif**: Attaque augmentée  3 tours\n(Dmg +25%)\n**PV**: 27696\n**Attaque**: 1362\n**Défense**: 1702\n**Récupération**:2574", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Coto','EauCoto']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553075357909014/Cottonsong_large.jpeg", color=0xffffff)
+		embed.set_author(name="#142 Cotonou (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553075357909014/Cottonsong_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Récupération\n**Lead**: SP Rec +10~15%\n**Passif**: Brise bouclier 100%\n(Dmg +25%)\n**Actif**: Défense augmentée 3 tours\n(Dmg +25%)\n**PV**: 30216\n**Attaque**: 1457\n**Défense**: 1730\n**Récupération**:2492", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Coto','BoisCoto']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553077203533826/CottonsongG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#143 Cotonou (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553077203533826/CottonsongG_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Récupération\n**Lead**: SP Rec +10~15%\n**Passif**: Provocation 40% 1 tour \n(Dmg +10%, Taux: +20%)\n**Actif**: Purification 100%\n(Dmg +25%)\n**PV**: 31054\n**Attaque**: 1532\n**Défense**: 1430\n**Récupération**:2574", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Coto','LightCoto']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/684370413958332436/731541347722592369/CotoL.png", color=0xffffff)
+		embed.set_author(name="#142 Cotonou (Light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/684370413958332436/731541347722592369/CotoL.png")
+		embed.add_field(name="★★", value="**Type**: Récupération\n**Lead**: SP Rec +10~15%\n**Passif**: Nécrose 60%\n(Dmg +20%, Taux: +10%)\n**Actif**: Bouclier 2 tours\n(Dmg +20%, +1 tour)\n**PV**: 26314\n**Attaque**: 1362\n**Défense**: 1968\n**Récupération**:2663", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Coto','DarkCoto']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/684370413958332436/731541425467949056/CotoD.png", color=0xffffff)
+		embed.set_author(name="#143 Cotonou (Dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/684370413958332436/731541425467949056/CotoD.png")
+		embed.add_field(name="★★", value="**Type**: Défenseur\n**Lead**: SP Rec +10~15%\n**Passif**: Résistance réduite 100% 1 tour \n(Dmg +20%, +1 tour)\n**Actif**: Domination 2 tours\n(Dmg +20%, +1 tour)\n**PV**: 25483\n**Attaque**: 1607\n**Défense**: 2411\n**Récupération**:1525", inline=False)
+
+		await message.channel.send(embed=embed)
+
 
 
 @client.event
