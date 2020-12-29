@@ -3452,6 +3452,588 @@ async def on_message(message):
 
 		await message.channel.send(embed=embed)
 
+		###########################
+		######### misha ############
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Mish','FeuMish']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558515118538756/Runeclaw_large.jpeg", color=0xffffff)
+		embed.set_author(name="#406 Misha (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558515118538756/Runeclaw_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Tank\n**Lead**: PV +30~35% (Même élément)\n**Passif**: Adrénaline 30% de ses PV\n(Dmg +20%, +Effect.: +5%)\n**Actif**: Prédateur 30%\n(Dmg +30%)\n**PV**: 35395\n**Attaque**: 1922\n**Défense**: 1622\n**Récupération**:1486", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mish','EauMish']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558529266057278/RuneclawB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#407 Misha (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558529266057278/RuneclawB_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Équilibré\n**Lead**: PV +30~35%(Même élément)\n**Passif**: Nécrose x2 50% 2 tours\n(Dmg +20%, Taux: +10%)\n**Actif**: Frappe impitoyable\n(Dmg +30%)\n**PV**: 29293\n**Attaque**: 2083\n**Défense**: 2011\n**Récupération**:1732", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mish','BoisMish']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558532088561695/RuneclawG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#408 Misha (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558532088561695/RuneclawG_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Défenseur\n**Lead**: PV +30~35% (Même élément)\n**Passif**: Provocation 80% 1 tour\n(Dmg +30%)\n**Actif**: Aveuglement 80% 2 tours\n(Dmg +20%, Taux: +10%)\n**PV**: 25476\n**Attaque**: 1866\n**Défense**: 2969\n**Récupération**:1512", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mish','LightMish']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558534160678935/RuneclawW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#409 Misha (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558534160678935/RuneclawW_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: PV +30~35% (Même élément)\n**Passif**: Vague martiale 20% (On crit)\n(Dmg +30%)\n**Actif**: Choc 70%(On crit) 1 tour\n(Dmg +10%, Taux: +20%)\n**PV**: 40312\n**Attaque**: 2221\n**Défense**: 2364\n**Récupération**:1874", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mish','DarkMish']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558521913311242/RuneclawD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#410 Misha (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558521913311242/RuneclawD_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: PV +30~35%(Même élément)\n**Passif**: Vengeance\n(Dmg +35%)\n**Actif**: Vengeance\n(Dmg +35%)\n**PV**: 26287\n**Attaque**: 2663\n**Défense**: 3105\n**Récupération**:2009", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### taupinou ############
+		###########################
+	if any([message.content.startswith (item) for item in ['Taup','FeuTaup']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553566196203520/DrillmonR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#411 Taupinou (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553566196203520/DrillmonR_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Défenseur\n**Lead**: PV Rec +10~15%\n**Passif**: Attaque réduite 60% 2 tours\n(No skillbooks)\n**Actif**: Nécrose 60% 1 tour\n(No skillbooks)\n**PV**: 28731\n**Attaque**: 1709\n**Défense**: 2486\n**Récupération**:1192", inline=False)
+
+		await message.channel.send(embed=embed)
+		###########################     
+
+	if any([message.content.startswith (item) for item in ['Taup','EauTaup']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553564493578270/DrillmonB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#412 Taupinou (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553564493578270/DrillmonB_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Tank\n**Lead**: PV Rec +10~15%\n**Passif**: Étourdissement 40% 1 tour\n(No skillbooks)\n**Actif**: Provocation 80% 1 tour\n(No skillbooks)\n**PV**: 36069\n**Attaque**: 1622\n**Défense**: 1329\n**Récupération**:1506", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Taup','BoisTaup']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553561985122337/Drillmon_large.jpeg", color=0xffffff)
+		embed.set_author(name="#413 Taupinou (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553561985122337/Drillmon_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Équilibré\n**Lead**: PV Rec +10~15%\n**Passif**: Nécrose x2 60% 1 tour\n(No skillbooks)\n**Actif**: Nécrose 80% 2 tours\n(No skillbooks)\n**PV**: 28857\n**Attaque**: 1831\n**Défense**: 1637\n**Récupération**:1596", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Taup','FeuTaup']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553566196203520/DrillmonR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#411 Taupinou (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553566196203520/DrillmonR_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Défenseur\n**Lead**: PV Rec +10~15%\n**Passif**: Attaque réduite 60% 2 tours\n(No skillbooks)\n**Actif**: Nécrose 60% 1 tour\n(No skillbooks)\n**PV**: 28731\n**Attaque**: 1709\n**Défense**: 2486\n**Récupération**:1192", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### mona ############
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Mona','FeuMona','mona','MonaFeu', 'MonaF']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556697726746634/MonArchh_large.jpeg", color=0xffffff)
+		embed.set_author(name="#416 Mona (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556697726746634/MonArchh_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Tank \n**Lead**: Att +30~35% (Même élément)\n**Passif**: Siphon de PA 20%\n(dmg +20%, Taux : +10%)\n**Actif**: Attaque réduite 60% 2 tours\n(Dmg +20%, Taux: +20%)\n**PV**: 42627\n**Attaque**: 1431\n**Défense**: 1785\n**Récupération**:1411", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mona', 'mona', 'MonaEau','EauMona', 'MonaE', 'TopMona']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556704307347466/MonArchhB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#417 Mona (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556704307347466/MonArchhB_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: Att +30~35(Même élément)\n**Passif**: Boost de moral 20% de ses PA\n(Dmg +20%, +Effect.: +5%)\n**Actif**: Défense réduite 50% 2 tours\n(Dmg +15%, Taux: +20%)\n**PV**: 25081\n**Attaque**: 2853\n**Défense**: 2016\n**Récupération**:1641", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mona', 'mona', 'MonaBois','BoisMona', 'MonaB']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/557214074111262720/MonArchhG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#418 Mona (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/557214074111262720/MonArchhG_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Défenseur\n**Lead**: Att +30~35%(Même élément)\n**Passif**: Adrénaline 20% de ses PV\n(Dmg +20%, +Effect.: +5%)\n**Actif**: Provocation intrépide 80% 1 tour\n(???)\n**PV**: 27860\n**Attaque**: 1491\n**Défense**: 2554\n**Récupération**:1839", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mona', 'mona', 'MonaLight','LightMona', 'MonaL']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556709810274319/MonArchhW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#419 Mona (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556709810274319/MonArchhW_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: Att +30~35%(Même élément)\n**Passif**: Adrénaline 25% de ses PV\n(Dmg +20%, +Effect.: +5%)\n**Actif**: Agression (Def)\n(Dmg +40%)\n**PV**: 30686\n**Attaque**: 2486\n**Défense**: 3255\n**Récupération**:1771", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mona','mona', 'MonaDark', 'MonaD','DarkMona']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556707352412185/MonArchhD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#420 Mona (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556707352412185/MonArchhD_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Att +30~35%(Même élément)\n**Passif**: Boost de moral 30% de ses PA\n(Dmg +25%)\n**Actif**: Chasseur(Dc) 30%\n(Dmg +25%, +Effect.: +10%)\n**PV**: 28030\n**Attaque**: 3391\n**Défense**: 2070\n**Récupération**:2077", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###################################
+		########### Mona S Evo ############
+		###################################
+
+
+	if any([message.content.startswith (item) for item in ['Mona','mona','FeuMona','MonaF','MonaFeu','SMonaF','SMona','FeuSMona','SMonaFeu']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/752449210422525962/752569222143410236/Screenshot_20200907-183956_Monster_Super_League.jpg", color=0xffffff)
+		embed.set_author(name="#362 Mona SE (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/752449210422525962/752569222143410236/Screenshot_20200907-183956_Monster_Super_League.jpg")
+		embed.add_field(name="★★★", value="**Type**: Tank \n**Lead**: Att +30~35% (Même élément)\n**Passif**: Siphon de PA 20%\n(dmg +20%, Taux : +10%)\n**Actif**: Attaque réduite 60% 2 tours\n(Dmg +20%, Taux: +20%)\n**PV**: 47053\n**Attaque**: 1474\n**Défense**: 1969\n**Récupération**:1554", inline=False)
+
+		await message.channel.send(embed=embed)     
+
+	if any([message.content.startswith (item) for item in ['Mona','mona','MonaEau','MonaE','EauMona','SMonaE','Smona','SmonaEau','EauSMona']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/752449210422525962/752569221883363409/Screenshot_20200907-183923_Monster_Super_League.jpg", color=0xffffff)
+		embed.set_author(name="#364 Mona SE (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/752449210422525962/752569221883363409/Screenshot_20200907-183923_Monster_Super_League.jpg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: Att +30~35(Même élément)\n**Passif**: Boost de moral 20% de ses PA\n(Dmg +20%, +Effect.: +5%)\n**Actif**: Défense réduite 50% 2 tours\n(Dmg +15%, Taux: +20%)\n**PV**: 27594\n**Attaque**: 3173\n**Défense**: 2227\n**Récupération**:1811", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mona','mona','MonaBois','MonaB','BoisMona','SMonaB','Smona','SmonaBois','BoisSMona']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/752449210422525962/752569222294536274/Screenshot_20200907-184021_Monster_Super_League.jpg", color=0xffffff)
+		embed.set_author(name="#366 Mona SE (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/752449210422525962/752569222294536274/Screenshot_20200907-184021_Monster_Super_League.jpg")
+		embed.add_field(name="★★★", value="**Type**: Défenseur\n**Lead**: Att +30~35%(Même élément)\n**Passif**: Adrénaline 20% de ses PV\n(Dmg +20%, +Effect.: +5%)\n**Actif**: Provocation intrépide 80% 1 tour\n(???)\n**PV**: 30652\n**Attaque**: 1648\n**Défense**: 2840\n**Récupération**:2029", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mona','mona','MonaLight','MonaL','LightMona','SMonaL','Smona','SmonaLight','LightSMona']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/752449210422525962/752569222491799573/Screenshot_20200907-184043_Monster_Super_League.jpg", color=0xffffff)
+		embed.set_author(name="#368 Mona SE (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/752449210422525962/752569222491799573/Screenshot_20200907-184043_Monster_Super_League.jpg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: Att +30~35%(Même élément)\n**Passif**: Adrénaline 25% de ses PV\n(Dmg +20%, +Effect.: +5%)\n**Actif**: Agression (Def)\n(Dmg +40%)\n**PV**: 33764\n**Attaque**: 2744\n**Défense**: 3609\n**Récupération**:1954", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mona','mona','MonaDark','MonaD','DarkMona','SMonaD','Smona','SmonaDark','DarkSMona']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/752449210422525962/752569222772555816/Screenshot_20200907-184103_Monster_Super_League.jpg", color=0xffffff)
+		embed.set_author(name="#371 Mona SE (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/752449210422525962/752569222772555816/Screenshot_20200907-184103_Monster_Super_League.jpg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Att +30~35%(Même élément)\n**Passif**: Boost de moral 30% de ses PA\n(Dmg +25%)\n**Actif**: Chasseur(Dc) 30%\n(Dmg +25%, +Effect.: +10%)\n**PV**: 30842\n**Attaque**: 3759\n**Défense**: 2281\n**Récupération**:2295", inline=False)
+
+		await message.channel.send(embed=embed)     
+
+		###################################
+		############ Monkiki ##############
+		################################### 
+
+	if any([message.content.startswith (item) for item in ['Monk','FeuMonk']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552082805358612/Bluemong_large.jpeg", color=0xffffff)
+		embed.set_author(name="#421 Monkiki (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552082805358612/Bluemong_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: Att +25~30%\n**Passif**: Sommeil (On crit) 1 tour\n(Dmg +25%)\n**Actif**: Sommeil (On crit) 2 tours\n(Dmg +25%)\n**PV**: 27676\n**Attaque**: 2867\n**Défense**: 1914\n**Récupération**:1382", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Monk','EauMonk','TopMonkiki']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552085267283968/BluemongB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#422 Monkiki (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552085267283968/BluemongB_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Défenseur\n**Lead**: Att +25~30%\n**Passif**: Défense réduite 80% 2 tours\n(Dmg +25%)\n**Actif**: Soif 80% -10% 1 tour\n(Dmg +15%, tour: +1)\n**PV**: 28697\n**Attaque**: 1852\n**Défense**: 2588\n**Récupération**:1328", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Monk','BoisMonk']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552097451737091/BluemongG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#423 Monkiki (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552097451737091/BluemongG_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Équilibré\n**Lead**: Att +25~30%\n**Passif**: Récupération réduite 60% 1 tour\n(Dmg +10%, Taux: +20%, tour: +1)\n**Actif**: Étourdissement 100% 1 tour\n(Dmg +25%)\n**PV**: 28476\n**Attaque**: 1892\n**Défense**: 1963\n**Récupération**:1725", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Monk','LightMonk']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552099897147403/BluemongW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#424 Monkiki (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552099897147403/BluemongW_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: Att +25~30%\n**Passif**: Chasseur 50%\n(Dmg +20%)\n**Actif**: Aveuglement (On crit) 3 tours\n(Dmg +25%)\n**PV**: 26917\n**Attaque**: 2662\n**Défense**: 2658\n**Récupération**:2488", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Monk','DarkMonk']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552088807276544/BluemongD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#425 Monkiki (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552088807276544/BluemongD_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: Att +25~30%\n**Passif**: Agression (Def)\n(Dmg +20%)\n**Actif**: Défense 100% 2 tours\n(Dmg +15%, tour: +1)\n**PV**: 28731\n**Attaque**: 1941\n**Défense**: 3167\n**Récupération**:2309", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###################################
+		############ Mowgli ###############
+		################################### 
+
+	if any([message.content.startswith (item) for item in ['Mowg','FeuMowg','TopMowg']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556868510285825/MowgliaR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#426 Mowgli (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556868510285825/MowgliaR_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: Att +30~35%(Même élément)\n**Passif**: Chasseur (bois) 50%\n(Dmg +25%)\n**Actif**: Prédateur (bois) 40%\n(Dmg +25%)\n**PV**: 26900\n**Attaque**: 2717\n**Défense**: 1525\n**Récupération**:1580", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mowg','EauMowg']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552557085313859602/MowgliaB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#427 Mowgli (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552557085313859602/MowgliaB_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: Att +30~35%(Même élément)\n**Passif**: Feu Chasseur 50%\n(Dmg +25%)\n**Actif**: Prédateur (feu) 40%\n(Dmg +25%)\n**PV**: 28670\n**Attaque**: 2615\n**Défense**: 1648\n**Récupération**:1566", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mowg','BoisMowg']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556869877760002/Mowglia_large.jpeg", color=0xffffff)
+		embed.set_author(name="#428 Mowgli (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556869877760002/Mowglia_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: Att +30~35%(Même élément)\n**Passif**: Chasseur (eau) 50%\n(Dmg +25%)\n**Actif**: Prédateur (eau) 40%\n(Dmg +25%)\n**PV**: 26900\n**Attaque**: 2847\n**Défense**: 1532\n**Récupération**:1580", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mowg','LightMowg']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556869768445972/MowgliaW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#429 Mowgli (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556869768445972/MowgliaW_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Att +30~35%(Même élément)\n**Passif**: Chasseur (dark) 40%\n(Dmg +25%)\n**Actif**: Prédateur (dark) 30%\n(Dmg +25%)\n**PV**: 28016\n**Attaque**: 3133\n**Défense**: 2036\n**Récupération**:1989", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Mowg','DarkMowg']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556868711743510/MowgliaD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#430 Mowgli (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556868711743510/MowgliaD_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Att +30~35%(Même élément)\n**Passif**: Chasseur (light) 40%\n(Dmg +25%)\n**Actif**: Prédateur (light) 30%\n(Dmg +25%)\n**PV**: 27288\n**Attaque**: 3085\n**Défense**: 2193\n**Récupération**:1968", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###################################
+		############ champi ###############
+		################################### 
+
+	if any([message.content.startswith (item) for item in ['Champ','FeuChamp']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559527850147843/SporeR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#431 Champi (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552559527850147843/SporeR_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Défenseur\n**Lead**: PV +20~25%\n**Passif**: Nécrose x2 60% 1 tour\n(Dmg +15%, Taux: +20%)\n**Actif**: Provocation 100% 1 tour\n(Dmg +20%, tour: +1)\n**PV**: 29092\n**Attaque**: 1321\n**Défense**: 2540\n**Récupération**:1641", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Champ','EauChamp']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559525757190164/SporeB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#432 Champi (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552559525757190164/SporeB_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Équilibré\n**Lead**: PV +20~25%\n**Passif**: Provocation 40% 1 tour\n(Dmg +15%, Taux: +20%)\n**Actif**: Prédateur (eau) 20%\n(Dmg +20%)\n**PV**: 28054\n**Attaque**: 1879\n**Défense**: 1725\n**Récupération**:1555", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Champ','BoisChamp']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559523706044417/Spore_large.jpeg", color=0xffffff)
+		embed.set_author(name="#433 Champi (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552559523706044417/Spore_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Attaquant\n**Lead**: PV +20~25%\n**Passif**: Boost de moral (On crit) 100% de ses PA\n(Dmg +20%)\n**Actif**: Chasseur 50%\n(Dmg +20%)\n**PV**: 23862\n**Attaque**: 2785\n**Défense**: 1702\n**Récupération**:1662", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###################################
+		############# Nezha ###############
+		################################### 
+
+
+	if any([message.content.startswith (item) for item in ['Nez','FeuNez','TopNez']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556889733464064/Nalakuvara_large.jpeg", color=0xffffff)
+		embed.set_author(name="#436 Nezha (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556889733464064/Nalakuvara_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: Def +30~35%\n**Passif**: Attaque réduite 70% 2 tours\n(No skillbooks)\n**Actif**: Défense réduite 70% 3 tours\n(No skillbooks)\n**PV**: 38643\n**Attaque**: 2323\n**Défense**: 1806\n**Récupération**:1922", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Nez','EauNez','TopNez']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552557093924765706/NalakuvaraB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#437 Nezha (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552557093924765706/NalakuvaraB_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: Def +30~35%\n**Passif**: Attaque réduite 70% 2 tours\n(No skillbooks)\n**Actif**: Aveuglement 70% 2 tours\n(No skillbooks)\n**PV**: 30199\n**Attaque**: 2444\n**Défense**: 2542\n**Récupération**:2774", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Nez','BoisNez']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552557099780145163/NalakuvaraG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#438 Nezha (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552557099780145163/NalakuvaraG_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Def +30~35%\n**Passif**: Siphon de PV \n(No skillbooks)\n**Actif**: Sceau 60% 1 tour\n(No skillbooks)\n**PV**: 27696\n**Attaque**: 3092\n**Défense**: 2329\n**Récupération**:2023", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Nez','LightNez']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/557214207414894632/Nalakuvaraw_large.jpeg", color=0xffffff)
+		embed.set_author(name="#439 Nezha (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/557214207414894632/Nalakuvaraw_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: Def +30~35%\n**Passif**: Aveuglement 80% 3 tours\n(No skillbooks)\n**Actif**: Affaiblissement 80% 2 tours\n(No skillbooks)\n**PV**: 38752\n**Attaque**: 1853\n**Défense**: 2323\n**Récupération**:2133", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Nez','DarkNez']]):
+		embed=discord.Embed(title="", url="https://media.discordapp.net/attachments/552550283885019166/552557097187803167/NalakuvaraD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#440 Nezha (dark)")
+		embed.set_thumbnail(url="https://media.discordapp.net/attachments/552550283885019166/552557097187803167/NalakuvaraD_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Def +30~35%\n**Passif**: Siphon de PV , Greatly)\n(No skillbooks)\n**Actif**: Défense réduite 80% 2 tours\n(No skillbooks)\n**PV**: 25640\n**Attaque**: 3153\n**Défense**: 2431\n**Récupération**:2111", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###################################
+		############## Nifa ###############
+		################################### 
+
+	if any([message.content.startswith (item) for item in ['Nif','LightNif']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552551351289118721/Angelmon_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#444 Nifa (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552551351289118721/Angelmon_Large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: CR +15~20%\n**Passif**: Chasseur 50%\n(No skillbooks)\n**Actif**: Chasseur 50%\n(No skillbooks)\n**PV**: 25292\n**Attaque**: 3024\n**Défense**: 2288\n**Récupération**:2084", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Nif','DarkNif']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552551357824106537/AngelmonD_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#445 Nifa (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552551357824106537/AngelmonD_Large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: CR +15~20%\n**Passif**: Attaque réduite 70% 2 tours\n(No skillbooks)\n**Actif**: Adrénaline (Allies) 10% de ses PV\n(No skillbooks)\n**PV**: 47027\n**Attaque**: 1853\n**Défense**: 1915\n**Récupération**:1751", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###################################
+		############ Cauchemar ############
+		################################### 
+
+	if any([message.content.startswith (item) for item in ['Cauc','FeuCauc']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552557419897683968/NyxR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#446 Cauchemar (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552557419897683968/NyxR_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Attaquant\n**Lead**: Resist +20~25%\n**Passif**: Défense réduite 80% 2 tours\n(No skillbooks)\n**Actif**: Soif 80% -30% 2 tours\n(No skillbooks)\n**PV**: 32000\n**Attaque**: 3616\n**Défense**: 2172\n**Récupération**:2424", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Cauc','EauCauc','TopCauc']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552557413228609557/NyxB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#447 Cauchemar (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552557413228609557/NyxB_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Défenseur\n**Lead**: Resist +20~25%\n**Passif**: Sceau 100% 3 tours\n(No skillbooks)\n**Actif**: Adrénaline (Allies) 10% de ses PV\n(No skillbooks)\n**PV**: 27247\n**Attaque**: 2601\n**Défense**: 3514\n**Récupération**:2343", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Cauc','BoisCauc']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552557418219962388/NyxG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#448 Cauchemar (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552557418219962388/NyxG_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Défenseur\n**Lead**: Resist +20~25%\n**Passif**: Boost de moral 30% de ses PA\n(No skillbooks)\n**Actif**: Adrénaline (Allies) 10% de ses PV\n(No skillbooks)\n**PV**: 26906\n**Attaque**: 2595\n**Défense**: 3602\n**Récupération**:2349", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Cauc','LightCauc']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552557421390856192/NyxW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#449 Cauchemar (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552557421390856192/NyxW_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Défenseur\n**Lead**: Resist +20~25%\n**Passif**: Agression (Def)\n(Dmg +25%)\n**Actif**: Provocation intrépide 80% 2 tours\n(Dmg + 20%, Taux: +20%)\n**PV**: 32456\n**Attaque**: 2561\n**Défense**: 3875\n**Récupération**:2254", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Cauc','DarkCauc']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552557389174538252/Nyx_large.jpeg", color=0xffffff)
+		embed.set_author(name="#450 Cauchemar (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552557389174538252/Nyx_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Tank\n**Lead**: Resist +20~25%\n**Passif**: Boost de moral 40% de ses PA\n(No skillbooks)\n**Actif**: Sceau 80% 3 tours\n(No skillbooks)\n**PV**: 41143\n**Attaque**: 2316\n**Défense**: 2534\n**Récupération**:2916", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###################################
+		############## Odin ###############
+		################################### 
+
+	if any([message.content.startswith (item) for item in ['Odin','FeuOdin','TopOdin']]):
+		embed=discord.Embed(title="", url="https://media.discordapp.net/attachments/552550283885019166/552558094786363394/PrimeodinR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#451 Odin (Feu)")
+		embed.set_thumbnail(url="https://media.discordapp.net/attachments/552550283885019166/552558094786363394/PrimeodinR_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Tank\n**Lead**: PV +40~45%\n**Passif**: Défense réduite 80% 2 tours\n(Dmg +15%, Taux: +20%)\n**Actif**: Attaque réduite 80% 2 tours\n(Dmg +15%, Taux: +10%)\n**PV**: 43077\n**Attaque**: 2010\n**Défense**: 3066\n**Récupération**:2432", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Odin','EauOdin','TopOdin']]):
+		embed=discord.Embed(title="", url="https://media.discordapp.net/attachments/552550283885019166/552558094077526026/PrimeodinB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#452 Odin (Eau)")
+		embed.set_thumbnail(url="https://media.discordapp.net/attachments/552550283885019166/552558094077526026/PrimeodinB_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Équilibré\n**Lead**: PV +40~45%\n**Passif**: Étourdissement 100% 1 tour\n(Dmg +15%, tour: +1)\n**Actif**: Étourdissement 70% 1 tour\n(Dmg +15%, Taux: +30%)\n**PV**: 25378\n**Attaque**: 3172\n**Défense**: 3155\n**Récupération**:3012", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Odin','BoisOdin']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558094253555745/PrimeodinG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#453 Odin (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558094253555745/PrimeodinG_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Attaquant\n**Lead**: PV +40~45%\n**Passif**: Siphon de PV ,  Greatly))\n(Dmg +25%)\n**Actif**: Défense réduite 80% 2 tours\n(Dmg +25%)\n**PV**: 28473\n**Attaque**: 3909\n**Défense**: 2595\n**Récupération**:2152", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Odin','LightOdin']]):
+		embed=discord.Embed(title="", url="https://media.discordapp.net/attachments/552550283885019166/552558098632540170/PrimeodinW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#454 Odin (light)")
+		embed.set_thumbnail(url="https://media.discordapp.net/attachments/552550283885019166/552558098632540170/PrimeodinW_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Tank\n**Lead**: PV +40~45%\n**Passif**: Agression (PV)\n(Dmg +25%)\n**Actif**: Adrénaline (Allies) 10% de ses PV par mob attaqué\n(Dmg +25%)\n**PV**: 48048\n**Attaque**: 2099\n**Défense**: 2916\n**Récupération**:2677", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Odin','DarkOdin']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558087924351006/Primeodin_large.jpeg", color=0xffffff)
+		embed.set_author(name="#455 Odin (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558087924351006/Primeodin_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Équilibré\n**Lead**: PV +40~45%\n**Passif**: Vague martiale 20%\n(Dmg +15%, +Effect.: +5%)\n**Actif**: Défense réduite 80% 3 tours\n(Dmg +25%)\n**PV**: 32024\n**Attaque**: 2975\n**Défense**: 2828\n**Récupération**:1889", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###################################
+		############ Onmyoji ##############
+		################################### 
+
+	if any([message.content.startswith (item) for item in ['Onm','FeuOnm','TopOnm']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558730898571288/SeimeiR_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#456 Onmyoji (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558730898571288/SeimeiR_Large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Tank\n**Lead**: Resist +20~25%\n**Passif**: Siphon de PA 30%\n(Dmg +20%, Taux: +10%)\n**Actif**: Défense réduite 80% 2 tours\n(Dmg +25%)\n**PV**: 37772\n**Attaque**: 2521\n**Défense**: 2705\n**Récupération**:2494", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Onm','EauOnm','TopOnm']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558724070244352/Seimei_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#457 Onmyoji (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558724070244352/Seimei_Large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Attaquant\n**Lead**: Resist +20~25%\n**Passif**: Chasseur 50%\n(Dmg +30%)\n**Actif**: Chasseur 50%\n(Dmg +30%)\n**PV**: 31626\n**Attaque**: 3677\n**Défense**: 2070\n**Récupération**:2091", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Onm','BoisOnm']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558729330032651/SeimeiG_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#458 Onmyoji (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558729330032651/SeimeiG_Large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Défenseur\n**Lead**: Resist +20~25%\n**Passif**: Sceau 100% 2 tours\n(Dmg +30%)\n**Actif**: Pétrification 80% 1 tour\n(Dmg +15%, Taux: +20%)\n**PV**: 29569\n**Attaque**: 2363\n**Défense**: 3562\n**Récupération**:2588", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Onm','LightOnm']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558753854259201/SeimeiW_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#459 Onmyoji (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558753854259201/SeimeiW_Large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Défenseur\n**Lead**: Resist +20~25%\n**Passif**: Siphon de PA 30%%\n(Dmg +20%, Taux: +10%)\n**Actif**: Choc 70% 2 tours\n(Dmg +15%, Taux: +10%)\n**PV**: 25068\n**Attaque**: 2792\n**Défense**: 3609\n**Récupération**:2254", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Onm','DarkOnm']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558727438401537/SeimeiD_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#460 Onmyoji (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558727438401537/SeimeiD_Large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Attaquant\n**Lead**: Resist +20~25%\n**Passif**: Siphon de PV \n(Dmg +30%)\n**Actif**: Siphon de PV (Allies) Greatly\n(Dmg +30%)\n**PV**: 25878\n**Attaque**: 3698\n**Défense**: 2479\n**Récupération**:2452", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###################################
+		############## Otari ##############
+		################################### 
+
+	if any([message.content.startswith (item) for item in ['Ota','FeuOta']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558815204212758/SelkieR_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#461 Otari (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558815204212758/SelkieR_Large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Tank\n**Lead**: Dégâts critiques +30~35%\n**Passif**: Défense réduite 80% 2 tours\n(No skillbooks)\n**Actif**: Aveuglement 60% 2 tours\n(No skillbooks)\n**PV**: 35048\n**Attaque**: 1635\n**Défense**: 1302\n**Récupération**:1486", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Ota','EauOta']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558803640385584/Selkie_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#462 Otari (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558803640385584/Selkie_Large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Équilibré\n**Lead**: Dégâts critiques +30~35%\n**Passif**: Resistance réduite  100% 2 tours\n(Dmg: +30%)\n**Actif**: Attaque réduite 80% 2 tours\n(Dmg: +20%, +1 tour)\n**PV**: 28687\n**Attaque**: 1742\n**Défense**: 1854\n**Récupération**:1807", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Ota','BoisOta']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558813245472771/SelkieG_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#463 Otari (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558813245472771/SelkieG_Large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Défenseur\n**Lead**: Dégâts critiques +30~35%\n**Passif**: Étourdissement 60% 1 tour\n(No skillbooks)\n**Actif**: Étourdissement 80% 1 tour\n(No skillbooks)\n**PV**: 28820\n**Attaque**: 1478\n**Défense**: 2336\n**Récupération**:1614", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Ota','LightOta']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/557607503815376906/SelkieW_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#464 Otari (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/557607503815376906/SelkieW_Large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: Dégâts critiques +30~35%\n**Passif**: Boost de moral 30% de ses PA\n(No skillbooks)\n**Actif**: Prédateur 30%\n(No skillbooks)\n**PV**: 25667\n**Attaque**: 2574\n**Défense**: 1709\n**Récupération**:1614", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Ota','DarkOta']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552558799148285964/SelkieD_Large.jpeg", color=0xffffff)
+		embed.set_author(name="#465 Otari (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552558799148285964/SelkieD_Large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Défenseur\n**Lead**: Dégâts critiques +30~35%\n**Passif**: Attaque réduite 80% 2 tours\n(No skillbooks)\n**Actif**: Aveuglement 100% 2 tours\n(No skillbooks)\n**PV**: 28473\n**Attaque**: 1873\n**Défense**: 2724\n**Récupération**:1362", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###################################
+		############## Cayou ##############
+		################################### 
+
+	if any([message.content.startswith (item) for item in ['Cayou','FeuCayou']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552556020711292943/Magton_large.jpeg", color=0xffffff)
+		embed.set_author(name="#466 Cayou (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552556020711292943/Magton_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: PV +30~35%\n**Passif**: Étourdissement 70% 1 tour\n(No skillbooks)\n**Actif**: Provocation 80% 1 tour\n(No skillbooks)\n**PV**: 29773\n**Attaque**: 2240\n**Défense**: 3058\n**Récupération**:1852", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###################################
+		############# Pégase ##############
+		################################### 
+
+	if any([message.content.startswith (item) for item in ['Pega','FeuPega']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552551852319703080/BellerophonR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#471 Pégase (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552551852319703080/BellerophonR_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: SP Rec +20~25%\n**Passif**: Siphon de PV \n(No skillbooks)\n**Actif**: Chasseur 40%\n(No skillbooks)\n**PV**: 25619\n**Attaque**: 3208\n**Défense**: 2309\n**Récupération**:1893", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Pega','EauPega']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552551844161912867/BellerophonB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#472 Pégase (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552551844161912867/BellerophonB_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: SP Rec +20~25%\n**Passif**: Défense réduite 80% 2 tours\n(No skillbooks)\n**Actif**: Silence 80% 2 tours\n(No skillbooks)\n**PV**: 27666\n**Attaque**: 2328\n**Défense**: 2610\n**Récupération**:2263", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Pega','BoisPega']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552551849719496724/BellerophonG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#473 Pégase (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552551849719496724/BellerophonG_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: SP Rec +20~25%\n**Passif**: Attaque réduite 80% 2 tour\n(No skillbooks)\n**Actif**: Soif 60% -30% 2 tours\n(No skillbooks)\n**PV**: 30522\n**Attaque**: 2261\n**Défense**: 3099\n**Récupération**:2016", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Pega','LightPega']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552551841762770945/Bellerophon_large.jpeg", color=0xffffff)
+		embed.set_author(name="#474 Pégase (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552551841762770945/Bellerophon_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: SP Rec +20~25%\n**Passif**: Choc 80% 1 tour\n(No skillbooks)\n**Actif**: Adrénaline 10% de ses PV (Allies)\n(No skillbooks)\n**PV**: 30849\n**Attaque**: 2036\n**Défense**: 3221\n**Récupération**:2152", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Pega','DarkPega']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552551846833684480/BellerophonD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#475 Pégase (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552551846833684480/BellerophonD_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: SP Rec +20~25%\n**Passif**: Boost de moral 30%\n(No skillbooks)\n**Actif**: Chasseur 30%\n(No skillbooks)\n**PV**: 27560\n**Attaque**: 3242\n**Défense**: 2193\n**Récupération**:2084", inline=False)
+
+		await message.channel.send(embed=embed)
+
 
 
 
