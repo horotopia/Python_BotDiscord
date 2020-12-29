@@ -2112,50 +2112,6 @@ async def on_message(message):
 
 		await message.channel.send(embed=embed)
 
-		###########################
-		######### indra ##################
-		###########################
-
-	if any([message.content.startswith (item) for item in ['Indr','FeuIndr']]):
-		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552555001113739296/IndrasakraR_large.jpeg", color=0xffffff)
-		embed.set_author(name="#251 Indra (Feu)")
-		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552555001113739296/IndrasakraR_large.jpeg")
-		embed.add_field(name="★★★★★", value="**Type**: Attaquant\n**Lead**: Att +40~45%\n**Passif**: Avantage élémentaire\n(Dmg +30%)\n**Actif**: Sceau 70% 2 tours\n(Dmg +15%, Taux: +10%, tour: +1)\n**PV**: 31694\n**Attaque**: 3650\n**Défense**: 2288\n**Récupération**:2329", inline=False)
-
-		await message.channel.send(embed=embed)
-
-	if any([message.content.startswith (item) for item in ['Indr','EauIndr','TopIndr']]):
-		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552554997502705694/IndrasakraB_large.jpeg", color=0xffffff)
-		embed.set_author(name="#252 Indra (Eau)")
-		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552554997502705694/IndrasakraB_large.jpeg")
-		embed.add_field(name="★★★★★", value="**Type**: Équilibré\n**Lead**: Att +40~45%\n**Passif**: Attaque réduite 80% 3 tours\n(Dmg +15%, Taux: +10%)\n**Actif**: Frappe Courageuse\n(Dmg +20%)\n**PV**: 27768\n**Attaque**: 3043\n**Défense**: 3033\n**Récupération**:2876", inline=False)
-
-		await message.channel.send(embed=embed)
-
-	if any([message.content.startswith (item) for item in ['Indr','BoisIndr']]):
-		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552555002154188838/IndrasakraG_large.jpeg", color=0xffffff)
-		embed.set_author(name="#253 Indra (Bois)")
-		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552555002154188838/IndrasakraG_large.jpeg")
-		embed.add_field(name="★★★★★", value="**Type**: Équilibré\n**Lead**: Att +40~45%\n**Passif**: Étourdissement 100% 1 tour \n(Dmg +15%, tour: +1)\n**Actif**: Soif 80% -30% 2 tours\n(Dmg +20%, tour: +1)\n**PV**: 32841\n**Attaque**: 2846\n**Défense**: 2910\n**Récupération**:1929", inline=False)
-
-		await message.channel.send(embed=embed)
-
-	if any([message.content.startswith (item) for item in ['Indr','LightIndr']]):
-		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552555003815002112/IndrasakraW_large.jpeg", color=0xffffff)
-		embed.set_author(name="#254 Indra (light)")
-		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552555003815002112/IndrasakraW_large.jpeg")
-		embed.add_field(name="★★★★★", value="**Type**: Attaquant\n**Lead**: Att +40~45%\n**Passif**: Boost Moral regen 20% PA\n(Dmg +30%)\n**Actif**: prédateur 50%\n(Dmg +30%)\n**PV**: 27281\n**Attaque**: 3977\n**Défense**: 2663\n**Récupération**:2240", inline=False)
-
-		await message.channel.send(embed=embed)
-
-	if any([message.content.startswith (item) for item in ['Indr','DarkIndr']]):
-		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552554996357529610/Indrasakra_large.jpeg", color=0xffffff)
-		embed.set_author(name="#255 Indra (dark)")
-		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552554996357529610/Indrasakra_large.jpeg")
-		embed.add_field(name="★★★★★", value="**Type**: Attaquant\n**Lead**: Att +40~45%\n**Passif**: Frappe Courageuse\n(Dmg +20%)\n**Actif**: Frappe Courageuse\n(Dmg +20%)\n**PV**: 28166\n**Attaque**: 3677\n**Défense**: 2554\n**Récupération**:2295", inline=False)
-
-		await message.channel.send(embed=embed)
-
 
 
 @client.event
