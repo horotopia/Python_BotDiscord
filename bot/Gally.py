@@ -6963,18 +6963,6 @@ async def on_message(message):
 		for i in range(0,19):
 			Lynsha += ("@Lynsha#0334 ")
 		await message.channel.send(Lynsha)
-
-	if any([message.content.startswith (item) for item in ['Ush-ki']]):
-		Ush = " "
-		for i in range(0,19):
-			Ush += ("@Ushen#5870 ")
-		await message.channel.send(Ush)
-		
-	if any([message.content.startswith (item) for item in ['Horo']]):
-		Horo = " "
-		for i in range(0,19):
-			Horo += ("@horotopia#1922 ")
-		await message.channel.send(Horo)
  
 		#######################################
 		############  Golem  ##################
@@ -7243,7 +7231,7 @@ async def on_message(message):
 					mess += "\n"
 				a += 1
 			await message.channel.send (mess)
-		 else:
+		else:
 			await message.channel.send ("Erreur, Ecrivez Titan suivi du chiffre qui vous intéresse")
 
 	if message.content.startswith('Titi01'):
