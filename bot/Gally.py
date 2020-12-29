@@ -83,6 +83,29 @@ async def on_message(message):
 			await message.channel.send ("Erreur, Ecrivez D suivi de l'attaque, du taux critique et des dégats critique")
 
 ########################################
+#               Commande Tit           #
+########################################
+
+	if ListElementInMessage[0] == "Tit":
+		if len(ListElementInMessage) == 2 and ListElementInMessage[1].isnumeric():
+			a = int(ListElementInMessage[1])
+			b = a
+			c = [" :dark:", " :eau:", " :bois:", " :light:", " :feu:"]
+			d = int(0)
+			e = ["3","3.25","3.5","3.75","4","5.5","7","8.5","10","12.5","15","17.5","20","27.5","35","42.5","50","62.5","75","87.5","100","125","150","175","200","225","250","275","300","325","350","375","400","425","450","475","500","525","550","575","600"]
+			mess = ""
+			for i in range(0,10):
+				b = (a%5)-1
+				d = int((a-1)/5)
+				mess += ("Titan " + str(a) + str(c[b]) + " (" + str(e[d]) + "m) : ")
+				if i<9:
+					mess += "\n"
+				a += 1
+			await message.channel.send (mess)
+		else:
+			await message.channel.send ("Erreur, Ecrivez Titan suivi du chiffre qui vous intéresse")
+
+########################################
 ###########  Agression Def   ###########
 ########################################
 #   mettre un message d'erreur en cas  #
@@ -7214,25 +7237,6 @@ async def on_message(message):
 		#####################################################################     	 
 		############                Titi level                   ############
 		#####################################################################
-
-	if ListElementInMessage[0] == "Tit":
-		if len(ListElementInMessage) == 2 and ListElementInMessage[1].isnumeric():
-			ChiffreTitan = int(ListElementInMessage[1])
-			NumeroType = ChiffreTitan
-			TypeTitan = [" :dark:", " :eau:", " :bois:", " :light:", " :feu:"]
-			NumeroPV = int(0)
-			PvTitan = ["3","3.25","3.5","3.75","4","5.5","7","8.5","10","12.5","15","17.5","20","27.5","35","42.5","50","62.5","75","87.5","100","125","150","175","200","225","250","275","300","325","350","375","400","425","450","475","500","525","550","575","600"]
-			mess = ""
-			for i in range(0,10):
-				NumeroType = (ChiffreTitan%5)-1
-				NumeroPV = int((ChiffreTitan-1)/5)
-				mess += ("Titan " + str(ChiffreTitan) + str(TypeTitan[NumeroType]) + " (" + str(PvTitan[NumeroPV]) + "m) : ")
-				if i<9:
-					mess += "\n"
-				ChiffreTitan += 1
-			await message.channel.send (mess)
-		else:
-			await message.channel.send ("Erreur, Ecrivez Titan suivi du chiffre qui vous intéresse")
 		
 	if message.content.startswith('Titi01'):
 		await message.channel.send('Titan 1 :dark: (3m) :\nTitan 2 :eau: (3m) :\nTitan 3 :bois: (3m) :\nTitan 4 :light: (3m) :\nTitan 5 :feu: (3m) :\nTitan 6 :dark: (3.25m) :\nTitan 7 :eau: (3.25m) :\nTitan 8 :bois: (3.25m) :\nTitan 9 :light: (3.25m) :\nTitan 10 :feu: (3.25m) :')
