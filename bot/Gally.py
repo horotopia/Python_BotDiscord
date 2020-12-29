@@ -1340,6 +1340,210 @@ async def on_message(message):
 
 		await message.channel.send(embed=embed)
 
+		###########################
+		######### croquignol ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Croq','FeuCroq']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607327215167733829/CaptainCroR_large.jpg", color=0xffffff)
+		embed.set_author(name="#146 Croquignol (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607327215167733829/CaptainCroR_large.jpg")
+		embed.add_field(name="★★★", value="**Type**: Équilibré\n**Lead**: Dégâts critiques +40~45% (League)\n**Passif**: Boost de moral 30% de ses PA\n(Dmg: +30%, Taux: +20%)\n**Actif**: Nécrose x2 80% 1 tour\n(Dmg: 20%, +1 tour)\n**PV**: 29368\n**Attaque**: 2015\n**Défense**: 1684\n**Récupération**:1664", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Croq','EauCroq','TopCroq']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607327218745475082/CaptainCro_large.jpg", color=0xffffff)
+		embed.set_author(name="#147 Croquignol (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607327218745475082/CaptainCro_large.jpg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: Dégâts critiques +40~45% (League)\n**Passif**: Chasseur 50%\n(Dmg: +35%)\n**Actif**: Étourdissement 60% 1 tour\n(Dmg: +20%, +1 tour)\n**PV**: 25926\n**Attaque**: 2581\n**Défense**: 1777\n**Récupération**:1682", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Croq','BoisCroq']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607327223275323402/CaptainCroG_large.jpg", color=0xffffff)
+		embed.set_author(name="#148 Croquignol (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607327223275323402/CaptainCroG_large.jpg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: Dégâts critiques +40~45%(League)\n**Passif**: Chasseur 50%\n(Dmg: +35%)\n**Actif**: Défense réduite 60% 2 tours\n(Dmg: +20%, +1 tour)\n**PV**: 25565\n**Attaque**: 2717\n**Défense**: 1784\n**Récupération**:1226", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### cupidon ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Cupi','FeuCupi','TopCupi']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553671330889754/ErosR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#151 Cupidon (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553671330889754/ErosR_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Récupération\n**Lead**: PV +30~35%\n**Passif**: Attaque réduite 60% 1 tour\n(No skillbooks)\n**Actif**: Attaque augmentée  3 tours\n(No skillbooks)\n**PV**: 32456\n**Attaque**: 2159\n**Défense**: 1989\n**Récupération**:3323", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Cupi','EauCupi']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553664129138710/ErosB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#152 Cupidon (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553664129138710/ErosB_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Récupération\n**Lead**: PV +30~35%\n**Passif**: Adrénaline (Allies) 10% de ses PV\n(No skillbooks)\n**Actif**: Purification 100%\n(No skillbooks)\n**PV**: 30693\n**Attaque**: 2036\n**Défense**: 2452\n**Récupération**:3003", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Cupi','BoisCupi']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553668583489536/ErosG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#153 Cupidon (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553668583489536/ErosG_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Récupération\n**Lead**: PV +30~35%\n**Passif**: Abondance d'âmes rouges\n(No skillbooks)\n**Actif**: Bouclier (Flat) 2 tours\n(No skillbooks)\n**PV**: 29875\n**Attaque**: 2179\n**Défense**: 1989\n**Récupération**:3099", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Cupi','LightCupi']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553662711332866/Eros_large.jpeg", color=0xffffff)
+		embed.set_author(name="#154 Cupidon (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553662711332866/Eros_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Récupération\n**Lead**: PV +30~35%\n**Passif**: Agression (Def)\n(No skillbooks)\n**Actif**: Zèle 3 tours \n(No skillbooks)\n**PV**: 29630\n**Attaque**: 2023\n**Défense**: 3303\n**Récupération**:2731", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Cupi','DarkCupi']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553666050129921/ErosD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#155 Cupidon (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553666050129921/ErosD_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: PV +30~35%\n**Passif**: Agression (PV)\n(No skillbooks)\n**Actif**: Bouclier (PV) 3 tours\n(No skillbooks)\n**PV**: 37731\n**Attaque**: 1806\n**Défense**: 2323\n**Récupération**:2153", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### cura ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Cura','FeuCura','TopCura']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552557601397669908/PandoraR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#156 Cura (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552557601397669908/PandoraR_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Récupération\n**Lead**: PV Rec +20~25%\n**Passif**: Boost de moral (Allies)10% SP\n(No skillbooks)\n**Actif**: Bouclier (Level) 3 tours\n(No skillbooks)\n**PV**: 30679\n**Attaque**: 2036\n**Défense**: 2452\n**Récupération**:2996", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Cura','EauCura','TopCura']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552557593608847370/PandoraB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#157 Cura (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552557593608847370/PandoraB_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: PV Rec +20~25%\n**Passif**: Boost de moral 25% de ses PA\n(No skillbooks)\n**Actif**: Attaque augmentée  3 tours\n(No skillbooks)\n**PV**: 38378\n**Attaque**: 1928\n**Défense**: 2024\n**Récupération**:2133", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Cura','BoisCura']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552557598805590016/PandoraG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#158 Cura (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552557598805590016/PandoraG_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: PV Rec +20~25%\n**Passif**: Adrénaline 20% de ses PV\n(No skillbooks)\n**Actif**: Volonté 2 tours\n(No skillbooks)\n**PV**: 37533\n**Attaque**: 1962\n**Défense**: 2316\n**Récupération**:2194", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Cura','LightCura']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552557591276945408/Pandora_large.jpeg", color=0xffffff)
+		embed.set_author(name="#159 Cura (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552557591276945408/Pandora_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: PV Rec +20~25%\n**Passif**: Choc 60% 2 tours\n(No skillbooks)\n**Actif**: Domination 2 tours\n(No skillbooks)\n**PV**: 26178\n**Attaque**: 2281\n**Défense**: 3194\n**Récupération**:2050", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Cura','DarkCura']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552557595852800000/PandoraD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#160 Cura (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552557595852800000/PandoraD_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: PV Rec +20~25%\n**Passif**: Boost de moral (Allies) 10% SP\n(No skillbooks)\n**Actif**: Boost de moral 2 tours\n(No skillbooks)\n**PV**: 29014\n**Attaque**: 2532\n**Défense**: 2345\n**Récupération**:2100", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### d'artagnan ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ["D'art","FeuD'art","Dart","FeuDart"]]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553332091387914/DartagnanR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#161 D'artagnan (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553332091387914/DartagnanR_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Att +30~35%\n**Passif**: Défense réduite 80% 2 tours\n(No skillbooks)\n**Actif**: Soif 100% -20% 2 tours\n(No skillbooks)\n**PV**: 27220\n**Attaque**: 3092\n**Défense**: 2418\n**Récupération**:1954", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ["D'art","EauD'art","Dart","EauDart"]]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553327485779970/DartagnanB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#162 D'artagnan (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553327485779970/DartagnanB_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: Att +30~35%\n**Passif**: Attaque réduite 80% 2 tours\n(No skillbooks)\n**Actif**: Fatigue 100% 3 tours\n(No skillbooks)\n**PV**: 35579\n**Attaque**: 2282\n**Défense**: 2058\n**Récupération**:2010", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ["D'art","BoisD'art","Dart","BoisDart"]]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553329314496522/DartagnanG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#163 D'artagnan (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553329314496522/DartagnanG_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: Att +30~35%\n**Passif**: Récupération réduite 80% 2 tours\n(No skillbooks)\n**Actif**: Étourdissement 100% 1 tour\n(No skillbooks)\n**PV**: 29933\n**Attaque**: 2253\n**Défense**: 2386\n**Récupération**:2311", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ["D'art","LightD'art","Dart","LightDart"]]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553339238481922/DartagnanW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#164 D'artagnan (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553339238481922/DartagnanW_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Att +30~35%\n**Passif**: Boost de moral 50% de ses PA\n(No skillbooks)\n**Actif**: Prédateur 40%%\n(No skillbooks)\n**PV**: 24734\n**Attaque**: 3269\n**Défense**: 2254\n**Récupération**:2091", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ["D'art","DarkD'art","Dart","DarkDart"]]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553326928199710/Dartagnan_large.jpeg", color=0xffffff)
+		embed.set_author(name="#165 D'artagnan (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553326928199710/Dartagnan_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: Att +30~35%\n**Passif**: Nécrose x2 100% 1 tour\n(No skillbooks)\n**Actif**: Agression (Def)\n(No skillbooks)\n**PV**: 26736\n**Attaque**: 2322\n**Défense**: 3194\n**Récupération**:2036", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### draka ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Drak','FeuDrak','TopDrak']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553542011846692/Drakoness_large.jpeg", color=0xffffff)
+		embed.set_author(name="#166 Draka (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553542011846692/Drakoness_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Attaquant\n**Lead**: PV +40~45%\n**Passif**: Boost de moral 15% (Allies SP)\n(No skillbooks)\n**Actif**: Perforation 100% 2 tours\n(No skillbooks)\n**PV**: 24856\n**Attaque**: 3902\n**Défense**: 2520\n**Récupération**:2125", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Drak','EauDrak']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553546072195091/DrakonessB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#167 Draka (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553546072195091/DrakonessB_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Attaquant\n**Lead**: PV +40~45%\n**Passif**: Affaiblissement 80% 2 tours\n(No skillbooks)\n**Actif**: Affaiblissement 60% 3 tours\n(No skillbooks)\n**PV**: 28643\n**Attaque**: 3568\n**Défense**: 2622\n**Récupération**:2213", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Drak','BoisDrak']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553553454170113/DrakonessG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#168 Draka (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553553454170113/DrakonessG_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Tank\n**Lead**: PV +40~45%\n**Passif**: Agression (PV)\n(No skillbooks)\n**Actif**: Agression (PV)\n(No skillbooks)\n**PV**: 50098\n**Attaque**: 2010\n**Défense**: 2827\n**Récupération**:1840", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Drak','LightDrak']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553560928157696/DrakonessW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#169 Draka (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553560928157696/DrakonessW_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Attaquant\n**Lead**: PV +40~45%\n**Passif**: Affaiblissement 80% 2 tours\n(No skillbooks)\n**Actif**: Avantage élémentaire\n(No skillbooks)\n**PV**: 30556\n**Attaque**: 4038\n**Défense**: 2206\n**Récupération**:1852", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Drak','DarkDrak']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552553556293451797/DrakonessD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#170 Draka (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552553556293451797/DrakonessD_large.jpeg")
+		embed.add_field(name="★★★★★", value="**Type**: Équilibré\n**Lead**: PV +40~45%\n**Passif**: Affaiblissement 80% 2 tours\n(No skillbooks)\n**Actif**: Sceau 80% 2 tours\n(No skillbooks)\n**PV**: 28946\n**Attaque**: 3104\n**Défense**: 3162\n**Récupération**:2454", inline=False)
+
+		await message.channel.send(embed=embed)
+
 
 
 @client.event
