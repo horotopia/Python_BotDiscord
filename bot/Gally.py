@@ -964,6 +964,210 @@ async def on_message(message):
 
 		await message.channel.send(embed=embed)
 
+		###########################
+		######### bulbie ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Bul','FeuBul']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607327107101753376/BarometzR_large.jpg", color=0xffffff)
+		embed.set_author(name="#101 Bulbie (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607327107101753376/BarometzR_large.jpg")
+		embed.add_field(name="★★★", value="**Type**: Tank\n**Lead**: Resist +15~20%(Donjons)\n**Passif**: Étourdissement 70% 1 tour\n(Dmg +15%, Taux: +10%)\n**Actif**: Soif 60% -30% 2 tours\n(Dmg +10%, Taux: +20%)\n**PV**: 33032\n**Attaque**: 1881\n**Défense**: 1874\n**Récupération**:1806", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Bul','EauBul','TopBul']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607327101481254918/BarometzB_large.jpg", color=0xffffff)
+		embed.set_author(name="#102 Bulbie (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607327101481254918/BarometzB_large.jpg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: Resist +15~20%(Donjons)\n**Passif**: Brise bouclier 100%\n(Dmg +30%)\n**Actif**: Frappe indéfectible \n(Dmg +25%)\n**PV**: 21499\n**Attaque**: 3357\n**Défense**: 2363\n**Récupération**:1777", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Bul','BoisBul']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607327097999982613/Barometz_large.jpg", color=0xffffff)
+		embed.set_author(name="#103 Bulbie (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607327097999982613/Barometz_large.jpg")
+		embed.add_field(name="★★★", value="**Type**: Équilibré\n**Lead**: Resist +15~20%(Donjons)\n**Passif**: Nécrose x2 60% 1 tour\n(Dmg +10%, Taux: +30%)\n**Actif**: Brise-Bonus 100%\n(Dmg +30%)\n**PV**: 27427\n**Attaque**: 2192\n**Défense**: 2372\n**Récupération**:1671", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Bul','LightBul']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607327109634850817/BarometzW_large.jpg", color=0xffffff)
+		embed.set_author(name="#104 Bulbie (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607327109634850817/BarometzW_large.jpg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: Resist +15~20%(Donjons)\n**Passif**: Récupération réduite 80% 2 tour\n(Dmg +30%)\n**Actif**: Récupération réduite 100% 2 tour\n(Dmg +30%)\n**PV**: 32225\n**Attaque**: 2023\n**Défense**: 3139\n**Récupération**:2349", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Bul','DarkBul']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/607327104186581002/BarometzD_large.jpg", color=0xffffff)
+		embed.set_author(name="#105 Bulbie (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/607327104186581002/BarometzD_large.jpg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: Resist +15~20%(Donjons)\n**Passif**: Faiblesse exposée 70% 2 tours\n(Dmg +15%, Taux: +10%)\n**Actif**: Faiblesse exposée 100% 1 tours\n(Dmg +20%, tour: +1)\n**PV**: 24475\n**Attaque**: 3378\n**Défense**: 2349\n**Récupération**:2043", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### Lumignon ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Lumignon','FeuLumi','TopLumi']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552555572877197322/Lantra_large.jpeg", color=0xffffff)
+		embed.set_author(name="#106 Lumignon (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552555572877197322/Lantra_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: CR +15~20%(Donjons)\n**Passif**: Défense réduite 60% 2 tours\n(Dmg +20%, Taux: +10%)\n**Actif**: Défense réduite 60% 2 tours\n(Dmg +15%, Taux: +10%)\n**PV**: 28813\n**Attaque**: 2595\n**Défense**: 1975\n**Récupération**:1825", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Lumignon','EauLumi']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552555575649632296/LantraB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#107 Lumignon (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552555575649632296/LantraB_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Attaquant\n**Lead**: CR +15~20%(Donjons)\n**Passif**: Traqueur +20% CR\n(Dmg +20%, Taux: +10%)\n**Actif**: Traqueur +20% CR\n(Dmg +15%, Taux: +10%)\n**PV**: 24795\n**Attaque**: 2601\n**Défense**: 1832\n**Récupération**:1811", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Lumignon','BoisLumi']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552555577016844300/LantraG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#108 Lumignon (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552555577016844300/LantraG_large.jpeg")
+		embed.add_field(name="★★★", value="**Type**: Équilibré\n**Lead**: CR +15~20%(Donjons)\n**Passif**: Chasseur (eau) 50%\n(Dmg +15%, Taux: +10%)\n**Actif**: Chasseur (eau) 50%\n(???)\n**PV**: 29457\n**Attaque**: 1742\n**Défense**: 1963\n**Récupération**:1861", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### canna ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Canna','FeuCanna']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552232940208140/CanariaR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#111 Canna (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552232940208140/CanariaR_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: SP Rec +20~25%\n**Passif**: Pétrification 70% 2 tours\n(Dmg +20%, Taux: +10%)\n**Actif**: Soif 80% -20% 2 tours\n(Dmg +20%, Taux: +10%)\n**PV**: 34053\n**Attaque**: 2267\n**Défense**: 2277\n**Récupération**:2277", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Canna','EauCanna']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552226124464139/CanariaB_large.jpeg", color=0xffffff)
+		embed.set_author(name="#112 Canna (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552226124464139/CanariaB_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Défenseur\n**Lead**: SP Rec +20~25%\n**Passif**: Défense réduite 80% 2 tours\n(Dmg +15%, Taux: +10%)\n**Actif**: Attaque réduite 60% 2 tours\n(Dmg +15%, Taux: +10%)\n**PV**: 28752\n**Attaque**: 1948\n**Défense**: 3235\n**Récupération**:2254", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Canna','BoisCanna','TopCanna']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552230591660050/CanariaG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#113 Canna (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552230591660050/CanariaG_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: SP Rec +20~25%\n**Passif**: Attaque réduite 70% 1 tour\n(Dmg +10%, Taux: +5%, tour: +1)\n**Actif**: Frappe Courageuse (On crit)\n(Dmg +20%)\n**PV**: 29484\n**Attaque**: 2396\n**Défense**: 2447\n**Récupération**:2352", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Canna','LightCanna']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552224300072980/Canaria_large.jpeg", color=0xffffff)
+		embed.set_author(name="#114 Canna (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552224300072980/Canaria_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Tank\n**Lead**: SP Rec +20~25%\n**Passif**: Sceau 80% 2 tours\n(Dmg +20%, Taux: +10%)\n**Actif**: Choc 60% 2 tours\n(Dmg +15%, Taux: +10%)\n**PV**: 35443\n**Attaque**: 1956\n**Défense**: 2316\n**Récupération**:2187", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Canna','DarkCanna']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552228615880715/CanariaD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#115 Canna (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552228615880715/CanariaD_large.jpeg")
+		embed.add_field(name="★★★★", value="**Type**: Attaquant\n**Lead**: SP Rec +20~25%\n**Passif**: Siphon de PV \n(Dmg +20%)\n**Actif**: Siphon de PV ,Greatly)\n(Dmg +20%)\n**PV**: 25776\n**Attaque**: 3262\n**Défense**: 2349\n**Récupération**:1907", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### Cerise ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Ceri','FeuCeri','TopCeri']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/758071281219272775/772033505872838686/Cherry1.png", color=0xffffff)
+		embed.set_author(name="#796 Cerise (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/758071281219272775/772033505872838686/Cherry1.png")
+		embed.add_field(name="★★★", value="**Type**: Défenseur\n**Lead**: Att +30~35% (clan)\n**Passif**: Nécrose 80% 2 tours\n(Dmg: +10% Taux +20%)\n**Actif**: Défense augmentée 2 tours\n(Dmg: +25% tour: +1)\n**PV**: 23501\n**Attaque**: 2036\n**Défense**: 2969\n**Récupération**: 2009", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Ceri','EauCeri']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/758071281219272775/772033508372774912/Cherry2.png", color=0xffffff)
+		embed.set_author(name="#797 Cerise (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/758071281219272775/772033508372774912/Cherry2.png")
+		embed.add_field(name="★★★", value="**Type**: Récupération\n**Lead**: Att +30~35% (clan)\n**Passif**: Défense réduite 60% 1 tour\n(Dmg: +10% Taux +20%)\n**Actif**: Bouclier 2 tours\n(Dmg: +25% tour +1)\n**PV**: 28643\n**Attaque**: 1743\n**Défense**: 1580\n**Récupération**: 2540", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Ceri','BoisCeri']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/758071281219272775/772033511829405736/Cherry3.png", color=0xffffff)
+		embed.set_author(name="#798 Cerise (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/758071281219272775/772033511829405736/Cherry3.png")
+		embed.add_field(name="★★★", value="**Type**: Tank\n**Lead**: Att +30~35% (clan)\n**Passif**: Adrénaline (Allies) 10% de ses PV\n(Dmg: +30%)\n**Actif**: Bouclier (PV) 2 tours\n(Dmg: +25% tour: +1)\n**PV**: 30553\n**Attaque**: 1656\n**Défense**: 1826\n**Récupération**: 2180", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Ceri','LightCeri']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/758071281219272775/772033520024944650/Cherry5.png", color=0xffffff)
+		embed.set_author(name="#799 Cerise (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/758071281219272775/772033520024944650/Cherry5.png")
+		embed.add_field(name="★★★★", value="**Type**: Récupération\n**Lead**: Att +30~35% (clan)\n**Passif**: Nécrose x2 60% 2 tours\n(Dmg: +15% Taux: +20%)\n**Actif**: Défense augmentée 2 tours\n(Dmg: +20% tour +1)\n**PV**: 24645\n**Attaque**: 2458\n**Défense**: 1948\n**Récupération**: 2792", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Ceri','DarkCeri']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/758071281219272775/772033515268079626/Cherry4.png", color=0xffffff)
+		embed.set_author(name="#800 Cerise (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/758071281219272775/772033515268079626/Cherry4.png")
+		embed.add_field(name="★★★★", value="**Type**: Récupération\n**Lead**: Att +30~35% (clan)\n**Passif**: Défense réduite 60% 1 tour\n(Dmg: +15% Taux: +20%)\n**Actif**: Attaque augmentée  2 tours\n(Dmg: +20% tour: +1)\n**PV**: 25715\n**Attaque**: 1982\n**Défense**: 1920\n**Récupération**: 3153", inline=False)
+
+		await message.channel.send(embed=embed)
+
+		###########################
+		######### chiroptie ##################
+		###########################
+
+	if any([message.content.startswith (item) for item in ['Chir','FeuChir']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552787842564109/CloakR_large.jpeg", color=0xffffff)
+		embed.set_author(name="#116 Chiroptie (Feu)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552787842564109/CloakR_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Attaquant\n**Lead**: Def +20~25%\n**Passif**: Attaque réduite 60% 1 tour\n(No skillbooks)\n**Actif**: Attaque réduite 40% 2 tours\n(No skillbooks)\n**PV**: 27049\n**Attaque**: 2527\n**Défense**: 1403\n**Récupération**:1478", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Chir','EauChir']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/557210231248125963/Cloak_large.jpeg", color=0xffffff)
+		embed.set_author(name="#117 Chiroptie (Eau)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/557210231248125963/Cloak_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Tank\n**Lead**: Def +20~25%\n**Passif**: Récupération réduite 60% 1 tour\n(No skillbooks)\n**Actif**: Nécrose 40% 2 tours\n(No skillbooks)\n**PV**: 36675\n**Attaque**: 1710\n**Défense**: 1206\n**Récupération**:1343", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Chir','BoisChir']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552782914256897/CloakG_large.jpeg", color=0xffffff)
+		embed.set_author(name="#118 Chiroptie (Bois)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552782914256897/CloakG_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Équilibré\n**Lead**: Def +20~25%\n**Passif**: Défense réduite 60% 2 tours\n(No skillbooks)\n**Actif**: Défense réduite 40% 2 tours\n(No skillbooks)\n**PV**: 29334\n**Attaque**: 1933\n**Défense**: 1895\n**Récupération**:1691", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Chir','LightChir']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552795610546176/CloakW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#119 Chiroptie (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552795610546176/CloakW_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Défenseur\n**Lead**: Def +20~25%\n**Passif**: Prédateur (light) 50%\n(No skillbooks)\n**Actif**: Choc 80% 1 tour\n(No skillbooks)\n**PV**: 29249\n**Attaque**: 1321\n**Défense**: 2527\n**Récupération**:1573", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Chir','DarkChir']]):
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552552774186041344/CloakD_large.jpeg", color=0xffffff)
+		embed.set_author(name="#120 Chiroptie (dark)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552552774186041344/CloakD_large.jpeg")
+		embed.add_field(name="★★", value="**Type**: Attaquant\n**Lead**: Def +20~25%\n**Passif**: Prédateur (dark) 50%\n(No skillbooks)\n**Actif**: Silence 80% 1 tour\n(No skillbooks)\n**PV**: 26041\n**Attaque**: 2343\n**Défense**: 1566\n**Récupération**:1403", inline=False)
+
+		await message.channel.send(embed=embed)
+
 
 
 @client.event
