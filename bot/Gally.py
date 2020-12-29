@@ -6926,6 +6926,41 @@ async def on_message(message):
 
 		await message.channel.send(embed=embed) 
 
+		#######################################
+		############ Duplicata ################
+		#######################################
+
+	if any([message.content ==(item) for item in ['eeeeeee','eeeeeee']]):
+		embed=discord.Embed(title="", url="", color=0xfff99e)
+		embed.set_image(url="")
+
+		await message.channel.send(embed=embed) 
+
+	if any([message.content ==(item) for item in ['eeeeee','eeeeee']]):
+		embed=discord.Embed(title="", url="", color=0xfff99e)
+		embed.set_image(url="")
+
+		await message.channel.send(embed=embed)
+
+		#######################################
+		########### Competences ###############
+		#######################################
+
+	if any([message.content ==(item) for item in ['Competence','competence','competences','Competences']]):
+		embed=discord.Embed(title="", url="", color=0xfff99e)
+		embed.set_author(name="")
+		embed.set_thumbnail(url="")
+		embed.add_field(name="Liste des compétences", value="Adrénaline, Affaiblissement, Agression défense, Agression PV, Attaque augmentée\nAttaque réduite, Avantage élémentaire, Aveuglement, Boost de moral, Bouclier\nBrise bouclier, Brise-bonus, Chasseur, Chasseur d'eau, Chasseur de bois\nChasseur de feu, Chasseur de lumière, Chasseur de ténèbres, Choc, Défense augmentée\nDéfense réduite, Domination, Étourdissement, Faiblesse exposée, Fatigue\nFrappe courageuse, Frappe impitoyable, Frappe indéfectible, Malédiction, Malédiction foudroyante\nNécrose, Perforation, Persévérance, Pétrification, Prédateur, Prédateur d'eau\nPrédateur de bois, Prédateur de feu, Prédateur de lumière, Prédateur de ténèbres\nProvocation, Purification, Récupération augmentée, Récupération réduite, Réduction des dégâts\nSceau, Silence, Siphon de PA, Siphon de PV, Soif, Sommeil, Traqueur d'eau\nTraqueur de bois, Traqueur de feu, Traqueur de feu, Traqueur de ténèbres\nVague martiale, Vengeance, Vigueur, Volonté, Zèle", inline=False)
+
+		await message.channel.send(embed=embed)
+
+	if any([message.content.startswith (item) for item in ['Lynsha']]):
+		embed=discord.Embed(title="", url="", color=0xffffff)
+		embed.set_author(name="Lynsha")
+		embed.set_thumbnail(url="")
+		embed.add_field(name="@Lynsha,@Lynsha,@Lynsha", value="@Lynsha,@Lynsha,@Lynsha,@Lynsha,@Lynsha,@Lynsha,@Lynsha,@Lynsha,@Lynsha,@Lynsha,@Lynsha", inline=False)
+
+		await message.channel.send(embed=embed)	
 
 
 
