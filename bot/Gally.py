@@ -158,6 +158,13 @@ async def on_message(message):
 		else:
 			await message.channel.send ("Erreur, Ecrivez Titan suivi du chiffre qui vous intéresse")
 	
+	if ListElementInMessage[0] == "code":
+		if len(ListElementInMessage) == 1:
+			CodeUn = "★"
+			CodeDeux ="**Type**: ....\n**Lead**: ....\n**Passif**: ....\n(....)\n**Actif**: ....\n(....)\n**PV**: ....\n**Attaque**: ....\n**Défense**: ....\n**Récupération**: ...."
+			text = "Copiez/collez, modifiez le nmobre d'étoiles puis changez les '....' par les infos que vous avez trouvé.\n Un grand merci pour votre aide :blush:"
+			await message.channel.send (CodeUn +"\n"+ repr(CodeDeux)+"\n"+text)
+			
 @client.event
 async def on_ready():
     print(client.user.name)
