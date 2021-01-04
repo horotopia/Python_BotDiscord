@@ -158,12 +158,24 @@ async def on_message(message):
 		else:
 			await message.channel.send ("Erreur, Ecrivez Titan suivi du chiffre qui vous intéresse")
 	
-	if ListElementInMessage[0] == "code":
+	if ListElementInMessage[0] == "Code":
 		if len(ListElementInMessage) == 1:
+			CodeName = "Nom du mob + (élément)"
 			CodeUn = "★"
 			CodeDeux ="**Type**: ....\n**Lead**: ....\n**Passif**: ....\n(....)\n**Actif**: ....\n(....)\n**PV**: ....\n**Attaque**: ....\n**Défense**: ....\n**Récupération**: ...."
-			text = "Copiez/collez, modifiez le nmobre d'étoiles puis changez les '....' par les infos que vous avez trouvé.\n Un grand merci pour votre aide :blush:"
-			await message.channel.send (CodeUn +"\n"+ repr(CodeDeux)+"\n"+text)
+			CodeTexte = "Copiez/collez, , modifiez le nombre d'étoiles puis changez les '....' par les infos que vous avez trouvé.\n Un grand merci pour votre aide :blush: \n\nPour le test, pensez à mettre un espace là où j'ai fais un retour à la ligne svp."
+			await message.channel.send (CodeName +"\n"+ CodeUn +"\n"+ repr(CodeDeux)+"\n"+ CodeTexte)
+			
+	if ListElementInMessage[0] == "TestCode":
+		NomMob = ListElementInMessage[1,2]
+		Star = ListElementInMessage[3]
+		ResteDuMessage = (ListElementInMessage[4:len(ListElementInMessage)])
+		embed=discord.Embed(title="", url="", color=0xffffff)
+		embed.set_author(name=NomMob)
+		embed.set_thumbnail(url="")
+		embed.add_field(name = Star, Value = ResteDuMessage)
+
+		await message.channel.send(embed=embed)
 			
 @client.event
 async def on_ready():
