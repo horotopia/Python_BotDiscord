@@ -171,10 +171,11 @@ async def on_message(message):
 		Star = ListElementInMessage[3]
 		ResteDuMessage = (ListElementInMessage[4:len(ListElementInMessage)])
 		
-		embed=discord.Embed(title=" ", url="", color=0xffffff)
-		embed.set_author(name=" ")
-		embed.set_thumbnail(url="")
-		embed.add_field(name=" ", value=ResteDuMessage, inline=False)
+		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559616010223628/StrangeAlpacaW_large.jpeg", color=0xffffff)
+		embed.set_author(name="#9 Alpaca (light)")
+		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552559616010223628/StrangeAlpacaW_large.jpeg")
+		embed.add_field(name="★★★★", value=ResteDuMessage, inline=False)
+
 
 		await message.channel.send(embed=embed)
 
