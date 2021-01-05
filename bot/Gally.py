@@ -170,7 +170,7 @@ async def on_message(message):
 		NomMob = ListElementInMessage[1:3]
 		Star = ListElementInMessage[3]
 		ResteDuMessage = (ListElementInMessage[4:len(ListElementInMessage)])
-		embed=discord.Embed(title="", url="", color=0xffffff)
+		embed=discord.Embed(color=0xffffff)
 		embed.set_author(name=f"{NomMob}")
 		embed.add_field(name = f"{Star}", Value = f"{ResteDuMessage}", inline=False)
 
