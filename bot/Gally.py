@@ -175,9 +175,9 @@ async def on_message(message):
 #		await message.channel.send(embed=embed)
 
 	if ListElementInMessage[0] == "TestCode":
-		NomMob = ListElementInMessage[1:3]
+		NomMob = ListElementInMessage[1] + " " + ListElementInMessage[2]
 		Star = ListElementInMessage[3]
-		ResteDuMessage = (ListElementInMessage[4:len(ListElementInMessage)])		
+		ResteDuMessage = (ListElementInMessage[4:])		
 		embed=discord.Embed(title="", url="", color=0xffffff)
 		embed.set_author(name=f"{NomMob}")
 		embed.set_thumbnail(url="")
