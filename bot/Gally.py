@@ -158,13 +158,13 @@ async def on_message(message):
 		else:
 			await message.channel.send ("Erreur, Ecrivez Titan suivi du chiffre qui vous intéresse")
 	
-#	if ListElementInMessage[0] == "Code":
-#		if len(ListElementInMessage) == 1:
-#			CodeName = "Nom du mob + (élément)"
-#			CodeUn = "★"
-#			CodeDeux ="**Type**: ....\n**Lead**: ....\n**Passif**: ....\n(....)\n**Actif**: ....\n(....)\n**PV**: ....\n**Attaque**: ....\n**Défense**: ....\n**Récupération**: ...."
-#			CodeTexte = "Copiez/collez, donnez un nom et un élément, modifiez le nombre d'étoiles puis changez les '....' par les infos que vous avez trouvé.\n Un grand merci pour votre aide :blush: \n\nPour le test, pensez à mettre un espace là où j'ai fais un retour à la ligne svp. \nTest coming soon"
-#			await message.channel.send (CodeName +"\n"+ CodeUn +"\n"+ repr(CodeDeux)+"\n"+ CodeTexte)
+	if ListElementInMessage[0] == "Code":
+		if len(ListElementInMessage) == 1:
+			CodeName = "Nom du mob + (élément)"
+			CodeUn = "★"
+			CodeDeux ="**Type**: ....\n**Lead**: ....\n**Passif**: ....\n(....)\n**Actif**: ....\n(....)\n**PV**: ....\n**Attaque**: ....\n**Défense**: ....\n**Récupération**: ...."
+			CodeTexte = "Copiez/collez, donnez un nom et un élément, modifiez le nombre d'étoiles puis changez les '....' par les infos que vous avez trouvé.\n Un grand merci pour votre aide :blush: \n\nPour le test, pensez à mettre un espace là où j'ai fais un retour à la ligne svp. \nTest coming soon"
+			await message.channel.send (CodeName +"\n"+ CodeUn +"\n"+ repr(CodeDeux)+"\n"+ CodeTexte)
 
 #	if ListElementInMessage[0] == "LightAlp"
 #		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559616010223628/StrangeAlpacaW_large.jpeg", color=0xffffff)
