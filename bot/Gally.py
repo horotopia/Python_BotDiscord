@@ -174,7 +174,7 @@ async def on_message(message):
 		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559616010223628/StrangeAlpacaW_large.jpeg", color=0xffffff)
 		embed.set_author(name="#9 Alpaca (light)")
 		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552559616010223628/StrangeAlpacaW_large.jpeg")
-		embed.add_field(name="★★★★", value=ResteDuMessage, inline=False)
+		embed.add_field(name="★★★★", value=f"ResteDuMessage", inline=False)
 
 
 		await message.channel.send(embed=embed)
