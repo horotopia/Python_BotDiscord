@@ -171,7 +171,7 @@ async def on_message(message):
 		Star = ListElementInMessage[3]
 		ResteDuMessage = (ListElementInMessage[4:len(ListElementInMessage)])
 		embed=discord.Embed(title="", url="", color=0xffffff)
-		embed.set_author(name="NomMob)
+		embed.set_author(name="NomMob")
 		embed.set_thumbnail(url="")
 		embed.add_field(name = "Star", Value = ResteDuMessage, inline=False)
 
