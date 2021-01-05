@@ -163,21 +163,20 @@ async def on_message(message):
 			CodeName = "Nom du mob + (élément)"
 			CodeUn = "★"
 			CodeDeux ="**Type**: ....\n**Lead**: ....\n**Passif**: ....\n(....)\n**Actif**: ....\n(....)\n**PV**: ....\n**Attaque**: ....\n**Défense**: ....\n**Récupération**: ...."
-			CodeTexte = "Copiez/collez, , modifiez le nombre d'étoiles puis changez les '....' par les infos que vous avez trouvé.\n Un grand merci pour votre aide :blush: \n\nPour le test, pensez à mettre un espace là où j'ai fais un retour à la ligne svp."
+			CodeTexte = "Copiez/collez, donnez un nom et un élément, modifiez le nombre d'étoiles puis changez les '....' par les infos que vous avez trouvé.\n Un grand merci pour votre aide :blush: \n\nPour le test, pensez à mettre un espace là où j'ai fais un retour à la ligne svp. \nTest coming soon"
 			await message.channel.send (CodeName +"\n"+ CodeUn +"\n"+ repr(CodeDeux)+"\n"+ CodeTexte)
 			
-	if ListElementInMessage[0] == "TestCode":
-		NomMob = ListElementInMessage[1:3]
-		Star = ListElementInMessage[3]
-		ResteDuMessage = (ListElementInMessage[4:len(ListElementInMessage)])
+#	if ListElementInMessage[0] == "TestCode":
+#		NomMob = ListElementInMessage[1:3]
+#		Star = ListElementInMessage[3]
+#		ResteDuMessage = (ListElementInMessage[4:len(ListElementInMessage)])
 		
-		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559616010223628/StrangeAlpacaW_large.jpeg", color=0xffffff)
-		embed.set_author(name="#9 Alpaca (light)")
-		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552559616010223628/StrangeAlpacaW_large.jpeg")
-		embed.add_field(name="★★★★", value=f"ResteDuMessage", inline=False)
+#		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559616010223628/StrangeAlpacaW_large.jpeg", color=0xffffff)
+#		embed.set_author(name="#9 Alpaca (light)")
+#		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552559616010223628/StrangeAlpacaW_large.jpeg")
+#		embed.add_field(name="★★★★", value=f"ResteDuMessage", inline=False)
 
-
-		await message.channel.send(embed=embed)
+#		await message.channel.send(embed=embed)
 
 	if ListElementInMessage[0] == "LightAlp"
 		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559616010223628/StrangeAlpacaW_large.jpeg", color=0xffffff)
