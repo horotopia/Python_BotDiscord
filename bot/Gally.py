@@ -167,9 +167,9 @@ async def on_message(message):
 			await message.channel.send (CodeName +"\n"+ CodeUn +"\n"+ repr(CodeDeux)+"\n"+ CodeTexte)
 			
 	if ListElementInMessage[0] == "TestCode":
-		NomMob = ListElementInMessage[1:3]
-		Star = ListElementInMessage[3]
-		ResteDuMessage = (ListElementInMessage[4:len(ListElementInMessage)])
+#		NomMob = ListElementInMessage[1:3]
+#		Star = ListElementInMessage[3]
+#		ResteDuMessage = (ListElementInMessage[4:len(ListElementInMessage)])
 		embed=discord.Embed(color=0xffffff)
 		embed.set_author(name="1")
 		embed.add_field(name = "2", Value = "3", inline=False)
