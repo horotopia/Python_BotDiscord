@@ -181,7 +181,7 @@ async def on_message(message):
 		embed=discord.Embed(title="", url="", color=0xffffff)
 		embed.set_author(name=f"{NomMob}")
 		embed.set_thumbnail(url="")
-		embed.add_field(name=f"{Star}", value=f"{ResteDuMessage}", inline=False)
+		embed.add_field(name=f"{Star}", value=.join(ResteDuMessage), inline=False)
 		await message.channel.send(embed=embed)
 			
 @client.event
