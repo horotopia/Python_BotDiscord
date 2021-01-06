@@ -178,7 +178,7 @@ async def on_message(message):
 		NomMob = ListElementInMessage[1] + " " + ListElementInMessage[2]
 		Star = ListElementInMessage[3]
 		ResteDuMessage = " "
-		for i in range(4, len(ListElementInMessage[])):
+		for i in range(4, len(ListElementInMessage)):
 		ResteDuMessage += ListElementInMessage[i]		
 		embed=discord.Embed(title="", url="", color=0xffffff)
 		embed.set_author(name=f"{NomMob}")
