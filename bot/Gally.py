@@ -174,18 +174,33 @@ async def on_message(message):
 
 #		await message.channel.send(embed=embed)
 
+#	if ListElementInMessage[0] == "TestCode":
+#		NomMob = ListElementInMessage[1] + " " + ListElementInMessage[2]
+#		Star = ListElementInMessage[3]
+#		ResteDuMessage = " "
+#		for i in range(4, len(ListElementInMessage)):
+#			ResteDuMessage += ListElementInMessage[i]		
+#		embed=discord.Embed(title="", url="", color=0xffffff)
+#		embed.set_author(name=f"{NomMob}")
+#		embed.set_thumbnail(url="")
+#		embed.add_field(name=f"{Star}", value=f"{ResteDuMessage}", inline=False)
+#		await message.channel.send(embed=embed)
+
 	if ListElementInMessage[0] == "TestCode":
-		NomMob = ListElementInMessage[1] + " " + ListElementInMessage[2]
+		NomMob = ListElementInMessage[1] + ListElementInMessage[2]
 		Star = ListElementInMessage[3]
-		ResteDuMessage = " "
-		for i in range(4, len(ListElementInMessage)):
-			ResteDuMessage += ListElementInMessage[i]		
+		reste = ListElementInMessage[4:]
+		for i, e in enumerate(reste):
+			if e.endswith(':'):
+				reste[i] = '\n' + e
+		reste = ' '.join(reste)
 		embed=discord.Embed(title="", url="", color=0xffffff)
-		embed.set_author(name=f"{NomMob}")
+		embed.set_author(name=NomMob)
 		embed.set_thumbnail(url="")
-		embed.add_field(name=f"{Star}", value=f"{ResteDuMessage}", inline=False)
+		embed.add_field(name=Star, value=reste, inline=False)
 		await message.channel.send(embed=embed)
-			
+
+
 @client.event
 async def on_ready():
     print(client.user.name)
