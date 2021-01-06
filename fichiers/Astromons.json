@@ -1,0 +1,19 @@
+{
+  "Knuckles": {
+    "Feu": {
+      "img": "https://cdn.discordapp.com/attachments/552550283885019166/607634702953611285/Knuckles3Evo_large.jpg",
+      "stars": "★★★★",
+      "type" : "Attaquant",
+      "lead": "Att + 30~35",
+      "passif": "Persévérance",
+      "passif_book": "Dmg: +20%",
+      "actif": "Persévérance",
+      "actif_book": "Dmg: +20%",
+      "pv": "27.996",
+      "atk": "3.344",
+      "def": "2.009",
+      "rec": "2.043"
+    }
+  }
+
+}
