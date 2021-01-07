@@ -168,7 +168,7 @@ async def on_message(message):
 			await message.channel.send (CodeName +"\n"+ CodeUn +"\n"+ repr(CodeDeux)+"\n"+ CodeTexte)
 
 	if ListElementInMessage[0] == "Feu":
-		with open('astromons.json', 'r') as f:
+		with open('../fichiers/astromons.json', 'r') as f:
 			names = json.load(f)
 			element = ListElementInMessage[0]
 			nom = ListElementInMessage[1]
@@ -177,7 +177,10 @@ async def on_message(message):
 				embed.set_author(name=nom)
 				embed.set_thumbnail(url=names[nom][element]['img'])
 				embed.add_field(name=names[nom][element]['stars'], value=names[nom][element]['type'], inline=False)
-				await ctx.channel.send(embed=embed)
+				await message.channel.send(embed=embed)
+			else:
+				await message.channel.send("Erreur, Ecrivez l'élément suivi d'un espace puis le nom de l'astromon qui vous intéresse")
+				
 
 #	if ListElementInMessage[0] == "TestCode":
 #		NomMob = ListElementInMessage[1] + " " + ListElementInMessage[2]
