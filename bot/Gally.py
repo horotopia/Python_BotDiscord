@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import os
+import json
 
 TOKEN = os.getenv("DiscordBotToken")
 
@@ -166,13 +167,17 @@ async def on_message(message):
 			CodeTexte = "Copiez/collez, donnez un nom et un élément, modifiez le nombre d'étoiles puis changez les '....' par les infos que vous avez trouvé.\n Un grand merci pour votre aide :blush: \n\nPour le test, pensez à mettre un espace là où j'ai fais un retour à la ligne svp. \nTest coming soon"
 			await message.channel.send (CodeName +"\n"+ CodeUn +"\n"+ repr(CodeDeux)+"\n"+ CodeTexte)
 
-#	if ListElementInMessage[0] == "LightAlp"
-#		embed=discord.Embed(title="", url="https://cdn.discordapp.com/attachments/552550283885019166/552559616010223628/StrangeAlpacaW_large.jpeg", color=0xffffff)
-#		embed.set_author(name="#9 Alpaca (light)")
-#		embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/552550283885019166/552559616010223628/StrangeAlpacaW_large.jpeg")
-#		embed.add_field(name="★★★★", value="**Type**: Équilibré\n**Lead**: Tc +15~20%(Même élément)\n**Passif**: Choc 50% 2 tours\n(Dmg +20% Taux +20%)\n**Actif**: Étourdissement 50% 2 tours\n(Dmg +20% Taux + 20%)\n**PV**: 32024\n**Attaque**: 2389\n**Défense**: 2685\n**Récupération**:1752", inline=False)
-
-#		await message.channel.send(embed=embed)
+	if ListElementInMessage[0] == "Feu" or ListElementInMessage[0] == "Eau" or ListElementInMessage[0] == "Bois" or ListElementInMessage[0] == "Dark" or ListElementInMessage[0] == "Light":
+		with open('astromons.json', 'r') as f:
+			names = json.load(f)
+			element = ListElementInMessage[0]
+			nom = ListElementInMessage[1]
+			if nom in names:
+				embed = discord.Embed(title="", url="", color=0xffffff)
+				embed.set_author(name=nom)
+				embed.set_thumbnail(url=names[nom][element]['img'])
+				embed.add_field(name=names[nom][element]['stars'], value=names[nom][element]['type'], inline=False)
+				await ctx.channel.send(embed=embed)
 
 #	if ListElementInMessage[0] == "TestCode":
 #		NomMob = ListElementInMessage[1] + " " + ListElementInMessage[2]
