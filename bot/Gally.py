@@ -168,7 +168,7 @@ async def on_message(message):
 			await message.channel.send (CodeName +"\n"+ CodeUn +"\n"+ repr(CodeDeux)+"\n"+ CodeTexte)
 
 	if ListElementInMessage[0] == "Feu":
-		with open('../fichiers/astromons.json', 'r') as f:
+		with open('../fichiers/Astromons.json', 'r') as f:
 			names = json.load(f)
 			element = ListElementInMessage[0]
 			nom = ListElementInMessage[1]
