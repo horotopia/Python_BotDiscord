@@ -167,7 +167,7 @@ async def on_message(message):
 			CodeTexte = "Copiez/collez, donnez un nom et un élément, modifiez le nombre d'étoiles puis changez les '....' par les infos que vous avez trouvé.\n Un grand merci pour votre aide :blush: \n\nPour le test, pensez à mettre un espace là où j'ai fais un retour à la ligne svp. \nTest coming soon"
 			await message.channel.send (CodeName +"\n"+ CodeUn +"\n"+ repr(CodeDeux)+"\n"+ CodeTexte)
 
-	if ListElementInMessage[0] in ["Feu"]:
+	if ListElementInMessage[0] in ["Feu","Eau","Bois","Dark","Light"]:
 		with open('fichiers/Astromons.json', 'r') as f:
 			names = json.load(f)
 			element = ListElementInMessage[0]
@@ -176,7 +176,7 @@ async def on_message(message):
 				embed = discord.Embed(title="", url="", color=0xffffff)
 				embed.set_author(name=nom)
 				embed.set_thumbnail(url=names[nom][element]['img'])
-				embed.add_field(name=names[nom][element]['stars'], value=names[nom][element]['type'], inline=False)
+				embed.add_field(name=names[nom][element]['stars'], value="**Type**: "names[nom][element]['type']"\n**Lead**: ....\n**Passif**: ....\n(....)\n**Actif**: ....\n(....)\n**PV**: ....\n**Attaque**: ....\n**Défense**: ....\n**Récupération**: ....", inline=False)
 				await message.channel.send(embed=embed)
 			else:
 				await message.channel.send("Erreur, Ecrivez l'élément suivi d'un espace puis le nom de l'astromon qui vous intéresse")
