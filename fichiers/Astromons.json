@@ -13,8 +13,8 @@
       "atk": "2840",
       "def": "3432",
       "rec": "2424"
-    }
-    "Eau"{
+    },
+    "Eau":{
       "img": "https://media.discordapp.net/attachments/758071281219272775/758687793802248222/Screenshot_20200924-155142_Monster_Super_League.jpg",
       "stars": "★★★★★",
       "type" : "Tank",
@@ -27,8 +27,8 @@
       "atk": "2534",
       "def": "2364",
       "rec": "2466"
-    }
-    "Bois"{
+    },
+    "Bois":{
       "img": "https://media.discordapp.net/attachments/758071281219272775/758687793974607882/Screenshot_20200924-155212_Monster_Super_League.jpg",
       "stars": "★★★★★",
       "type" : "Équilibré",
@@ -41,8 +41,8 @@
       "atk": "3145",
       "def": "2815",
       "rec": "3033"
-    }
-    "Dark"{
+    },
+    "Dark":{
       "img": "https://media.discordapp.net/attachments/758071281219272775/758687794343444480/Screenshot_20200924-155305_Monster_Super_League.jpg",
       "stars": "★★★★★",
       "type" : "Équilibré",
@@ -55,8 +55,8 @@
       "atk": "3807",
       "def": "2629",
       "rec": "3180"
-    }
-    "Light"{
+    },
+    "Light":{
       "img": "https://media.discordapp.net/attachments/758071281219272775/758687794184192060/Screenshot_20200924-155237_Monster_Super_League.jpg",
       "stars": "★★★★★",
       "type" : "Attaquant",
