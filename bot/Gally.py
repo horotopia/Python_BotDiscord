@@ -176,7 +176,7 @@ async def on_message(message):
 				embed = discord.Embed(title="", url="", color=0xffffff)
 				embed.set_author(name=nom)
 				embed.set_thumbnail(url=names[nom][element]['img'])
-				embed.add_field(name=names[nom][element]['stars'], value="**Type**: "+names[nom][element]['type']+"\n**Lead**: ....\n**Passif**: ....\n(....)\n**Actif**: ....\n(....)\n**PV**: ....\n**Attaque**: ....\n**Défense**: ....\n**Récupération**: ....", inline=False)
+				embed.add_field(name=names[nom][element]['stars'], value="**Type**: "+names[nom][element]['type']+"\n**Lead**: "+names[nom][element]['lead']+"\n**Passif**: "+names[nom][element]['passif']+"\n("+names[nom][element]['passif_book']+")\n**Actif**: "+names[nom][element]['actif']+"\n("+names[nom][element]['actif_book']+")\n**PV**: "+names[nom][element]['pv']+"\n**Attaque**: "+names[nom][element]['atk']+"\n**Défense**: "+names[nom][element]['def']+"\n**Récupération**: "+names[nom][element]['rec']+, inline=False)
 				await message.channel.send(embed=embed)
 			else:
 				await message.channel.send("Erreur, Ecrivez l'élément suivi d'un espace puis le nom de l'astromon qui vous intéresse")
