@@ -167,7 +167,7 @@ async def on_message(message):
 			CodeTexte = "Copiez/collez, donnez un nom et un élément, modifiez le nombre d'étoiles puis changez les '....' par les infos que vous avez trouvé.\n Un grand merci pour votre aide :blush: \n\nPour le test, pensez à mettre un espace là où j'ai fais un retour à la ligne svp. \nTest coming soon"
 			await message.channel.send (CodeName +"\n"+ CodeUn +"\n"+ repr(CodeDeux)+"\n"+ CodeTexte)
 
-	if ListElementInMessage[0] == "Feu":
+	if ListElementInMessage[0] in ["Feu"]:
 		with open('fichiers/Astromons.json', 'r') as f:
 			names = json.load(f)
 			element = ListElementInMessage[0]
