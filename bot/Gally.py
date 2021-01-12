@@ -210,20 +210,20 @@ async def on_message(message):
 		if ListElementInMessage[1] == "ADD":
 			if ListElementInMessage[2] == "Nom":
 				cur = conn.cursor()
-				sql = "INSERT INTO AstromonsNom (Nom) VALUES (ListElementInMessage[3])"
+				sql = "INSERT INTO Astromons.AstromonsNom (Nom) VALUES (ListElementInMessage[3])"
 				cur.execute(sql)
-				sql = "SELECT * FROM AstromonsNom"
+				sql = "SELECT * FROM Astromons.AstromonsNom"
 				cur.execute(sql)
 				await message.channel.send(cur.fetchall())
 				conn.close()
 				
 			elif ListElementInMessage[3] == "Rac":
-				NomId = "SELECT Id FROM AstromonsNom WHERE Nom = ListElementInMessage[2]"
+				NomId = "SELECT Id FROM Astromons.AstromonsNom WHERE Nom = ListElementInMessage[2]"
 				cur = conn.cursor()
-				sql = "INSERT INTO AstromonsRaccourcis (Nom_Id, Mot_Clef) VALUES (NomId,'ListElementInMessage[4]')"
+				sql = "INSERT INTO Astromons.AstromonsRaccourcis (Nom_Id, Mot_Clef) VALUES (NomId,'ListElementInMessage[4]')"
 				cur.execute(sql)
-				sql = "SELECT Nom FROM AstromonsNom"
-				sql += "SELECT Mot_Clef FROM AstromonsRaccourcis"
+				sql = "SELECT Nom FROM Astromons.AstromonsNom"
+				sql += "SELECT Mot_Clef FROM Astromons.AstromonsRaccourcis"
 				cur.execute(sql)
 				await message.channel.send(cur.fetchall())
 				conn.close()
