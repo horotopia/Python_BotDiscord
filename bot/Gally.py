@@ -206,12 +206,21 @@ async def on_message(message):
 
 	if ListElementInMessage[0] == "DB":
 		if ListElementInMessage[1] == "SHOW":
-			cur = conn.cursor()
-			sql = "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"			
-			cur.execute(sql)
-			vue = str(cur.fetchall())
-			await message.channel.send(vue)
-			conn.close()
+			if ListElementInMessage[2] = "DATA":
+				cur = conn.cursor()
+				sql = 1
+				sql += "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"			
+				cur.execute(sql)
+				vue = str(cur.fetchall())
+				await message.channel.send(vue)
+				conn.close()
+			else:
+				cur = conn.cursor()
+				sql = "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"			
+				cur.execute(sql)
+				vue = str(cur.fetchall())
+				await message.channel.send(vue)
+				conn.close()
 			
 		if ListElementInMessage[1] == "ADD":
 			if ListElementInMessage[2] == "Nom":
