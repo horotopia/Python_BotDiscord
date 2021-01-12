@@ -1,2 +1,2 @@
 discord.py
-psycopg2==2.5.1
+psycopg2==2.8.6
