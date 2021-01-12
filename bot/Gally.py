@@ -210,7 +210,7 @@ async def on_message(message):
 			sql = "SELECT * FROM information_schema.tables"
 			cur.execute(sql)
 			print (cur.fetchall())
-#			await message.channel.send(cur.fetchall())
+			await message.channel.send("cur.fetchall()")
 			conn.close()
 			
 		if ListElementInMessage[1] == "ADD":
