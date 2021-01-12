@@ -205,7 +205,9 @@ async def on_message(message):
 		await message.channel.send(embed=embed)
 
 	if ListElementInMessage[0] == "DB":
-#		if ListElementInMessage[1] == "SHOW":
+		if ListElementInMessage[1] == "SHOW":
+			sql = "SELECT * FROM information_schema.tables"
+			await message.channel.send(cur.fetchall())
 			
 		if ListElementInMessage[1] == "ADD":
 			if ListElementInMessage[2] == "Nom":
