@@ -208,7 +208,7 @@ async def on_message(message):
 		if ListElementInMessage[1] == "SHOW":
 			if ListElementInMessage[2] == "DATA":
 				cur = conn.cursor()
-				sql = 1
+				sql = CHOUBakA
 				sql += "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"			
 				cur.execute(sql)
 				vue = str(cur.fetchall())
