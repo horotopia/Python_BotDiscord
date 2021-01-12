@@ -206,8 +206,11 @@ async def on_message(message):
 
 	if ListElementInMessage[0] == "DB":
 		if ListElementInMessage[1] == "SHOW":
+			cur = conn.cursor()
 			sql = "SELECT * FROM information_schema.tables"
+			cur.execute(sql)
 			await message.channel.send(cur.fetchall())
+			conn.close()
 			
 		if ListElementInMessage[1] == "ADD":
 			if ListElementInMessage[2] == "Nom":
