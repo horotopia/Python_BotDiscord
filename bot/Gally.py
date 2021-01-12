@@ -2,8 +2,17 @@ import discord
 from discord.ext import commands
 import os
 import json
+import psycopg2
 
 TOKEN = os.getenv("DiscordBotToken")
+
+HOST = os.getenv("HostSqlHeroku")
+USER = os.getenv("UserSqlHeroku")
+PASSWORD = os.getenv("MdpSqlHeroku")
+DATABASE = os.getenv("DataSqlHeroku")
+
+# Open connection
+conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
 
 client = discord.Client()
 
@@ -180,19 +189,6 @@ async def on_message(message):
 				await message.channel.send(embed=embed)
 			else:
 				await message.channel.send("Erreur, Ecrivez l'élément suivi d'un espace puis le nom de l'astromon qui vous intéresse")
-				
-
-#	if ListElementInMessage[0] == "TestCode":
-#		NomMob = ListElementInMessage[1] + " " + ListElementInMessage[2]
-#		Star = ListElementInMessage[3]
-#		ResteDuMessage = " "
-#		for i in range(4, len(ListElementInMessage)):
-#			ResteDuMessage += ListElementInMessage[i]		
-#		embed=discord.Embed(title="", url="", color=0xffffff)
-#		embed.set_author(name=f"{NomMob}")
-#		embed.set_thumbnail(url="")
-#		embed.add_field(name=f"{Star}", value=f"{ResteDuMessage}", inline=False)
-#		await message.channel.send(embed=embed)
 
 	if ListElementInMessage[0] == "TestCode":
 		NomMob = ListElementInMessage[1] + ListElementInMessage[2]
@@ -207,6 +203,33 @@ async def on_message(message):
 		embed.set_thumbnail(url="")
 		embed.add_field(name=Star, value=reste, inline=False)
 		await message.channel.send(embed=embed)
+
+	if ListElementInMessage[0] == "DB":
+#		if ListElementInMessage[1] == "SHOW":
+			
+		if ListElementInMessage[1] == "ADD":
+			if ListElementInMessage[2] == "Nom":
+				cur = conn.cursor()
+				sql = "INSERT INTO AstromonsNom (Nom) VALUES (ListElementInMessage[3])"
+				cur.execute(sql)
+				sql = "SELECT * FROM AstromonsNom"
+				cur.execute(sql)
+				await message.channel.send(cur.fetchall())
+				conn.close()
+				
+			elif ListElementInMessage[3] == "Rac":
+				NomId = "SELECT Id FROM AstromonsNom WHERE Nom = ListElementInMessage[2]"
+				cur = conn.cursor()
+				sql = "INSERT INTO AstromonsRaccourcis (Nom_Id, Mot_Clef) VALUES (NomId,'ListElementInMessage[4]')"
+				cur.execute(sql)
+				sql = "SELECT Nom FROM AstromonsNom"
+				sql += "SELECT Mot_Clef FROM AstromonsRaccourcis"
+				cur.execute(sql)
+				await message.channel.send(cur.fetchall())
+				conn.close()
+				
+				
+#			elif ListElementInMessage[2] in ["Img","Star","Passif_Book","Actif_Book","Pv","Atk","Def","Rec"]
 
 
 @client.event
