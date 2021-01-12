@@ -207,7 +207,7 @@ async def on_message(message):
 	if ListElementInMessage[0] == "DB":
 		if ListElementInMessage[1] == "SHOW":
 			cur = conn.cursor()
-			sql = "SELECT table_schema, table_name FROM information_schema.tables"
+			sql = "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"
 			cur.execute(sql)
 			print (cur.fetchall())
 #			await message.channel.send(vue)
