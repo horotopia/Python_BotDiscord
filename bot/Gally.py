@@ -207,21 +207,22 @@ async def on_message(message):
 	if ListElementInMessage[0] == "DB":
 		if ListElementInMessage[1] == "SHOW":
 			cur = conn.cursor()
-			sql = "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"
+			sql = "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"			
 			cur.execute(sql)
 			vue = str(cur.fetchall())
 			await message.channel.send(vue)
 			conn.close()
 			
-#		if ListElementInMessage[1] == "ADD":
-#			if ListElementInMessage[2] == "Nom":
-#				cur = conn.cursor()
+		if ListElementInMessage[1] == "ADD":
+			if ListElementInMessage[2] == "Nom":
+				cur = conn.cursor()
 #				sql = "INSERT INTO Astromons.AstromonsNom (Nom) VALUES (ListElementInMessage[3])"
 #				cur.execute(sql)
-#				sql = "SELECT * FROM Astromons.AstromonsNom"
-#				cur.execute(sql)
-#				await message.channel.send(cur.fetchall())
-#				conn.close()
+				sql = "SELECT * FROM Astromons.AstromonsNom"
+				cur.execute(sql)
+				vue = str(cur.fetchall())
+				await message.channel.send(vue)
+				conn.close()
 				
 #			elif ListElementInMessage[3] == "Rac":
 #				NomId = "SELECT Id FROM Astromons.AstromonsNom WHERE Nom = ListElementInMessage[2]"
