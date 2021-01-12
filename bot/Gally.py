@@ -216,7 +216,7 @@ async def on_message(message):
 		if ListElementInMessage[1] == "ADD":
 			if ListElementInMessage[2] == "Nom":
 				cur = conn.cursor()
-				sql = "INSERT INTO \"Astromons\".\"AstromonsNom\" (Nom) VALUES ("+ListElementInMessage[3]+")"
+				sql = "INSERT INTO \"Astromons\".\"AstromonsNom\" (Nom) VALUES ('"+ListElementInMessage[3]+"')"
 				cur.execute(sql)
 				sql = "SELECT * FROM \"Astromons\".\"AstromonsNom\""
 				cur.execute(sql)
