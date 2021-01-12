@@ -209,8 +209,8 @@ async def on_message(message):
 			cur = conn.cursor()
 			sql = "SELECT * FROM information_schema.tables"
 			cur.execute(sql)
-			print (cur.fetchall())
-			await message.channel.send("cur.fetchall()")
+			vue = cur.fetchall()
+			await message.channel.send(vue)
 			conn.close()
 			
 		if ListElementInMessage[1] == "ADD":
