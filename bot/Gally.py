@@ -13,7 +13,7 @@ DATABASE = os.getenv("DataSqlHeroku")
 
 # Open connection
 conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
-
+cur = conn.cursor()
 client = discord.Client()
 
 @client.event
@@ -207,14 +207,12 @@ async def on_message(message):
 	if ListElementInMessage[0] == "DB":
 		if ListElementInMessage[1] == "SHOW":
 			if ListElementInMessage[2] == "Nom":
-				cur = conn.cursor()
 				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
 				cur.execute(sql)
 				vue = str(cur.fetchall())
 				await message.channel.send(vue)
-				conn.close()
+
 #			if ListElementInMessage[2] == "DATA":
-#				cur = conn.cursor()
 #				sql = "SELECT \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
 #				cur.execute(sql)
 #				sql = str(cur.fetchall())
@@ -232,41 +230,34 @@ async def on_message(message):
 #					Lead = row[5]
 #					
 #				await message.channel.send(Nom+Element+"\n"+Star+"\n"+Type+"\n"+Lead)
-#				conn.close()
 			else:
-				cur = conn.cursor()
 				sql = "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"			
 				cur.execute(sql)
 				vue = str(cur.fetchall())
 				await message.channel.send(vue)
-				conn.close()
 			
 		if ListElementInMessage[1] == "ADD":
 			if ListElementInMessage[2] == "Nom":
-				cur = conn.cursor()
 				sql = "INSERT INTO \"Astromons\".\"AstromonsNom\" (\"Nom\") VALUES ('"+ListElementInMessage[3]+"')"
 				cur.execute(sql)
 				sql = "SELECT * FROM \"Astromons\".\"AstromonsNom\""
 				cur.execute(sql)
 				vue = str(cur.fetchall())
 				await message.channel.send(vue)
-				conn.close()
 				
 			elif ListElementInMessage[3] == "Rac":
 				NomId = "SELECT Id FROM Astromons.AstromonsNom WHERE Nom = ListElementInMessage[2]"
-				cur = conn.cursor()
 				sql = "INSERT INTO Astromons.AstromonsRaccourcis (Nom_Id, Mot_Clef) VALUES (NomId,'ListElementInMessage[4]')"
 				cur.execute(sql)
 				sql = "SELECT Nom FROM Astromons.AstromonsNom"
 				sql += "SELECT Mot_Clef FROM Astromons.AstromonsRaccourcis"
 				cur.execute(sql)
 				await message.channel.send(cur.fetchall())
-				conn.close()
 				
 				
 #			elif ListElementInMessage[2] in ["Img","Star","Passif_Book","Actif_Book","Pv","Atk","Def","Rec"]
 
-
+conn.close()
 @client.event
 async def on_ready():
     print(client.user.name)
