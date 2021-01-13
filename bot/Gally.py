@@ -13,7 +13,7 @@ DATABASE = os.getenv("DataSqlHeroku")
 
 # Open connection
 conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
-cur = conn.cursor()
+
 client = discord.Client()
 
 @client.event
@@ -205,6 +205,7 @@ async def on_message(message):
 		await message.channel.send(embed=embed)
 
 	if ListElementInMessage[0] == "DB":
+		cur = conn.cursor()
 		if ListElementInMessage[1] == "SHOW":
 			if ListElementInMessage[2] == "Nom":
 				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
