@@ -206,26 +206,33 @@ async def on_message(message):
 
 	if ListElementInMessage[0] == "DB":
 		if ListElementInMessage[1] == "SHOW":
-			if ListElementInMessage[2] == "DATA":
+			if ListElementInMessage[2] == "Nom":
 				cur = conn.cursor()
+				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
+				cur.execute(sql)
+				vue = str(cur.fetchall())
+				await message.channel.send(vue)
+				conn.close()
+#			if ListElementInMessage[2] == "DATA":
+#				cur = conn.cursor()
 #				sql = "SELECT \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
 #				cur.execute(sql)
 #				sql = str(cur.fetchall())
 
 #				sql = "SELECT \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
 #				cur.execute(sql)
-				sql = "SELECT * FROM  \"Astromons\".\"Astroguide\""			
-				cur.execute(sql)
-				sql = str(cur.fetchall())
-				for row in sql:
-					Nom = str(row[1])
-					Element = "( "+row[2]+" )"
-					Star = row[3] * "★"
-					Type = row[4]
-					Lead = row[5]
-					
-				await message.channel.send(Nom+Element+"\n"+Star+"\n"+Type+"\n"+Lead)
-				conn.close()
+#				sql = "SELECT * FROM  \"Astromons\".\"Astroguide\""			
+#				cur.execute(sql)
+#				sql = str(cur.fetchall())
+#				for row in sql:
+#					Nom = str(row[1])
+#					Element = "( "+row[2]+" )"
+#					Star = row[3] * "★"
+#					Type = row[4]
+#					Lead = row[5]
+#					
+#				await message.channel.send(Nom+Element+"\n"+Star+"\n"+Type+"\n"+Lead)
+#				conn.close()
 			else:
 				cur = conn.cursor()
 				sql = "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"			
@@ -245,16 +252,16 @@ async def on_message(message):
 				await message.channel.send(vue)
 				conn.close()
 				
-#			elif ListElementInMessage[3] == "Rac":
-#				NomId = "SELECT Id FROM Astromons.AstromonsNom WHERE Nom = ListElementInMessage[2]"
-#				cur = conn.cursor()
-#				sql = "INSERT INTO Astromons.AstromonsRaccourcis (Nom_Id, Mot_Clef) VALUES (NomId,'ListElementInMessage[4]')"
-#				cur.execute(sql)
-#				sql = "SELECT Nom FROM Astromons.AstromonsNom"
-#				sql += "SELECT Mot_Clef FROM Astromons.AstromonsRaccourcis"
-#				cur.execute(sql)
-#				await message.channel.send(cur.fetchall())
-#				conn.close()
+			elif ListElementInMessage[3] == "Rac":
+				NomId = "SELECT Id FROM Astromons.AstromonsNom WHERE Nom = ListElementInMessage[2]"
+				cur = conn.cursor()
+				sql = "INSERT INTO Astromons.AstromonsRaccourcis (Nom_Id, Mot_Clef) VALUES (NomId,'ListElementInMessage[4]')"
+				cur.execute(sql)
+				sql = "SELECT Nom FROM Astromons.AstromonsNom"
+				sql += "SELECT Mot_Clef FROM Astromons.AstromonsRaccourcis"
+				cur.execute(sql)
+				await message.channel.send(cur.fetchall())
+				conn.close()
 				
 				
 #			elif ListElementInMessage[2] in ["Img","Star","Passif_Book","Actif_Book","Pv","Atk","Def","Rec"]
