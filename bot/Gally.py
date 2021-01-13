@@ -218,7 +218,7 @@ async def on_message(message):
 				cur.execute(sql)
 				sql = str(cur.fetchall())
 				for row in sql:
-					Nom = row[1]
+					Nom = str(row[1])
 					Element = "( "+row[2]+" )"
 					Star = row[3] * "★"
 					Type = row[4]
