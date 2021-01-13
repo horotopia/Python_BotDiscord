@@ -205,14 +205,15 @@ async def on_message(message):
 		await message.channel.send(embed=embed)
 
 	if ListElementInMessage[0] == "DB":
-		cur = conn.cursor()
 		if ListElementInMessage[1] == "SHOW":
 			if ListElementInMessage[2] == "Nom":
+				cur = conn.cursor()
 				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
 				cur.execute(sql)
 				print (cur.fetchall())
 #				vue = str(cur.fetchall())
 #				await message.channel.send(vue)
+				conn.close()
 
 #			if ListElementInMessage[2] == "DATA":
 #				sql = "SELECT \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
