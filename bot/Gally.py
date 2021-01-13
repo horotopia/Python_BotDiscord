@@ -208,11 +208,23 @@ async def on_message(message):
 		if ListElementInMessage[1] == "SHOW":
 			if ListElementInMessage[2] == "DATA":
 				cur = conn.cursor()
-				sql = "CHOUBakA "
-				sql += "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"			
+#				sql = "SELECT \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
+#				cur.execute(sql)
+#				sql = str(cur.fetchall())
+
+#				sql = "SELECT \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
+#				cur.execute(sql)
+				sql = "SELECT * FROM  \"Astromons\".\"Astroguide\""			
 				cur.execute(sql)
-				vue = str(cur.fetchall())
-				await message.channel.send(vue)
+				sql = str(cur.fetchall())
+				for row in sql:
+					Nom = row[1]
+					Element = "( "+row[2]+" )"
+					Star = row[3] * "★"
+					Type = row[4]
+					Lead = row[5]
+					
+				await message.channel.send(Nom+Element+"\n"+Star+"\n"+Type+"\n"+Lead)
 				conn.close()
 			else:
 				cur = conn.cursor()
