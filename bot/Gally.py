@@ -210,8 +210,9 @@ async def on_message(message):
 			if ListElementInMessage[2] == "Nom":
 				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
 				cur.execute(sql)
-				vue = str(cur.fetchall())
-				await message.channel.send(vue)
+				print (cur.fetchall())
+#				vue = str(cur.fetchall())
+#				await message.channel.send(vue)
 
 #			if ListElementInMessage[2] == "DATA":
 #				sql = "SELECT \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
