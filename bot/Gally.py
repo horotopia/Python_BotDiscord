@@ -257,8 +257,9 @@ async def on_message(message):
 				
 				
 #			elif ListElementInMessage[2] in ["Img","Star","Passif_Book","Actif_Book","Pv","Atk","Def","Rec"]
+		conn.close()
 
-conn.close()
+	
 @client.event
 async def on_ready():
     print(client.user.name)
