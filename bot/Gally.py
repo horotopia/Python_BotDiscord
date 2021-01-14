@@ -207,7 +207,7 @@ async def on_message(message):
 			# Open connection
 			conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
 			cur = conn.cursor()
-			print(type(conn)+" ouvert."
+			print(type(conn)+" ouvert.")
 			print(type(cur))
 		if ListElementInMessage[1] == "OFF":
 			conn.close()
