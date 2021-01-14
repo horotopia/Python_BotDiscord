@@ -202,10 +202,10 @@ async def on_message(message):
 		embed.add_field(name=Star, value=reste, inline=False)
 		await message.channel.send(embed=embed)
 
-	if ListElementInMessage[0] == "ON":
+#	if ListElementInMessage[0] == "ON":
 		# Open connection
-		conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
-		print("Connecxion ouverte.")
+#		conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
+#		print("Connecxion ouverte.")
 	if ListElementInMessage[0] == "DB":
 		cur = conn.cursor()
 #		Create, Read, Update, Delete
