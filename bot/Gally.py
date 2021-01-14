@@ -213,7 +213,7 @@ async def on_message(message):
 			if ListElementInMessage[2] == "Nom":
 				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
 				cur.execute(sql)
-				vue = str(cur.fetchall())
+				vue = str(cur.fetchall()[1])
 				print(vue)
 				await message.channel.send(vue)
 			elif ListElementInMessage[2] == "Table":
@@ -251,7 +251,7 @@ async def on_message(message):
 					conn.commit()
 					sql = "SELECT * FROM \"Astromons\".\"AstromonsNom\""
 					cur.execute(sql)
-					vue = str(cur.fetchall())
+					vue = str(cur.fetchall()[1])
 					await message.channel.send(vue)
 				except Exception as e:
 					print("Erreur Doublon")
