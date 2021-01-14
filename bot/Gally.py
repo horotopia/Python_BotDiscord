@@ -247,6 +247,7 @@ async def on_message(message):
 			if ListElementInMessage[2] == "Nom":
 				sql = "INSERT INTO \"Astromons\".\"AstromonsNom\" (\"Nom\") VALUES ('"+ListElementInMessage[3]+"')"
 				cur.execute(sql)
+				conn.commit()
 				sql = "SELECT * FROM \"Astromons\".\"AstromonsNom\""
 				cur.execute(sql)
 				vue = str(cur.fetchall())
