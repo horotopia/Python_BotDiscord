@@ -207,27 +207,29 @@ async def on_message(message):
 			# Open connection
 			conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
 			cur = conn.cursor()
-			print(type(conn))
+			print(type(conn)+" ouvert."
 			print(type(cur))
 		if ListElementInMessage[1] == "OFF":
 			conn.close()
-			print(type(conn)+" fermée.")
-			
+			print(type(conn)+" fermée.")	
 #		Create, Read, Update, Delete
 		if ListElementInMessage[1] == "SHOW":
 			if ListElementInMessage[2] == "Nom":
 				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
 				cur.execute(sql)
-				print (cur.fetchall())
 				vue = str(cur.fetchall())
+				print(vue)
 				await message.channel.send(vue)
-				
-
+			else:
+				sql = "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"			
+				cur.execute(sql)
+				vue = str(cur.fetchall())
+				print(vue)
+				await message.channel.send(vue)
 #			if ListElementInMessage[2] == "DATA":
 #				sql = "SELECT \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
 #				cur.execute(sql)
 #				sql = str(cur.fetchall())
-
 #				sql = "SELECT \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
 #				cur.execute(sql)
 #				sql = "SELECT * FROM  \"Astromons\".\"Astroguide\""			
@@ -241,12 +243,7 @@ async def on_message(message):
 #					Lead = row[5]
 #					
 #				await message.channel.send(Nom+Element+"\n"+Star+"\n"+Type+"\n"+Lead)
-			else:
-				sql = "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"			
-				cur.execute(sql)
-				vue = str(cur.fetchall())
-				await message.channel.send(vue)
-			
+
 		if ListElementInMessage[1] == "ADD":
 			if ListElementInMessage[2] == "Nom":
 				sql = "INSERT INTO \"Astromons\".\"AstromonsNom\" (\"Nom\") VALUES ('"+ListElementInMessage[3]+"')"
