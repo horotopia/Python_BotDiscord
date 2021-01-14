@@ -207,7 +207,7 @@ async def on_message(message):
 			# Open connection
 			conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
 			cur = conn.cursor()
-			print(type(conn)+" ouvert.")	
+			print("Connecxion ouverte.")	
 	#		Create, Read, Update, Delete
 			if ListElementInMessage[1] == "SHOW":
 				if ListElementInMessage[2] == "Nom":
