@@ -11,11 +11,6 @@ USER = os.getenv("UserSqlHeroku")
 PASSWORD = os.getenv("MdpSqlHeroku")
 DATABASE = os.getenv("DataSqlHeroku")
 
-# Open connection
-conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
-cur = conn.cursor()
-print(type(conn))
-print(type(cur))
 
 client = discord.Client()
 
@@ -208,6 +203,16 @@ async def on_message(message):
 		await message.channel.send(embed=embed)
 
 	if ListElementInMessage[0] == "DB":
+		if ListElementInMessage[1] == "ON":
+			# Open connection
+			conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
+			cur = conn.cursor()
+			print(type(conn))
+			print(type(cur))
+		if ListElementInMessage[1] == "OFF":
+			conn.close()
+			print(type(conn)+" fermée.")
+			
 #		Create, Read, Update, Delete
 		if ListElementInMessage[1] == "SHOW":
 			if ListElementInMessage[2] == "Nom":
@@ -263,8 +268,7 @@ async def on_message(message):
 				
 #			elif ListElementInMessage[2] in ["Img","Star","Passif_Book","Actif_Book","Pv","Atk","Def","Rec"]
 
-conn.close()
-print(type(conn))
+
 @client.event
 async def on_ready():
     print(client.user.name)
