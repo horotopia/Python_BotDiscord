@@ -244,7 +244,7 @@ async def on_message(message):
 #				await message.channel.send(Nom+Element+"\n"+Star+"\n"+Type+"\n"+Lead)
 
 		if ListElementInMessage[1] == "ADD":
-			try
+			try:
 				if ListElementInMessage[2] == "Nom":
 					sql = "INSERT INTO \"Astromons\".\"AstromonsNom\" (\"Nom\") VALUES ('"+ListElementInMessage[3]+"')"
 					cur.execute(sql)
