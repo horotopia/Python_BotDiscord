@@ -257,14 +257,14 @@ async def on_message(message):
 					print("Erreur Doublon")
 					await message.channel.send("Cet Atromon est déjà enregistré, merci ^^")
 
-			elif ListElementInMessage[3] == "Rac":
-				NomId = "SELECT Id FROM Astromons.AstromonsNom WHERE Nom = ListElementInMessage[2]"
-				sql = "INSERT INTO Astromons.AstromonsRaccourcis (Nom_Id, Mot_Clef) VALUES (NomId,'ListElementInMessage[4]')"
-				cur.execute(sql)
-				sql = "SELECT Nom FROM Astromons.AstromonsNom"
-				sql += "SELECT Mot_Clef FROM Astromons.AstromonsRaccourcis"
-				cur.execute(sql)
-				await message.channel.send(cur.fetchall())				
+#			elif ListElementInMessage[3] == "Rac":
+#				NomId = "SELECT Id FROM Astromons.AstromonsNom WHERE Nom = ListElementInMessage[2]"
+##				sql = "INSERT INTO Astromons.AstromonsRaccourcis (Nom_Id, Mot_Clef) VALUES (NomId,'ListElementInMessage[4]')"
+#				cur.execute(sql)
+#				sql = "SELECT Nom FROM Astromons.AstromonsNom"
+#				sql += "SELECT Mot_Clef FROM Astromons.AstromonsRaccourcis"
+#				cur.execute(sql)
+#				await message.channel.send(cur.fetchall())				
 #			elif ListElementInMessage[2] in ["Img","Star","Passif_Book","Actif_Book","Pv","Atk","Def","Rec"]
 	if ListElementInMessage[0] == "OFF":
 		conn.close()
