@@ -211,10 +211,10 @@ async def on_message(message):
 #		Create, Read, Update, Delete
 		if ListElementInMessage[1] == "SHOW":
 			if ListElementInMessage[2] == "Nom":
-#				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
-				cur.execute('SELECT * FROM AstromonsNom')
+				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
+				cur.execute(sql)
 				vue = str(cur.fetchall())
-#				print(vue)
+				print(vue)
 				await message.channel.send(vue)
 			elif ListElementInMessage[2] == "Table":
 				sql = "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"			
