@@ -202,10 +202,10 @@ async def on_message(message):
 		embed.add_field(name=Star, value=reste, inline=False)
 		await message.channel.send(embed=embed)
 
-#	if ListElementInMessage[0] == "ON":
+	if ListElementInMessage[0] == "ON":
 		# Open connection
-#		conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
-#		print("Connecxion ouverte.")
+		conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
+		print("Connecxion ouverte.")
 	if ListElementInMessage[0] == "DB":
 		cur = conn.cursor()
 #		Create, Read, Update, Delete
@@ -218,9 +218,12 @@ async def on_message(message):
 				await message.channel.send(vue)
 			elif ListElementInMessage[2] == "Table":
 				sql = "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"			
-				cur.execute(sql)
-				vue = str(cur.fetchall())
-#				print(vue)
+				req = cur.execute(sql)
+				vue = ""
+				for row in req.fetchall():
+					vue += row
+					vue += "\n"
+				print(vue)
 				await message.channel.send(vue)
 #			if ListElementInMessage[2] == "DATA":
 #				sql = "SELECT \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
