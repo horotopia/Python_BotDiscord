@@ -218,9 +218,9 @@ async def on_message(message):
 				await message.channel.send(vue)
 			elif ListElementInMessage[2] == "Table":
 				sql = "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"			
-				req = cur.execute(sql)
+				cur.execute(sql)
 				vue = ""
-				for row in req.fetchall():
+				for row in cur.fetchall():
 					vue += row
 					vue += "\n"
 				print(vue)
