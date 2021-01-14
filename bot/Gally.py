@@ -212,7 +212,7 @@ async def on_message(message):
 		if ListElementInMessage[1] == "SHOW":
 			if ListElementInMessage[2] == "Nom":
 #				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
-				cur.execute(SELECT * FROM 'AstromonsNom')
+				cur.execute('SELECT * FROM AstromonsNom')
 				vue = str(cur.fetchall())
 #				print(vue)
 				await message.channel.send(vue)
