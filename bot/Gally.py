@@ -221,7 +221,7 @@ async def on_message(message):
 				cur.execute(sql)
 				vue = ""
 				for row in cur.fetchall():
-					vue += row
+					vue += str(row)
 					vue += "\n"
 				print(vue)
 				await message.channel.send(vue)
