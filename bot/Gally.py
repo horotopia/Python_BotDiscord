@@ -203,7 +203,7 @@ async def on_message(message):
 		await message.channel.send(embed=embed)
 
 #	if ListElementInMessage[0] == "ON":
-		# Open connection
+#		# Open connection
 #		conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
 #		print("Connecxion ouverte.")
 	if ListElementInMessage[0] == "DB":
