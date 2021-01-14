@@ -245,7 +245,8 @@ async def on_message(message):
 
 		if ListElementInMessage[1] == "ADD":
 			try:
-				if ListElementInMessage[2] == "Nom":
+			if ListElementInMessage[2] == "Nom":
+				try:
 					sql = "INSERT INTO \"Astromons\".\"AstromonsNom\" (\"Nom\") VALUES ('"+ListElementInMessage[3]+"')"
 					cur.execute(sql)
 					conn.commit()
@@ -253,9 +254,9 @@ async def on_message(message):
 					cur.execute(sql)
 					vue = str(cur.fetchall())
 					await message.channel.send(vue)
-			except Exception as e:
-				print("Erreur Doublon")
-				await message.channel.send("Cet Atromon est déjà enregistré, merci ^^")
+				except Exception as e:
+					print("Erreur Doublon")
+					await message.channel.send("Cet Atromon est déjà enregistré, merci ^^")
 
 			elif ListElementInMessage[3] == "Rac":
 				NomId = "SELECT Id FROM Astromons.AstromonsNom WHERE Nom = ListElementInMessage[2]"
