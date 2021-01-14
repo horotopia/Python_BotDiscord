@@ -13,6 +13,9 @@ DATABASE = os.getenv("DataSqlHeroku")
 
 # Open connection
 conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
+cur = conn.cursor()
+print(type(conn))
+print(type(cur))
 
 client = discord.Client()
 
@@ -205,15 +208,15 @@ async def on_message(message):
 		await message.channel.send(embed=embed)
 
 	if ListElementInMessage[0] == "DB":
+#		Create, Read, Update, Delete
 		if ListElementInMessage[1] == "SHOW":
 			if ListElementInMessage[2] == "Nom":
-				cur = conn.cursor()
 				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
 				cur.execute(sql)
-#				print (cur.fetchall())
+				print (cur.fetchall())
 				vue = str(cur.fetchall())
 				await message.channel.send(vue)
-				conn.close()
+				
 
 #			if ListElementInMessage[2] == "DATA":
 #				sql = "SELECT \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
@@ -259,9 +262,9 @@ async def on_message(message):
 				
 				
 #			elif ListElementInMessage[2] in ["Img","Star","Passif_Book","Actif_Book","Pv","Atk","Def","Rec"]
-		conn.close()
 
-	
+conn.close()
+print(type(conn))
 @client.event
 async def on_ready():
     print(client.user.name)
