@@ -214,13 +214,13 @@ async def on_message(message):
 				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
 				cur.execute(sql)
 				vue = str(cur.fetchall())
-				print(vue)
+#				print(vue)
 				await message.channel.send(vue)
 			else:
 				sql = "SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'Astromons'"			
 				cur.execute(sql)
 				vue = str(cur.fetchall())
-				print(vue)
+#				print(vue)
 				await message.channel.send(vue)
 #			if ListElementInMessage[2] == "DATA":
 #				sql = "SELECT \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
