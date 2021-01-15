@@ -259,7 +259,7 @@ async def on_message(message):
 
 #			elif ListElementInMessage[3] == "Rac":
 #				NomId = "SELECT Id FROM Astromons.AstromonsNom WHERE Nom = ListElementInMessage[2]"
-##				sql = "INSERT INTO Astromons.AstromonsRaccourcis (Nom_Id, Mot_Clef) VALUES (NomId,'ListElementInMessage[4]')"
+#				sql = "INSERT INTO Astromons.AstromonsRaccourcis (Nom_Id, Mot_Clef) VALUES (NomId,'ListElementInMessage[4]')"
 #				cur.execute(sql)
 #				sql = "SELECT Nom FROM Astromons.AstromonsNom"
 #				sql += "SELECT Mot_Clef FROM Astromons.AstromonsRaccourcis"
