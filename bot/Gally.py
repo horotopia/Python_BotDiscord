@@ -22,8 +22,8 @@ async def on_raw_reaction_add(payload):
 	print(Name)
 	print(Emoji)
 	print(Canal)
-#	if Name == "horotopia" and Emoji == "joy":
-#		print ("miaou")
+	if Name == "horotopia":
+		print ("miaou")
 #		await ctx.channel.send ("je crois que ce chat rigole")	
 
 	
