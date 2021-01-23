@@ -22,7 +22,7 @@ async def on_raw_reaction_add(payload):
 	print(Name)
 	print(Emoji)
 	print(Canal)
-	if Name == "horotopia":
+	if UserId == "horotopia":
 		await client.get_user(UserId).send ("je crois que ce chat rigole")	
 
 	
