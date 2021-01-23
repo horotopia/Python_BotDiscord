@@ -16,9 +16,11 @@ client = discord.Client()
 
 @client.event
 async def on_raw_reaction_add(payload):
-	if user_id=430137370365526036:
+	Name = payload.member.name
+	emoji = payload.emoji.name
+	if Name == "horotopia" and emoji = ":joy:"
 	await message.channel.send ("je crois que ce chat rigole")	
-	print(payload)
+#	print(payload)
 	
 @client.event
 async def on_message(message):
