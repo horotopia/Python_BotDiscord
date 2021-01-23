@@ -19,7 +19,9 @@ async def on_raw_reaction_add(payload):
 	Name = payload.member.name
 	Emoji = payload.emoji.name
 	Canal = payload.channel_id
-	print(Name+"\n"+Emoji+"\n"+Canal)
+	print(Name)
+	print(Emoji)
+	print(Canal)
 #	if Name == "horotopia" and Emoji == "joy":
 #		print ("miaou")
 #		await ctx.channel.send ("je crois que ce chat rigole")	
