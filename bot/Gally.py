@@ -25,7 +25,7 @@ async def on_raw_reaction_add(payload):
 	print(Emoji)
 	print(Canal)
 #	if Canal == "784691401094594571":
-	await membre.send("je crois que ce chat rigole")	
+	await client.send(membre,"je crois que ce chat rigole")	
 
 	
 @client.event
