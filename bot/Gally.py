@@ -15,16 +15,15 @@ conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABAS
 client = discord.Client()
 
 @client.event
-async def on_raw_reaction_add(ctx,payload):
-	Name = payload.member.name
+async def on_raw_reaction_add(payload):
+	UserId = payload.user_id
 	Emoji = payload.emoji.name
 	Canal = payload.channel_id
 	print(Name)
 	print(Emoji)
 	print(Canal)
 	if Name == "horotopia":
-		print ("miaou")
-		await ctx.channel.send ("je crois que ce chat rigole")	
+		await client.get_user(UserId).send ("je crois que ce chat rigole")	
 
 	
 @client.event
