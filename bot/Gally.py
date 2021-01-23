@@ -15,6 +15,10 @@ conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABAS
 client = discord.Client()
 
 @client.event
+async def on_raw_reaction_add(payload):
+	print(payload)
+	
+@client.event
 async def on_message(message):
 	if message.author == client.user:
 		return  
