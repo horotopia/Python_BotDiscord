@@ -19,7 +19,7 @@ async def on_raw_reaction_add(payload):
 	UserId = payload.user_id
 	Emoji = payload.emoji.name
 	Canal = payload.channel_id
-	print(Name)
+	print(UserId)
 	print(Emoji)
 	print(Canal)
 	if UserId == "horotopia":
