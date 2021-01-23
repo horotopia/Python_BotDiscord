@@ -24,7 +24,7 @@ async def on_raw_reaction_add(payload):
 	print(Canal)
 	if Name == "horotopia":
 		print ("miaou")
-#		await ctx.channel.send ("je crois que ce chat rigole")	
+		await ctx.channel.send ("je crois que ce chat rigole")	
 
 	
 @client.event
