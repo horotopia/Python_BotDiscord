@@ -15,7 +15,7 @@ conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABAS
 client = discord.Client()
 
 @client.event
-async def on_raw_reaction_add(payload):
+async def on_raw_reaction_add(ctx,payload):
 	Name = payload.member.name
 	Emoji = payload.emoji.name
 	Canal = payload.channel_id
