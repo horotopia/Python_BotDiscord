@@ -16,6 +16,8 @@ client = discord.Client()
 
 @client.event
 async def on_raw_reaction_add(payload):
+	if user_id=430137370365526036:
+	await message.channel.send ("je crois que ce chat rigole")	
 	print(payload)
 	
 @client.event
