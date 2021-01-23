@@ -19,7 +19,7 @@ async def on_raw_reaction_add(payload):
 	Name = payload.member.name
 	Emoji = payload.emoji.name
 	if Name == "horotopia" and Emoji == "joy":
-		await message.channel.send ("je crois que ce chat rigole")	
+		await ctx.channel.send ("je crois que ce chat rigole")	
 #	print(payload)
 	
 @client.event
