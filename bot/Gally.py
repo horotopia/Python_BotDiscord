@@ -20,12 +20,13 @@ async def on_raw_reaction_add(payload):
 	UserId = payload.user_id
 	Emoji = payload.emoji.name
 	Canal = payload.channel_id
-	membre = client.get_user(UserId)
+	membre = await client.get_guild(payload.guild_id).fetch_member(payload.UserId)
 	print(UserId)
 	print(Emoji)
 	print(Canal)
 #	if Canal == "784691401094594571":
-	await client.get_user(UserId).send(str,"je crois que ce chat rigole")	
+	
+	await client.send("je crois que ce chat rigole")	
 
 	
 @client.event
@@ -283,6 +284,10 @@ async def on_message(message):
 	if ListElementInMessage[0] == "OFF":
 		conn.close()
 		print(type(conn)+" fermée.")
+
+	if ListElementInMessage[0] == "Gally":
+		await message.channel.send("Oui ?")
+		
 
 @client.event
 async def on_ready():
