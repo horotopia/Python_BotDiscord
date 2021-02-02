@@ -3,6 +3,7 @@ from discord.ext import commands
 import os
 import json
 import psycopg2
+import asyncio
 
 TOKEN = os.getenv("DiscordBotToken")
 
@@ -37,6 +38,13 @@ async def on_message(message):
 	
 	if ListElementInMessage[0] == "Hello":
 		await message.channel.send ("salut ami humain")
+
+	if ListElementInMessage[0] == "Time":
+		counter = 0
+		while counter<4:
+			counter += 1
+			await client.send_message(counter)
+			await asyncio.sleep(60) # task runs every 60 seconds
 
 	if ListElementInMessage[0] == "Epv":
 		if len(ListElementInMessage) == 3 and ListElementInMessage[1].isnumeric() and ListElementInMessage[2].isnumeric():
