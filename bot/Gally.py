@@ -43,7 +43,7 @@ async def on_message(message):
 		counter = 0
 		while counter<4:
 			counter += 1
-			await client.send_message(counter)
+			await message.channel.send(counter)
 			await asyncio.sleep(60) # task runs every 60 seconds
 
 	if ListElementInMessage[0] == "Epv":
