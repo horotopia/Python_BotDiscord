@@ -49,7 +49,7 @@ async def on_message(message):
 			await asyncio.sleep(10) # task runs every 10 seconds
 			while counter2<3:
 				counter2 += 1
-				await message.author.send("pense à faire tes attaques World Boss.")
+				await message.author.send("@here pense à faire tes attaques World Boss.")
 				await asyncio.sleep(10) # task runs every 10 seconds
 
 	if ListElementInMessage[0] == "Epv":
