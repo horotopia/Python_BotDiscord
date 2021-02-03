@@ -39,17 +39,16 @@ async def on_message(message):
 	if ListElementInMessage[0] == "Hello":
 		await message.channel.send ("salut ami humain")
 
-	if ListElementInMessage[0] == "Time":
+	if ListElementInMessage[0] == "WBTime":
 		counter1 = 0
 		counter2 = 0
-		while counter1<10:
-			counter1 += 1
+		while counter1=0:
 			counter2 = 0
 			await message.channel.send("Prochain WorldBoss dans 12 jours.")
 			await asyncio.sleep(10) # task runs every 10 seconds
 			while counter2<3:
 				counter2 += 1
-				await message.author.send("@here pense à faire tes attaques World Boss.")
+				await message.channel.send("@here Amis humains, pensez à faire vos attaques World Boss.")
 				await asyncio.sleep(10) # task runs every 10 seconds
 
 	if ListElementInMessage[0] == "Epv":
