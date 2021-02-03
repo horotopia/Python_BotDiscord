@@ -42,7 +42,7 @@ async def on_message(message):
 	if ListElementInMessage[0] == "WBTime":
 		counter1 = 0
 		counter2 = 0
-		while counter1=0:
+		while counter1==0:
 			counter2 = 0
 			await message.channel.send("Prochain WorldBoss dans 12 jours.")
 			await asyncio.sleep(10) # task runs every 10 seconds
