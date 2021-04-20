@@ -40,16 +40,20 @@ async def on_message(message):
 		await message.channel.send ("salut ami humain")
 
 	if ListElementInMessage[0] == "WBTime":
-		counter1 = 0
-		counter2 = 0
-		while counter1==0:
-			counter2 = 0
-			await message.channel.send("Prochain WorldBoss dans 12 jours.")
-			await asyncio.sleep(1036800) # task runs every 10 seconds
-			while counter2<3:
-				counter2 += 1
-				await message.channel.send("@here Amis humains, pensez à faire vos attaques World Boss.")
-				await asyncio.sleep(86400) # task runs every 10 seconds
+		if len(ListElementInMessage) == 2 and ListElementInMessage[1].isnumeric():
+			temps = ListElementInMessage[1]
+			
+			reste = int(temps * 86400)
+			counter1 = 0
+			while counter1==0:
+				counter2 = 0
+				await message.channel.send("Prochain WorldBoss dans " + temps + " jours.")
+				await asyncio.sleep(reste) # task runs every 10 seconds
+				while counter2<3:
+					counter2 += 1
+					await message.channel.send("@here Amis humains, pensez à faire vos attaques World Boss.")
+					await asyncio.sleep(86400) # task runs every 10 seconds
+				temps = 12
 
 	if ListElementInMessage[0] == "Epv":
 		if len(ListElementInMessage) == 3 and ListElementInMessage[1].isnumeric() and ListElementInMessage[2].isnumeric():
