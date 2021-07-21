@@ -59,7 +59,7 @@ async def on_message(message):
 		if len(ListElementInMessage) == 3 and ListElementInMessage[1].isnumeric() and ListElementInMessage[2].isnumeric():
 			a = int(ListElementInMessage[1])
 			b = int(ListElementInMessage[2])
-			c = round(a/(1-(b/(b+1200))))
+			c = round(a/(1-(b/(b+1500))))
 			embed = discord.Embed(title="Epv", color=0xffffff)
 			embed.set_thumbnail(url="https://img.pngio.com/bar-development-game-health-video-game-icon-video-game-health-png-512_204.png")
 			embed.add_field(name="Calculs effectués avec:", value="\nPV : " + str(a) + "\nDéfense : " + str(b) + "\n\n**Epv : " + str(c) + "**", inline=False)
