@@ -13,10 +13,9 @@ PASSWORD = os.getenv("MdpSqlHeroku")
 DATABASE = os.getenv("DataSqlHeroku")
 
 conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
-client = discord.Client()
 bot = commands.Bot(command_prefix='#', description="This is a test Bot")
 
-@client.event
+@bot.event
 async def on_raw_reaction_add(payload):
 	print(payload)
 	UserId = payload.user_id
@@ -37,7 +36,7 @@ async def ping(ctx: commands.Context):
 		#return
 	await message.channel.send('pong')
 
-@client.event
+@bot.event
 async def on_message(message):
 	if message.author == client.user:
 		return  
@@ -313,10 +312,10 @@ async def on_message(message):
 		await message.channel.send("Oui ?")
 		
 
-@client.event
+@bot.event
 async def on_ready():
     print(client.user.name)
     print( "[ON]")
     print('- - - - - - - -')
 
-client.run(TOKEN)
+bot.run(TOKEN)
