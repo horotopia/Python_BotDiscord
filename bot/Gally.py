@@ -36,7 +36,7 @@ async def ping(ctx: commands.Context):
 		#return
 	await ctx.send('pong')
 
-@bot.event
+'''@bot.event
 async def on_message(message):
 	if message.author == bot.user:
 		return  
@@ -313,7 +313,7 @@ async def on_message(message):
 
 	if ListElementInMessage[0] == "Gally":
 		await message.channel.send("Oui ?")
-		
+'''		
 
 @bot.event
 async def on_ready():
