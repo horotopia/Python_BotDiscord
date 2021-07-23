@@ -314,7 +314,7 @@ async def on_message(message):
 
 @bot.event
 async def on_ready():
-    print(client.user.name)
+    print(bot.user.name)
     print( "[ON]")
     print('- - - - - - - -')
 
