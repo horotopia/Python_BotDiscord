@@ -21,24 +21,24 @@ async def on_raw_reaction_add(payload):
 	UserId = payload.user_id
 	Emoji = payload.emoji.name
 	Canal = payload.channel_id
-	membre = await client.get_guild(payload.guild_id).fetch_member(payload.UserId)
+	membre = await bot.get_guild(payload.guild_id).fetch_member(payload.UserId)
 	print(UserId)
 	print(Emoji)
 	print(Canal)
 #	if Canal == "784691401094594571":
 	
-	await client.send("je crois que ce chat rigole")	
+	await bot.send("je crois que ce chat rigole")	
 
 @bot.command(help="ping pong")
 async def ping(ctx: commands.Context):
 	print("ping")
 	#if ctx.channel.name != CHANNEL_WORK:
 		#return
-	await message.channel.send('pong')
+	await ctx.channel.send('pong')
 
 @bot.event
 async def on_message(message):
-	if message.author == client.user:
+	if message.author == bot.user:
 		return  
 	ListElementInMessage = message.content.split()
 	
