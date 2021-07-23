@@ -14,6 +14,7 @@ DATABASE = os.getenv("DataSqlHeroku")
 
 conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
 client = discord.Client()
+bot = commands.Bot(command_prefix='#', description="This is a test Bot")
 
 @client.event
 async def on_raw_reaction_add(payload):
