@@ -32,10 +32,10 @@ async def on_raw_reaction_add(payload):
 
 @bot.command(help="ping pong")
 async def ping(ctx: commands.Context):
-    print("ping")
-#    if ctx.channel.name != CHANNEL_WORK:
-#        return
-    await ctx.send('pong')
+	print("ping")
+	#if ctx.channel.name != CHANNEL_WORK:
+	return
+await ctx.send('pong')
 
 @client.event
 async def on_message(message):
