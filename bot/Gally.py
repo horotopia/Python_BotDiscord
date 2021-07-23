@@ -29,7 +29,13 @@ async def on_raw_reaction_add(payload):
 	
 	await client.send("je crois que ce chat rigole")	
 
-	
+@client.command(help="ping pong")
+async def ping(ctx: commands.Context):
+    print("ping")
+#    if ctx.channel.name != CHANNEL_WORK:
+#        return
+    await ctx.send('pong')
+
 @client.event
 async def on_message(message):
 	if message.author == client.user:
