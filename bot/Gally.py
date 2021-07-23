@@ -34,13 +34,16 @@ async def ping(ctx: commands.Context):
 	print("ping")
 	#if ctx.channel.name != CHANNEL_WORK:
 		#return
-	await ctx.channel.send('pong')
+	await ctx.send('pong')
 
 @bot.event
 async def on_message(message):
 	if message.author == bot.user:
 		return  
 	ListElementInMessage = message.content.split()
+	
+	if ListElementInMessage[0] == "ping":
+		await message.channel.send ("ping")
 	
 	if ListElementInMessage[0] == "Hello":
 		await message.channel.send ("salut ami humain")
