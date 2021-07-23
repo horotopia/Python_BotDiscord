@@ -34,7 +34,7 @@ async def on_raw_reaction_add(payload):
 async def ping(ctx: commands.Context):
 	print("ping")
 	#if ctx.channel.name != CHANNEL_WORK:
-	return
+		#return
 	await message.channel.send('pong')
 
 @client.event
