@@ -35,7 +35,7 @@ async def ping(ctx: commands.Context):
 	print("ping")
 	#if ctx.channel.name != CHANNEL_WORK:
 	return
-await ctx.send('pong')
+	await ctx.send('pong')
 
 @client.event
 async def on_message(message):
