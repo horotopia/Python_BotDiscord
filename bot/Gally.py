@@ -38,14 +38,19 @@ async def ping(ctx: commands.Context):
 	
 @bot.command(help= "Obtenir l'id de l'interlocuteur")
 async def GetId(ctx: commands.Context):
-	print(ctx.author.id)
+	print(ctx.author)
+	auteur = ctx.author
 	await ctx.send('id obtenue')
 
-'''@bot.command(help= "timer pour le World Boss")
+@bot.command(help= "timer pour le World Boss")
 async def WbTime(ctx: commands.Context):
-	print("le Timer est en place")
+	GetId(ctx)
+	print("Timer pour", auteur)
+	await ctx.send("le Timer va être mis en place")
+	await ctx.send("Dans combien de temps (en jours) le WorldBoss arrive-t-il ? ")
 	
-	if len(ListElementInMessage) == 2 and ListElementInMessage[1].isnumeric():
+	
+'''	if len(ListElementInMessage) == 2 and ListElementInMessage[1].isnumeric():
 	temps = ListElementInMessage[1]
 
 	reste = int(temps * 86400)
