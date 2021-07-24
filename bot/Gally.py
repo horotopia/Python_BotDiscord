@@ -38,7 +38,7 @@ async def ping(ctx: commands.Context):
 	
 @bot.command(help= "Obtenir l'id de l'interlocuteur")
 async def GetId(ctx: commands.Context):
-	print(message.author.id)
+	print(ctx.author.id)
 	await ctx.send('id obtenue')
 
 '''@bot.command(help= "timer pour le World Boss")
