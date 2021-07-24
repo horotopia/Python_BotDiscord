@@ -13,7 +13,7 @@ PASSWORD = os.getenv("MdpSqlHeroku")
 DATABASE = os.getenv("DataSqlHeroku")
 
 conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
-bot = commands.Bot(command_prefix='e', description="This is a test Bot")
+bot = commands.Bot(command_prefix='', description="This is a test Bot")
 
 @bot.event
 async def on_raw_reaction_add(payload):
