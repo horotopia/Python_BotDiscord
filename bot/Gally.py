@@ -13,7 +13,7 @@ PASSWORD = os.getenv("MdpSqlHeroku")
 DATABASE = os.getenv("DataSqlHeroku")
 
 conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
-bot = commands.Bot(command_prefix='', description="This is a test Bot")
+bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le Monster Super League")
 
 @bot.event
 async def on_raw_reaction_add(payload):
@@ -35,7 +35,31 @@ async def ping(ctx: commands.Context):
 	#if ctx.channel.name != CHANNEL_WORK:
 		#return
 	await ctx.send('pong')
+	
+@bot.command(help= "Obtenir l'id de l'interlocuteur")
+async def GetId(ctx: commands.Context):
+	print(message.author.id)
+	await ctx.send('id obtenue')
 
+'''@bot.command(help= "timer pour le World Boss")
+async def WbTime(ctx: commands.Context):
+	print("le Timer est en place")
+	
+	if len(ListElementInMessage) == 2 and ListElementInMessage[1].isnumeric():
+	temps = ListElementInMessage[1]
+
+	reste = int(temps * 86400)
+	counter1 = 0
+	while counter1==0:
+		counter2 = 0
+		await message.channel.send("Prochain WorldBoss dans " + temps + " jours.")
+		await asyncio.sleep(reste) # task runs every 10 seconds
+		while counter2<3:
+			counter2 += 1
+			await message.channel.send("@here Amis humains, pensez à faire vos attaques World Boss.")
+			await asyncio.sleep(86400) # task runs every 10 seconds
+		temps = 12
+'''
 '''@bot.event
 async def on_message(message):
 	if message.author == bot.user:
