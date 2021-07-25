@@ -35,6 +35,19 @@ async def ping(ctx: commands.Context):
 	#if ctx.channel.name != CHANNEL_WORK:
 		#return
 	await ctx.send('pong')
+
+@bot.command(help="Calculer l'epv d'un Pkmn")
+async def Epv(ctx: commands.Context, pv: int, def: int):
+	try:
+		epv = round(pv/(1-(def/(def+1500))))
+		embed = discord.Embed(title="Epv", color=0xffffff)
+		embed.set_thumbnail(url="https://img.pngio.com/bar-development-game-health-video-game-icon-video-game-health-png-512_204.png")
+		embed.add_field(name="Calculs effectués avec:", value="\nPV : " + str(pv) + "\nDéfense : " + str(def) + "\n\n**Epv : " + str(epv) + "**", inline=False)
+		await ctx.send(embed=embed)
+ 
+	except ValueError:
+		await ctx.send ("Erreur, Ecrivez Epv suivi des PV et de la Def. (ex : Epv 20000 2000)")
+		print("error : " + ValueError)
 	
 @bot.command(help= "Obtenir l'id de l'interlocuteur")
 async def GetId(ctx: commands.Context):
@@ -45,7 +58,7 @@ async def GetId(ctx: commands.Context):
 @bot.command(help= "timer pour le World Boss")
 async def WbTime(ctx: commands.Context):
 	GetId(ctx)
-	print("Timer pour", auteur)
+	#print("Timer pour", auteur)
 	await ctx.send("le Timer va être mis en place")
 	await ctx.send("Dans combien de temps (en jours) le WorldBoss arrive-t-il ? ")
 	
