@@ -37,12 +37,12 @@ async def ping(ctx: commands.Context):
 	await ctx.send('pong')
 
 @bot.command(help="Calculer l'epv d'un Pkmn")
-async def Epv(ctx: commands.Context, pv: int, def: int):
+async def Epv(ctx: commands.Context, pv: int, defense: int):
 	try:
-		epv = round(pv/(1-(def/(def+1500))))
+		epv = round(pv/(1-(defense/(defense+1500))))
 		embed = discord.Embed(title="Epv", color=0xffffff)
 		embed.set_thumbnail(url="https://img.pngio.com/bar-development-game-health-video-game-icon-video-game-health-png-512_204.png")
-		embed.add_field(name="Calculs effectués avec:", value="\nPV : " + str(pv) + "\nDéfense : " + str(def) + "\n\n**Epv : " + str(epv) + "**", inline=False)
+		embed.add_field(name="Calculs effectués avec:", value="\nPV : " + str(pv) + "\nDéfense : " + str(defense) + "\n\n**Epv : " + str(epv) + "**", inline=False)
 		await ctx.send(embed=embed)
  
 	except ValueError:
