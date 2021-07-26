@@ -45,8 +45,9 @@ async def Epv(ctx: commands.Context, pv: int, defense: int):
 		embed.add_field(name="Calculs effectués avec:", value="\nPV : " + str(pv) + "\nDéfense : " + str(defense) + "\n\n**Epv : " + str(epv) + "**", inline=False)
 		await ctx.send(embed=embed)
  
-	except ValueError:
-		await ctx.send ("Erreur, Ecrivez Epv suivi des PV et de la Def. (ex : Epv 20000 2000)")
+	except:
+		if isinstance(error, commands.MissingRequiredArgument):
+			await ctx.send ("Erreur, Ecrivez Epv suivi des PV et de la Def. (ex : Epv 20000 2000)")
 		print("error : " + ValueError)
 	
 @bot.command(help= "Obtenir l'id de l'interlocuteur")
