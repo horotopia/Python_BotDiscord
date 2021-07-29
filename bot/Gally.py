@@ -46,7 +46,7 @@ async def Epv(ctx: commands.Context, pv: int, defense: int):
 
 @bot.event
 async def on_command_error(ctx, error):
-	if isinstance(error, MissingRequiredArgument):
+	if isinstance(error, commands.MissingRequiredArgument):
 		await ctx.send ("Erreur, Ecrivez Epv suivi des PV et de la Def. (ex : Epv 20000 2000)")
 
 	
