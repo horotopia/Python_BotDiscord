@@ -38,14 +38,17 @@ async def ping(ctx: commands.Context):
 
 @bot.command(help="Calculer l'epv d'un Pkmn")
 async def Epv(ctx: commands.Context, pv: int, defense: int):
-	if commands.MissingRequiredArgument:
-		await ctx.send ("Erreur, Ecrivez Epv suivi des PV et de la Def. (ex : Epv 20000 2000)")
-	else:
+#	if commands.MissingRequiredArgument:
+#		await ctx.send ("Erreur, Ecrivez Epv suivi des PV et de la Def. (ex : Epv 20000 2000)")
+	if pv.isnumeric() and defense.isnumeric():
 		epv = round(pv/(1-(defense/(defense+1500))))
 		embed = discord.Embed(title="Epv", color=0xffffff)
 		embed.set_thumbnail(url="https://img.pngio.com/bar-development-game-health-video-game-icon-video-game-health-png-512_204.png")
 		embed.add_field(name="Calculs effectués avec:", value="\nPV : " + str(pv) + "\nDéfense : " + str(defense) + "\n\n**Epv : " + str(epv) + "**", inline=False)
 		await ctx.send(embed=embed)
+	else:
+		await ctx.send ("Erreur, Ecrivez Epv suivi des PV et de la Def. (ex : Epv 20000 2000)")
+
 	
 @bot.command(help= "Obtenir l'id de l'interlocuteur")
 async def GetId(ctx: commands.Context):
