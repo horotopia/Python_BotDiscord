@@ -44,8 +44,8 @@ async def Epv(ctx: commands.Context, pv: int, defense: int):
 	embed.add_field(name="Calculs effectués avec:", value="\nPV : " + str(pv) + "\nDéfense : " + str(defense) + "\n\n**Epv : " + str(epv) + "**", inline=False)
 	await ctx.send(embed=embed)
 
-@bot.event
-async def on_command_error(ctx, error):
+@Epv.error
+async def Epv_Error(ctx, error):
 	if isinstance(error, commands.MissingRequiredArgument):
 		await ctx.send ("Erreur, Ecrivez Epv suivi des PV et de la Def. (ex : Epv 20000 2000)")
 
