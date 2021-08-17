@@ -30,7 +30,7 @@ Class FonctionSql :
 			With Connexion():
 				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
 				conn.cursor().execute(sql)
-				vue = str(cur.fetchall())
+				vue = str(conn.cursor().fetchall())
 				print(vue)
 				await message.channel.send(vue)
 
