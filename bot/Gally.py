@@ -12,8 +12,27 @@ USER = os.getenv("UserSqlHeroku")
 PASSWORD = os.getenv("MdpSqlHeroku")
 DATABASE = os.getenv("DataSqlHeroku")
 
-conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
-bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le Monster Super League")
+bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le jeu Monster Super League")
+
+Class FonctionSql :
+	Def __init__(self, Pseudo, Commande, CombienDeFois, Channel, Serveur):
+		Self.nom = Pseudo
+		Self.com = Commande
+		Self.time = CombienDeFois
+		Self.chan = Channel
+		Self.guild = Serveur
+
+	Def Connexion :
+		conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
+
+	Def selection:
+		Try:
+			With Connexion():
+				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
+				conn.cursor().execute(sql)
+				vue = str(cur.fetchall())
+				print(vue)
+				await message.channel.send(vue)
 
 @bot.event
 async def on_raw_reaction_add(payload):
