@@ -14,7 +14,7 @@ DATABASE = os.getenv("DataSqlHeroku")
 
 bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le jeu Monster Super League")
 
-Class FonctionSql :
+Class FonctionSql:
 	Def __init__(self, Pseudo, Commande, CombienDeFois, Channel, Serveur):
 		Self.nom = Pseudo
 		Self.com = Commande
@@ -22,7 +22,7 @@ Class FonctionSql :
 		Self.chan = Channel
 		Self.guild = Serveur
 
-	Def Connexion :
+	Def Connexion:
 		conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
 
 	Def selection:
