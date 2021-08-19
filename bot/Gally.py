@@ -96,7 +96,7 @@ async def GemHeal(ctx: commands.Context, pv: int, defense: int, recup: int):
 	DblDef = int(defense*2.36)
 	SmplRec = int(recup*1.68)
 	DblRec = int(recup*2.36)
-	TrplRec = int(recup*5.04)
+	TrplRec = int(recup*3.04)
 	Epv1 = round(SmplPv / (1 - (SmplDef / (SmplDef + 1500))))
 	Epv2 = round(SmplPv / (1 - (defense / (defense + 1500))))
 	Epv3 = round(pv / (1 - (SmplDef / (SmplDef + 1500))))
@@ -137,6 +137,27 @@ async def D(ctx: commands.Context, Atk: int, Tc: int, Dc: int):
 async def D_Error(ctx, error):
 	if isinstance(error, commands.MissingRequiredArgument):
 		await ctx.channel.send ("Erreur, Ecrivez D suivi de l'attaque, du taux critique et des dégats critique")
+
+@bot.command(help= "Savoir quoi choisir entre une gemme Atk ou Dc")
+async def AtkDc(ctx: commands.Context, Atk: int, Dc: int):
+	FullAtk1 = round((Atk*1.68)*5.5*(1+(Dc/100)))
+	FullAtk2 = round(Atk*5.5*(1+((Dc*1.7)/100)))
+	embed.add_field(name="Avec une gemme Atk :", value="Les degats crit seront de : " +str(FullAtk1), inline=True)
+	embed.add_field(name="Avec une gemme Dc :", value="Les degats crit seront de : " +str(FullAtk2), inline=True)
+	await ctx.channel.send(embed=embed)
+	if FullAtk1 > FullAtk2:
+		embed.add_field(name="Résultat :", value="La gemme Atk serait un meilleur choix.", inline=False)
+	elif FullAtk2 > FullAtk1:
+		embed.add_field(name="Résultat :", value="La gemme Dc serait un meilleur choix.", inline=False)
+	else:
+		embed.add_field(name="Résultat :", value="Il n'y a pas de meilleur choix.", inline=False)
+	embed.add_field(name="Attention", value="\n\n__les sub, attirails, amélio, etc. ne sont pas pris en compte__ ;)", inline=False)
+	await ctx.channel.send(embed=embed)
+
+@AtkDc.error
+async def D_Error(ctx, error):
+	if isinstance(error, commands.MissingRequiredArgument):
+		await ctx.channel.send ("Erreur, Ecrivez AtkDc suivi de l'attaque et des dégats critique")
 
 @bot.command(help= "Obtenir l'id de l'interlocuteur")
 async def GetId(ctx: commands.Context):
