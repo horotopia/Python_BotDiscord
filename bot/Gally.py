@@ -146,7 +146,6 @@ async def AtkDc(ctx: commands.Context, Atk: int, Dc: int):
 	embed.set_thumbnail(url = "https://img2.pngio.com/markeus-b-ui-buttons-opengameartorg-attack-png-187_207.png")
 	embed.add_field(name="Avec une gemme Atk :", value="Les degats crit seront de : " +str(FullAtk1), inline=True)
 	embed.add_field(name="Avec une gemme Dc :", value="Les degats crit seront de : " +str(FullAtk2), inline=True)
-	await ctx.channel.send(embed=embed)
 	if FullAtk1 > FullAtk2:
 		embed.add_field(name="Résultat :", value="La gemme Atk serait un meilleur choix.", inline=False)
 	elif FullAtk2 > FullAtk1:
