@@ -87,7 +87,57 @@ async def EpvGem(ctx: commands.Context, pv: int, defense: int):
 async def EpvGem_Error(ctx, error):
 	if isinstance(error, commands.MissingRequiredArgument):
 		await ctx.channel.send ("Erreur, Ecrivez EpvGem suivi des PV de base et de la Def de base. (ex : Epv 20000 2000)")
+
+@bot.command(help="Calculer la meilleure config pour l'epv d'un Healeur")
+async def GemHeal(ctx: commands.Context, pv: int, defense: int, recup: int):
+	SmplPv = int(pv*1.68)
+	DblPv = int(pv*2.36)
+	SmplDef = int(defense*1.68)
+	DblDef = int(defense*2.36)
+	SmplRec = int(recup*1.68)
+	DblRec = int(recup*2.36)
+	TrplRec = int(recup*5.04)
+	Epv1 = round(SmplPv / (1 - (SmplDef / (SmplDef + 1500))))
+	Epv2 = round(SmplPv / (1 - (defense / (defense + 1500))))
+	Epv3 = round(pv / (1 - (SmplDef / (SmplDef + 1500))))
+	Epv4 = round(DblPv / (1 - (SmplDef / (SmplDef + 1500))))
+	Epv5 = round(SmplPv / (1 - (DblDef / (DblDef + 1500))))
+	Epv6 = round(pv / (1 - (defense / (defense + 1500))))
+
+	embed=discord.Embed(title="Choix de Gemmes pour un healer", description="Quelles gemmes choisir ? voici la réponse")
+	embed.set_thumbnail(url="https://wiki.dungeondefenders2.com/images/6/6e/Heal.png")
+	embed.add_field(name="1 Pv, 1 Def, 1 Recup", value="**Epv : "+str(Epv1)+"**"+"\nPv : "+str(SmplPv)+"\nDef : "+str(SmplDef)+"\nRecup : " +str(SmplRec), inline=True)
+	embed.add_field(name="1 Pv, 2 Recup", value="**Epv : "+str(Epv2)+"**"+"\nPv : "+str(SmplPv)+"\nDef : "+str(defense)+"\nRecup : " +str(DblRec), inline=True)
+	embed.add_field(name="1 Def, 2 Recup", value="**Epv : "+str(Epv3)+"**"+"\nPv : "+str(pv)+"\nDef : "+str(SmplDef)+"\nRecup : " +str(DblRec), inline=True)
+	embed.add_field(name="2 Pv, 1 Def", value="**Epv : "+str(Epv4)+"**"+"\nPv : "+str(DblPv)+"\nDef : "+str(SmplDef)+"\nRecup : " +str(recup), inline=True)
+	embed.add_field(name="1 Pv, 2 Def", value="**Epv : "+str(Epv5)+"**"+"\nPv : "+str(SmplPv)+"\nDef : "+str(DblDef)+"\nRecup : " +str(recup), inline=True)
+	embed.add_field(name="3 Rec", value="**Epv : "+str(Epv6)+"**"+"\nPv : "+str(pv)+"\nDef : "+str(defense)+"\nRecup : " +str(TrplRec), inline=True)
+	embed.add_field(name="Attention", value="\n\n__les sub, attirails, amélio, etc. ne sont pas pris en compte__ ;)", inline=False)
+	await ctx.channel.send(embed=embed)
+
+@GemHeal.error
+async def GemHeal_Error(ctx, error):
+	if isinstance(error, commands.MissingRequiredArgument):
+		await ctx.channel.send ("Erreur, Ecrivez GemHeal suivi des PV de base, de la Def de base et de la récup de base")
 	
+@bot.command(help="Calculer les degats du pkmn")
+async def D(ctx: commands.Context, Atk: int, Tc: int, Dc: int):
+			AtkSmpl = round(Atk*5.5)
+			AtkNorm = round(Atk*5.5*(1+(Tc/100)*(Dc/100)))
+			FullAtk = round(Atk*5.5*(1+(Dc/100)))
+			embed = discord.Embed(title="", color=0xffffff)
+			embed.set_thumbnail(url = "https://img2.pngio.com/markeus-b-ui-buttons-opengameartorg-attack-png-187_207.png")
+			embed.add_field(name="Calculs effectués avec : ", value="\nAttaque : " + str(a) + "\nTaux critique : " + str(b) + "\nDommages critiques : " + str(c) +
+					"\n\n__**Dégâts moyens__ : "+ str(AtkNorm)+ "**" + " (75k recomandé)" +
+					"\n\n__Dégâts min :__ " + str(AtkSmpl)+ " (no crit)" +
+					"\n__Dégâts crit :__ "+ str(FullAtk)+ " (crit)",inline=False)
+			await ctx.channel.send(embed=embed)
+
+@D.error
+async def D_Error(ctx, error):
+	if isinstance(error, commands.MissingRequiredArgument):
+		await ctx.channel.send ("Erreur, Ecrivez D suivi de l'attaque, du taux critique et des dégats critique")
+
 @bot.command(help= "Obtenir l'id de l'interlocuteur")
 async def GetId(ctx: commands.Context):
 	print(ctx.author)
