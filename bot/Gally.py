@@ -157,7 +157,7 @@ async def AtkDc(ctx: commands.Context, Atk: int, Dc: int):
 	await ctx.channel.send(embed=embed)
 
 @AtkDc.error
-async def D_Error(ctx, error):
+async def AtkDc_Error(ctx, error):
 	if isinstance(error, commands.MissingRequiredArgument):
 		await ctx.channel.send ("Erreur, Ecrivez AtkDc suivi de l'attaque et des dégats critique")
 
