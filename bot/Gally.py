@@ -86,7 +86,7 @@ async def EpvGem(ctx: commands.Context, pv: int, defense: int):
 @EpvGem.error
 async def EpvGem_Error(ctx, error):
 	if isinstance(error, commands.MissingRequiredArgument):
-		await ctx.channel.send ("Erreur, Ecrivez EpvGem suivi des PV de base et de la Def de base")
+		await ctx.channel.send ("Erreur, Ecrivez EpvGem suivi des PV de base et de la Def de base. (ex : Epv 20000 2000)")
 	
 @bot.command(help= "Obtenir l'id de l'interlocuteur")
 async def GetId(ctx: commands.Context):
