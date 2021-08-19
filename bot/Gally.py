@@ -81,12 +81,12 @@ async def EpvGem(ctx: commands.Context, pv: int, defense: int):
 	embed.add_field(name="Calculs effectués avec:", value="\nPV de base : " + str(pv) + "\nDéfense de base : " + str(defense), inline=False)
 	embed.add_field(name="2Pv, 1Def", value="\n\n**Epv : " + str(Epv1) + "**\nPV : " + str(DblPv) + "\nDef : " + str(SmplDef), inline=True)
 	embed.add_field(name="1Pv, 2Def", value="\n\n**Epv : " + str(Epv2) + "**\nPV : " + str(SmplPv) + "\nDef : " + str(DblDef), inline=True)
-	await message.channel.send(embed=embed)
+	await ctx.channel.send(embed=embed)
 	
 @EpvGem.error
 async def EpvGem_Error(ctx, error):
 	if isinstance(error, commands.MissingRequiredArgument):
-		await message.channel.send ("Erreur, Ecrivez EpvGem suivi des PV de base et de la Def de base")
+		await ctx.channel.send ("Erreur, Ecrivez EpvGem suivi des PV de base et de la Def de base")
 	
 @bot.command(help= "Obtenir l'id de l'interlocuteur")
 async def GetId(ctx: commands.Context):
