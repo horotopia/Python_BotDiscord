@@ -68,6 +68,24 @@ async def Epv_Error(ctx, error):
 	if isinstance(error, commands.MissingRequiredArgument):
 		await ctx.send ("Erreur, Ecrivez Epv suivi des PV et de la Def. (ex : Epv 20000 2000)")
 
+@bot.command(help="Calculer la config la plus tanky et l'epv d'un Pkmn")
+async def EpvGem(ctx: commands.Context, pv: int, defense: int):
+	DblPv = int(pv * 2.36)
+	DblDef = int(defense * 2.36)
+	SmplPv = int(pv * 1.68)
+	SmplDef = int(defense * 1.68)
+	Epv1 = round((DblPv) / (1 - ((SmplDef) / ((SmplDef) + 1500))))
+	Epv2 = round((SmplPv) / (1 - ((DblDef) / ((DblDef) + 1500))))
+	embed=discord.Embed(title="Choisir entre 2 choix de gemmes :", description="- 2 gemmes Pv + 1 gemme Def \n- 2 gemmes Def + 1 gemme Pv", color=0xffffff)
+	embed.set_thumbnail(url="https://vignette.wikia.nocookie.net/mslgame/images/a/aa/Gem.png/revision/latest/top-crop/width/150/height/150?cb=20160922163030")
+	embed.add_field(name="Calculs effectués avec:", value="\nPV de base : " + str(pv) + "\nDéfense de base : " + str(defense), inline=False)
+	embed.add_field(name="2Pv, 1Def", value="\n\n**Epv : " + str(Epv1) + "**\nPV : " + str(DblPv) + "\nDef : " + str(SmplDef), inline=True)
+	embed.add_field(name="1Pv, 2Def", value="\n\n**Epv : " + str(Epv2) + "**\nPV : " + str(SmplPv) + "\nDef : " + str(DblDef), inline=True)
+	await message.channel.send(embed=embed)
+	
+@EpvGem.error
+async def EpvGem_Error(ctx, error):
+	await message.channel.send ("Erreur, Ecrivez EpvGem suivi des PV de base et de la Def de base")
 	
 @bot.command(help= "Obtenir l'id de l'interlocuteur")
 async def GetId(ctx: commands.Context):
