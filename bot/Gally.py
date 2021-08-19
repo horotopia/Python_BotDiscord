@@ -142,6 +142,8 @@ async def D_Error(ctx, error):
 async def AtkDc(ctx: commands.Context, Atk: int, Dc: int):
 	FullAtk1 = round((Atk*1.68)*5.5*(1+(Dc/100)))
 	FullAtk2 = round(Atk*5.5*(1+((Dc*1.7)/100)))
+	embed = discord.Embed(title="", color=0xffffff)
+	embed.set_thumbnail(url = "https://img2.pngio.com/markeus-b-ui-buttons-opengameartorg-attack-png-187_207.png")
 	embed.add_field(name="Avec une gemme Atk :", value="Les degats crit seront de : " +str(FullAtk1), inline=True)
 	embed.add_field(name="Avec une gemme Dc :", value="Les degats crit seront de : " +str(FullAtk2), inline=True)
 	await ctx.channel.send(embed=embed)
