@@ -14,7 +14,7 @@ DATABASE = os.getenv("DataSqlHeroku")
 
 bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le jeu Monster Super League")
 
-Class FonctionSql(discord.Client):
+'''Class FonctionSql(discord.Client):
 	Def __init__(self, Pseudo, Commande, CombienDeFois, Channel, Serveur):
 		Self.nom = Pseudo
 		Self.com = Commande
@@ -32,7 +32,7 @@ Class FonctionSql(discord.Client):
 				conn.cursor().execute(sql)
 				vue = str(conn.cursor().fetchall())
 				print(vue)
-				await message.channel.send(vue)
+				await message.channel.send(vue)'''
 
 @bot.event
 async def on_raw_reaction_add(payload):
