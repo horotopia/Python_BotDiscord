@@ -122,16 +122,16 @@ async def GemHeal_Error(ctx, error):
 	
 @bot.command(help="Calculer les degats du pkmn")
 async def D(ctx: commands.Context, Atk: int, Tc: int, Dc: int):
-			AtkSmpl = round(Atk*5.5)
-			AtkNorm = round(Atk*5.5*(1+(Tc/100)*(Dc/100)))
-			FullAtk = round(Atk*5.5*(1+(Dc/100)))
-			embed = discord.Embed(title="", color=0xffffff)
-			embed.set_thumbnail(url = "https://img2.pngio.com/markeus-b-ui-buttons-opengameartorg-attack-png-187_207.png")
-			embed.add_field(name="Calculs effectués avec : ", value="\nAttaque : " + str(a) + "\nTaux critique : " + str(b) + "\nDommages critiques : " + str(c) +
-					"\n\n__**Dégâts moyens__ : "+ str(AtkNorm)+ "**" + " (75k recomandé)" +
-					"\n\n__Dégâts min :__ " + str(AtkSmpl)+ " (no crit)" +
-					"\n__Dégâts crit :__ "+ str(FullAtk)+ " (crit)",inline=False)
-			await ctx.channel.send(embed=embed)
+	AtkSmpl = round(Atk*5.5)
+	AtkNorm = round(Atk*5.5*(1+(Tc/100)*(Dc/100)))
+	FullAtk = round(Atk*5.5*(1+(Dc/100)))
+	embed = discord.Embed(title="", color=0xffffff)
+	embed.set_thumbnail(url = "https://img2.pngio.com/markeus-b-ui-buttons-opengameartorg-attack-png-187_207.png")
+	embed.add_field(name="Calculs effectués avec : ", value="\nAttaque : " + str(a) + "\nTaux critique : " + str(b) + "\nDommages critiques : " + str(c) +
+			"\n\n__**Dégâts moyens__ : "+ str(AtkNorm)+ "**" + " (75k recomandé)" +
+			"\n\n__Dégâts min :__ " + str(AtkSmpl)+ " (no crit)" +
+			"\n__Dégâts crit :__ "+ str(FullAtk)+ " (crit)",inline=False)
+	await ctx.channel.send(embed=embed)
 
 @D.error
 async def D_Error(ctx, error):
