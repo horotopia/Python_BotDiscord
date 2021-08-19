@@ -127,7 +127,7 @@ async def D(ctx: commands.Context, Atk: int, Tc: int, Dc: int):
 	FullAtk = round(Atk*5.5*(1+(Dc/100)))
 	embed = discord.Embed(title="", color=0xffffff)
 	embed.set_thumbnail(url = "https://img2.pngio.com/markeus-b-ui-buttons-opengameartorg-attack-png-187_207.png")
-	embed.add_field(name="Calculs effectués avec : ", value="\nAttaque : " + str(a) + "\nTaux critique : " + str(b) + "\nDommages critiques : " + str(c) +
+	embed.add_field(name="Calculs effectués avec : ", value="\nAttaque : " + str(Atk) + "\nTaux critique : " + str(Tc) + "\nDommages critiques : " + str(Dc) +
 		"\n\n__**Dégâts moyens__ : "+ str(AtkNorm)+ "**" + " (75k recomandé)" +
 		"\n\n__Dégâts min :__ " + str(AtkSmpl)+ " (no crit)" +
 		"\n__Dégâts crit :__ "+ str(FullAtk)+ " (crit)",inline=False)
