@@ -14,7 +14,7 @@ DATABASE = os.getenv("DataSqlHeroku")
 
 bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le jeu Monster Super League")
 
-Class FonctionSql(discord.Client):
+class FonctionSql:
 	Def __init__(self, Pseudo, Commande, CombienDeFois, Channel, Serveur):
 		Self.nom = Pseudo
 		Self.com = Commande
