@@ -22,10 +22,10 @@ class FonctionSql:
 		self.chan = Channel
 		self.guild = Serveur
 
-	def Connexion:
+	def Connexion():
 		conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
 
-	def selection:
+	def selection():
 		try:
 			with Connexion():
 				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
