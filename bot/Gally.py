@@ -31,7 +31,8 @@ class FonctionSql:
 				vue = str(conn.cursor().fetchall())
 				print(vue)
 				await message.channel.send(vue)
-				
+
+
 bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le jeu Monster Super League")
 
 @bot.event
