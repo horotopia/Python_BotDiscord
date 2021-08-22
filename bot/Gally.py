@@ -12,8 +12,6 @@ USER = os.getenv("UserSqlHeroku")
 PASSWORD = os.getenv("MdpSqlHeroku")
 DATABASE = os.getenv("DataSqlHeroku")
 
-bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le jeu Monster Super League")
-
 class FonctionSql:
 	def __init__(self, Pseudo, Commande, CombienDeFois, Channel, Serveur):
 		self.nom = Pseudo
@@ -33,6 +31,22 @@ class FonctionSql:
 				vue = str(conn.cursor().fetchall())
 				print(vue)
 				await message.channel.send(vue)
+				
+bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le jeu Monster Super League")
+
+@bot.event
+async def on_raw_reaction_add(payload):
+	print(payload)
+	UserId = payload.user_id
+	Emoji = payload.emoji.name
+	Canal = payload.channel_id
+	membre = await bot.get_guild(payload.guild_id).fetch_member(payload.UserId)
+	print(UserId)
+	print(Emoji)
+	print(Canal)
+	if Canal == "784691401094594571":
+	
+	await bot.send("je crois que ce chat rigole")
 
 @bot.command(help="ping pong")
 async def ping(ctx: commands.Context):
