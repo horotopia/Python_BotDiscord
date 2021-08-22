@@ -12,27 +12,6 @@ USER = os.getenv("UserSqlHeroku")
 PASSWORD = os.getenv("MdpSqlHeroku")
 DATABASE = os.getenv("DataSqlHeroku")
 
-'''class FonctionSql:
-	def __init__(self, Pseudo, Commande, CombienDeFois, Channel, Serveur):
-		self.nom = Pseudo
-		self.com = Commande
-		self.time = CombienDeFois
-		self.chan = Channel
-		self.guild = Serveur
-
-	def Connexion():
-		conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
-
-	def selection():
-		try:
-			with Connexion():
-				sql = "SELECT \"Id\", \"Nom\" FROM \"Astromons\".\"AstromonsNom\""
-				conn.cursor().execute(sql)
-				vue = str(conn.cursor().fetchall())
-				print(vue)
-				await message.channel.send(vue)'''
-
-
 bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le jeu Monster Super League")
 
 @bot.event
