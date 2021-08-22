@@ -34,7 +34,7 @@ class FonctionSql:
 				print(vue)
 				await message.channel.send(vue)
 
-@bot.event
+'''@bot.event
 async def on_raw_reaction_add(payload):
 	print(payload)
 	UserId = payload.user_id
@@ -46,7 +46,7 @@ async def on_raw_reaction_add(payload):
 	print(Canal)
 #	if Canal == "784691401094594571":
 	
-	await bot.send("je crois que ce chat rigole")	
+	await bot.send("je crois que ce chat rigole")	'''
 
 @bot.command(help="ping pong")
 async def ping(ctx: commands.Context):
