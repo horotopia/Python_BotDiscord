@@ -12,7 +12,7 @@ USER = os.getenv("UserSqlHeroku")
 PASSWORD = os.getenv("MdpSqlHeroku")
 DATABASE = os.getenv("DataSqlHeroku")
 
-class FonctionSql:
+'''class FonctionSql:
 	def __init__(self, Pseudo, Commande, CombienDeFois, Channel, Serveur):
 		self.nom = Pseudo
 		self.com = Commande
@@ -30,7 +30,7 @@ class FonctionSql:
 				conn.cursor().execute(sql)
 				vue = str(conn.cursor().fetchall())
 				print(vue)
-				await message.channel.send(vue)
+				await message.channel.send(vue)'''
 
 
 bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le jeu Monster Super League")
