@@ -34,7 +34,8 @@ class FonctionSql:
 				print(vue)
 				await message.channel.send(vue)
 
-'''@bot.event
+'''
+@bot.event
 async def on_raw_reaction_add(payload):
 	print(payload)
 	UserId = payload.user_id
