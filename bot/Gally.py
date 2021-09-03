@@ -14,7 +14,7 @@ DATABASE = os.getenv("DataSqlHeroku")
 
 bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le jeu Monster Super League")
 
-'''class FonctionSql:
+class FonctionSql:
 	def __init__(self, Pseudo, Commande, CombienDeFois, Channel, Serveur):
 		self.nom = Pseudo
 		self.com = Commande
@@ -32,7 +32,8 @@ bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour 
 				conn.cursor().execute(sql)
 				vue = str(conn.cursor().fetchall())
 				print(vue)
-				await message.channel.send(vue)'''
+				await message.channel.send(vue)
+
 
 @bot.event
 async def on_raw_reaction_add(payload):
@@ -173,6 +174,10 @@ async def WbTime(ctx: commands.Context):
 	await ctx.send("le Timer va être mis en place")
 	await ctx.send("Dans combien de temps (en jours) le WorldBoss arrive-t-il ? ")
 	
+@bot.command(help= "Montre la carte")
+async def Maps(ctx: commands.Context):
+	await ctx.send("ok")
+
 	
 '''	if len(ListElementInMessage) == 2 and ListElementInMessage[1].isnumeric():
 	temps = ListElementInMessage[1]
