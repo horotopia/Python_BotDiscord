@@ -35,6 +35,7 @@ class FonctionSql:
 				await message.channel.send(vue)
 
 
+
 @bot.event
 async def on_raw_reaction_add(payload):
 	print(payload)
