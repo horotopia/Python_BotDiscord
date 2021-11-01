@@ -138,8 +138,10 @@ async def D_Error(ctx, error):
 	if isinstance(error, commands.MissingRequiredArgument):
 		await ctx.channel.send ("Erreur, Ecrivez D suivi de l'attaque, du taux critique et des dégats critique")
 
-@bot.command(help= "Savoir quoi choisir entre une gemme Atk ou Dc")
+@bot.command(help= "Savoir quoi choisir entre une gemme Atk ou Dc : AtkDc + 2020(Atk) + 150(Dc)")
 async def AtkDc(ctx: commands.Context, Atk: int, Dc: int):
+	"""AtkDc Atk Dc => AtkDc 3260 50
+	Avec ça, tu obtiendras 2 résultats pour te faire une idée."""
 	FullAtk1 = round((Atk*1.68)*5.5*(1+(Dc/100)))
 	FullAtk2 = round(Atk*5.5*(1+((Dc*1.7)/100)))
 	embed = discord.Embed(title="", color=0xffffff)
