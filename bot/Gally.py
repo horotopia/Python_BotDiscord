@@ -57,6 +57,13 @@ async def ping(ctx: commands.Context):
 
 @bot.command(help="Calculer l'epv d'un Pkmn")
 async def Epv(ctx: commands.Context, pv: int, defense: int):
+	"""
+	Pour le calcul de l'Epv, il faut écrire : 
+	Epv 1 2
+	Epv est la commande pour ce calcul
+	1 est le nombre de pv du mob
+	2 est le nombre de def du mob
+	"""
 	epv = round(pv/(1-(defense/(defense+1500))))
 	embed = discord.Embed(title="Epv", color=0xffffff)
 	embed.set_thumbnail(url="https://img.pngio.com/bar-development-game-health-video-game-icon-video-game-health-png-512_204.png")
