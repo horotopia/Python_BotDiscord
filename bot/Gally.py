@@ -55,7 +55,7 @@ async def ping(ctx: commands.Context):
 		#return
 	await ctx.send('pong')
 
-@bot.command(help="Calculer l'epv d'un Pkmn")
+@bot.command(help="Calculer l'epv (ex : Epv 20000 2000)")
 async def Epv(ctx: commands.Context, pv: int, defense: int):
 	"""
 	Pour le calcul de l'Epv, il faut écrire : 
