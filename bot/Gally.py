@@ -175,7 +175,7 @@ async def Titan(ctx: commands.Context, lvl: int, iterations=10):
 	here = get(ctx.guild.roles, name='here')
 	nature = [" :dark:", " :eau:", " :bois:", " :light:", " :feu:"]
 	pvTitan = ["3","3.25","3.5","3.75","4","5.5","7","8.5","10","12.5","15","17.5","20","27.5","35","42.5","50","62.5","75","87.5","100","125","150","175","200","225","250","275","300","325","350","375","400","425","450","475","500","525","550","575","600"]
-	messageSortie =  here.mention," \n"
+	messageSortie =""
 	#creation lines
 	for i in range(iterations):
 		iterationLvl = lvl+i 
@@ -184,7 +184,7 @@ async def Titan(ctx: commands.Context, lvl: int, iterations=10):
 		messageSortie += ("Titan " + str(iterationLvl) + str(nature[indexNature]) + " (" + str(pvTitan[indexPvTitan]) + "m) : ")
 		if i<iterations:
 			messageSortie += "\n"
-	await ctx.channel.send(messageSortie)
+	await ctx.channel.send(here.mention,messageSortie)
 	
 @Titan.error
 async def Titan_Error(ctx, error):
