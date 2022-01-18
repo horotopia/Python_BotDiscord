@@ -174,7 +174,7 @@ async def Titan(ctx: commands.Context, lvl: int, iterations=10):
 	#init	
 	nature = [" :dark:", " :eau:", " :bois:", " :light:", " :feu:"]
 	pvTitan = ["3","3.25","3.5","3.75","4","5.5","7","8.5","10","12.5","15","17.5","20","27.5","35","42.5","50","62.5","75","87.5","100","125","150","175","200","225","250","275","300","325","350","375","400","425","450","475","500","525","550","575","600"]
-	messageSortie = "@horotopia#1922 "
+	messageSortie = "<@&here> "
 	#creation lines
 	for i in range(iterations):
 		indexNature = ((lvl+i)%5)-1
