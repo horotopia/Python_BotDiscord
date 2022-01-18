@@ -183,7 +183,6 @@ async def Titan(ctx: commands.Context, lvl: int, iterations=10):
 		messageSortie += ("Titan " + str(iterationLvl) + str(nature[indexNature]) + " (" + str(pvTitan[indexPvTitan]) + "m) : ")
 		if i<iterations:
 			messageSortie += "\n"
-	print(messageSortie)
 	await ctx.channel.send(messageSortie)
 	
 @Titan.error
