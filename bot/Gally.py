@@ -172,7 +172,7 @@ async def AtkDc_Error(ctx, error):
 @bot.command(help= "connaître les PV et la nature du titan celon son niveau : Titan 203")
 async def Titan(ctx: commands.Context, lvl: int, iterations=10):
 	#init
-	here = get(ctx.guild.roles, name='here')
+	#here = get(ctx.guild.roles, name='here')
 	nature = [" :dark:", " :eau:", " :bois:", " :light:", " :feu:"]
 	pvTitan = ["3","3.25","3.5","3.75","4","5.5","7","8.5","10","12.5","15","17.5","20","27.5","35","42.5","50","62.5","75","87.5","100","125","150","175","200","225","250","275","300","325","350","375","400","425","450","475","500","525","550","575","600"]
 	messageSortie =""
@@ -184,7 +184,7 @@ async def Titan(ctx: commands.Context, lvl: int, iterations=10):
 		messageSortie += ("Titan " + str(iterationLvl) + str(nature[indexNature]) + " (" + str(pvTitan[indexPvTitan]) + "m) : ")
 		if i<iterations:
 			messageSortie += "\n"
-	await ctx.channel.send(f"{here.mention},\n{messageSortie}")
+	await ctx.channel.send(messageSortie)
 	
 @Titan.error
 async def Titan_Error(ctx, error):
