@@ -180,7 +180,7 @@ async def Titan(ctx: commands.Context, lvl: int, iterations=10):
 		iterationLvl = lvl+i 
 		indexNature = (iterationLvl%5)-1
 		indexPvTitan = int((iterationLvl-1)/5)
-		messageSortie += ("Titan " + str(lvl) + str(nature[indexNature]) + " (" + str(pvTitan[indexPvTitan]) + "m) : ")
+		messageSortie += ("Titan " + str(iterationLvl) + str(nature[indexNature]) + " (" + str(pvTitan[indexPvTitan]) + "m) : ")
 		if i<iterations:
 			messageSortie += "\n"
 	print(messageSortie)
