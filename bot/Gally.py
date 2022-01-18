@@ -180,11 +180,14 @@ async def Titan(ctx: commands.Context, lvl: int, iterations=10):
 		indexNature = ((lvl+i)%5)-1
 		indexPvTitan = int((lvl-1)/5)
 		messageSortie += ("Titan " + str(lvl) + str(nature[indexNature]) + " (" + str(pvTitan[indexPvTitan]) + "m) : ")
-		if i<9:
+		if i<iterations:
 			messageSortie += "\n"
-			await message.channel.send (messageSortie)
-		else:
-			await message.channel.send ("Erreur, Ecrivez Titan suivi du chiffre qui vous intéresse : Titan 21")
+	await message.channel.send (messageSortie)
+	
+@Titan.error
+async def Titan_Error(ctx, error):
+	if isinstance(error, commands.MissingRequiredArgument):
+		await ctx.channel.send ("Erreur, Ecrivez Titan suivi du chiffre qui vous intéresse : Titan 21")
 
 @bot.command(help= "Obtenir l'id de l'interlocuteur")
 async def GetId(ctx: commands.Context):
