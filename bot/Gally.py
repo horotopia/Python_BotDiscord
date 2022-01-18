@@ -177,8 +177,9 @@ async def Titan(ctx: commands.Context, lvl: int, iterations=10):
 	messageSortie = "<@&here> \n"
 	#creation lines
 	for i in range(iterations):
-		indexNature = ((lvl+i)%5)-1
-		indexPvTitan = int((lvl+i-1)/5)
+		iterationLvl = lvl+i 
+		indexNature = (iterationLvl%5)-1
+		indexPvTitan = int((iterationLvl-1)/5)
 		messageSortie += ("Titan " + str(lvl) + str(nature[indexNature]) + " (" + str(pvTitan[indexPvTitan]) + "m) : ")
 		if i<iterations:
 			messageSortie += "\n"
