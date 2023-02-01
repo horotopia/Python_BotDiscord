@@ -12,7 +12,6 @@ USER = os.getenv("UserSqlHeroku")
 PASSWORD = os.getenv("MdpSqlHeroku")
 DATABASE = os.getenv("DataSqlHeroku")
 
-
 bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le jeu Monster Super League")
 
 '''class FonctionSql:
