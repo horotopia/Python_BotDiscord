@@ -12,7 +12,11 @@ USER = os.getenv("UserSqlHeroku")
 PASSWORD = os.getenv("MdpSqlHeroku")
 DATABASE = os.getenv("DataSqlHeroku")
 
-bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le jeu Monster Super League")
+intents = discord.Intents.default()
+intents.message_content = True
+intents.members = True
+
+bot = commands.Bot(command_prefix='', description="Ceci est un Bot Discord pour le jeu Monster Super League", intents=intents)
 
 '''class FonctionSql:
 	def __init__(self, Pseudo, Commande, CombienDeFois, Channel, Serveur):
@@ -195,7 +199,7 @@ async def Titan_Error(ctx, error):
 async def GetId(ctx: commands.Context):
 	print(ctx.author)
 	auteur = ctx.author
-	await ctx.send('id obtenue')
+	await ctx.send(f"id obtenue ({auteur})')
 
 @bot.command(help= "timer pour le World Boss")
 async def WbTime(ctx: commands.Context):
